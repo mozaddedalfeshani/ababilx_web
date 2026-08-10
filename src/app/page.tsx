@@ -3,6 +3,7 @@ import HomePageClient from "@/components/home/home-page-client";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
+  FOUNDER_NAME,
   GITHUB_ORG_URL,
   PAPER_URL,
   SITE_NAME,
@@ -38,6 +39,10 @@ function OrganizationJsonLd() {
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
     description: DEFAULT_DESCRIPTION,
+    founder: {
+      "@type": "Person",
+      name: FOUNDER_NAME,
+    },
     sameAs: [GITHUB_ORG_URL],
     contactPoint: {
       "@type": "ContactPoint",

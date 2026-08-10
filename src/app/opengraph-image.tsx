@@ -55,7 +55,7 @@ export default function OpenGraphImage() {
             maxWidth: 900,
           }}
         >
-          Open Source Organization
+          Build useful tools. My own way.
         </div>
         <div
           style={{
@@ -66,7 +66,8 @@ export default function OpenGraphImage() {
             lineHeight: 1.4,
           }}
         >
-          Practical software — Paper & Workspace — open for everyone.
+          AbabilX builds Paper & Workspace — practical software for developers
+          and learners. Founded by Murad.
         </div>
       </div>
     ),

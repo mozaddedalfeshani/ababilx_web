@@ -18,6 +18,11 @@ export default function AuthActions({
   const { copy } = useHomeLocale();
   const labels = copy.auth;
 
+  const heroSize =
+    size === "lg"
+      ? "h-11 gap-2 px-6 text-base sm:h-12 sm:px-7"
+      : undefined;
+
   return (
     <div
       className={cn(
@@ -25,14 +30,14 @@ export default function AuthActions({
         className,
       )}
     >
-      <Button onClick={openPaper} size={size} className="gap-2">
+      <Button onClick={openPaper} size={size} className={cn("gap-2", heroSize)}>
         {labels.paper}
       </Button>
       <Button
         onClick={openWorkspace}
         size={size}
         variant="outline"
-        className="gap-2"
+        className={cn("gap-2", heroSize)}
       >
         {labels.workspace}
       </Button>

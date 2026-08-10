@@ -25,11 +25,11 @@ export const HOME_COPY_EN: HomeCopy = {
     workspace: "Workspace",
   },
   hero: {
-    badge: "Open Source Organization",
-    headline: "Practical software,",
-    headlineAccent: "open for everyone.",
+    badge: "Founded by Murad",
+    headline: "Build useful tools.",
+    headlineAccent: "My own way.",
     tagline:
-      "Two products from AbabilX — Paper and Workspace — built open for developers and learners.",
+      "AbabilX builds Paper and Workspace — practical software for developers and learners.",
   },
   languageEn: "English",
   languageBn: "বাংলা",
@@ -42,11 +42,11 @@ export const HOME_COPY_BN: HomeCopy = {
     workspace: "Workspace",
   },
   hero: {
-    badge: "ওপেন সোর্স অর্গানাইজেশন",
-    headline: "ব্যবহারিক সফটওয়্যার,",
-    headlineAccent: "সবার জন্য উন্মুক্ত।",
+    badge: "প্রতিষ্ঠাতা Murad",
+    headline: "দরকারি টুল বানাও।",
+    headlineAccent: "নিজের মতো করে।",
     tagline:
-      "AbabilX-এর দুই প্রোডাক্ট — Paper ও Workspace — ডেভেলপার ও লার্নারদের জন্য উন্মুক্ত।",
+      "AbabilX তৈরি করে Paper ও Workspace — ডেভেলপার ও লার্নারদের জন্য ব্যবহারিক সফটওয়্যার।",
   },
   languageEn: "English",
   languageBn: "বাংলা",

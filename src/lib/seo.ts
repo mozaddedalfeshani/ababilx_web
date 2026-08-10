@@ -5,13 +5,15 @@ export const SITE_URL =
 
 export const SITE_NAME = "AbabilX";
 
-export const DEFAULT_TITLE = `${SITE_NAME} — Open Source Organization`;
+export const DEFAULT_TITLE = `${SITE_NAME} — Paper & Workspace`;
 
 export const DEFAULT_DESCRIPTION =
-  "AbabilX is a community-driven open-source organization building practical, clean, and impactful software — including Paper and Workspace — for developers and learners worldwide.";
+  "AbabilX builds Paper and Workspace — practical software for developers and learners. Founded by Murad.";
 
 export const DEFAULT_DESCRIPTION_BN =
-  "AbabilX একটি কমিউনিটি-ড্রিভেন ওপেন সোর্স অর্গানাইজেশন — Paper ও Workspaceসহ ব্যবহারিক, পরিষ্কার ও প্রভাবশালী সফটওয়্যার তৈরি করে ডেভেলপার ও লার্নারদের জন্য।";
+  "AbabilX তৈরি করে Paper ও Workspace — ডেভেলপার ও লার্নারদের জন্য ব্যবহারিক সফটওয়্যার। প্রতিষ্ঠাতা Murad।";
+
+export const FOUNDER_NAME = "Murad";
 
 export const GITHUB_ORG_URL = "https://github.com/AbabilX";
 export const PAPER_URL = "https://paper.ababilx.cloud";
