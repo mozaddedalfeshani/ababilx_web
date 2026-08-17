@@ -7,7 +7,13 @@ Landing shell for AbabilX. Most UI comes from **shadcn** (`src/components/ui`); 
 ```
 ababilx_main/
 ├── public/hero.png + logo.png
-├── src/app/page.tsx              # → HomePageClient
+├── legal/                        # legal markdown (copied from Ababil-X-frontend)
+├── src/app/
+│   ├── page.tsx                  # → HomePageClient
+│   ├── privacy-policy/page.tsx   # all legal docs (same as Workspace frontend)
+│   ├── account-deletion/page.tsx
+│   └── data-deletion/page.tsx
+├── src/components/legal/legal-markdown/
 ├── src/components/hero/          # landing hero art (Ababil-X-frontend match)
 ├── src/components/home/
 │   ├── navbar/                   # fixed glass navbar + auth
