@@ -84,7 +84,7 @@ Attendance, work logs, and activity graphs exist to coordinate work, not to surv
 ## 9. Reporting
 
 - **Inside your Team:** raise it with your team owner or a manager, who has the tools to act.
-- **To AbabilX:** email `info@ababilx.cloud` with the team, content, and what happened — especially when the problem involves the team's leadership, or is severe (threats, hate speech, doxxing, CSAM — the last is reported to authorities without exception).
+- **To AbabilX:** email `info@ababilx.com` with the team, content, and what happened — especially when the problem involves the team's leadership, or is severe (threats, hate speech, doxxing, CSAM — the last is reported to authorities without exception).
 - Reports are handled confidentially; retaliation against a good-faith reporter is itself a violation.
 
 ## 10. Enforcement
@@ -97,7 +97,7 @@ Changes are versioned in Section 13 and announced in the Service when material.
 
 ## 12. Contact
 
-Conduct reports: `info@ababilx.cloud` · Urgent safety issues: `info@ababilx.cloud`
+Conduct reports: `info@ababilx.com` · Urgent safety issues: `info@ababilx.com`
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 13. Revision History

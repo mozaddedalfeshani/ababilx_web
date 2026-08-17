@@ -57,7 +57,7 @@ Under Articles 15–22 GDPR you have the rights of **access, rectification, eras
 - delete individual content items;
 - delete your account entirely (erasure — see [Privacy Policy](./privacy-policy.md), Section 14).
 
-**By request to `info@ababilx.cloud`:**
+**By request to `info@ababilx.com`:**
 
 - a copy of your Personal Data (access) and a machine-readable export (portability, Article 20);
 - objection to legitimate-interest processing (Article 21) — we will stop unless we demonstrate compelling legitimate grounds;
@@ -88,7 +88,7 @@ Article 25 obligations are reflected in the platform's construction:
 
 We maintain records of processing activities appropriate to our size and processing (Article 30), assess new features with privacy-affecting scope before launch, and conduct data-protection impact assessments where processing is likely to result in high risk (Article 35). Subprocessors are engaged under written contracts imposing GDPR-equivalent obligations (Article 28(4)); the current list is the [Subprocessor List](./subprocessors.md).
 
-We have not appointed a mandatory Data Protection Officer under Article 37, as our core activities do not involve large-scale systematic monitoring or large-scale special-category processing; privacy responsibility rests with engineering leadership, reachable at `info@ababilx.cloud`. We will appoint a DPO and an EU/UK representative (Article 27) if and when our processing triggers those obligations, and will update this Statement accordingly.
+We have not appointed a mandatory Data Protection Officer under Article 37, as our core activities do not involve large-scale systematic monitoring or large-scale special-category processing; privacy responsibility rests with engineering leadership, reachable at `info@ababilx.com`. We will appoint a DPO and an EU/UK representative (Article 27) if and when our processing triggers those obligations, and will update this Statement accordingly.
 
 ## 9. Breach Notification
 
@@ -100,7 +100,7 @@ The Service does not make decisions producing legal or similarly significant eff
 
 ## 11. Supervisory Authorities and Complaints
 
-You may lodge a complaint with the supervisory authority of your habitual residence, place of work, or the place of an alleged infringement (Article 77) — for example, your national Data Protection Authority in the EEA, or the ICO in the UK. We would welcome the opportunity to resolve your concern first at `info@ababilx.cloud`.
+You may lodge a complaint with the supervisory authority of your habitual residence, place of work, or the place of an alleged infringement (Article 77) — for example, your national Data Protection Authority in the EEA, or the ICO in the UK. We would welcome the opportunity to resolve your concern first at `info@ababilx.com`.
 
 ## 12. Changes to This Statement
 
@@ -108,7 +108,7 @@ Changes are versioned in Section 14; material changes are announced through the 
 
 ## 13. Contact
 
-Privacy and GDPR requests: `info@ababilx.cloud` · Legal: `info@ababilx.cloud`
+Privacy and GDPR requests: `info@ababilx.com` · Legal: `info@ababilx.com`
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 14. Revision History

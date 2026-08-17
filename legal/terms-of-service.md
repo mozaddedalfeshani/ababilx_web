@@ -78,7 +78,7 @@ You are responsible for all activity under your Account. You must:
 
 - safeguard the devices and identity-provider accounts used to access AbabilX;
 - keep pairing codes (such as desktop login codes) confidential;
-- notify `info@ababilx.cloud` promptly of any unauthorized use or suspected compromise.
+- notify `info@ababilx.com` promptly of any unauthorized use or suspected compromise.
 
 We are not liable for loss caused by unauthorized use of your Account arising from your failure to protect your credentials.
 
@@ -260,7 +260,7 @@ These Terms are governed by the laws of **Bangladesh**, without regard to confli
 
 ### 23.2 Informal Resolution First
 
-Before starting formal proceedings, you agree to contact `info@ababilx.cloud` describing the dispute; both parties will attempt in good faith to resolve it within 30 days.
+Before starting formal proceedings, you agree to contact `info@ababilx.com` describing the dispute; both parties will attempt in good faith to resolve it within 30 days.
 
 ### 23.3 Arbitration
 
@@ -277,7 +277,7 @@ To the extent permitted by law, disputes must be brought on an individual basis;
 3. **No Waiver.** Failure to enforce a provision is not a waiver of the right to enforce it later.
 4. **Assignment.** You may not assign these Terms without our prior written consent. We may assign them in connection with a merger, acquisition, or sale of assets, with notice to you.
 5. **Force Majeure.** Neither party is liable for delay or failure caused by events beyond its reasonable control, including natural disasters, war, terrorism, labor disputes, governmental action, internet or utility failures, and third-party platform outages. Payment obligations are excluded.
-6. **Notices.** We may notify you through the Service or at your account email. Legal notices to us go to `info@ababilx.cloud` and by post to AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
+6. **Notices.** We may notify you through the Service or at your account email. Legal notices to us go to `info@ababilx.com` and by post to AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 7. **Independent Contractors.** The parties are independent contractors; these Terms create no partnership, joint venture, or agency.
 8. **Headings and Interpretation.** Headings are for convenience. "Including" means "including without limitation."
 9. **Changes to These Terms.** We may update these Terms. Material changes will be notified through the Service or by email at least 14 days before taking effect; continued use after the effective date constitutes acceptance. If you do not agree, stop using the Service before the effective date and, for paid Plans, request a pro-rated refund of prepaid, unused fees for the remaining period.
@@ -287,9 +287,9 @@ To the extent permitted by law, disputes must be brought on an individual basis;
 
 | Purpose | Contact |
 |---|---|
-| Legal notices and disputes | `info@ababilx.cloud` |
-| General support | `info@ababilx.cloud` |
-| Billing | `info@ababilx.cloud` |
+| Legal notices and disputes | `info@ababilx.com` |
+| General support | `info@ababilx.com` |
+| Billing | `info@ababilx.com` |
 
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 

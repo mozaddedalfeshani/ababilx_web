@@ -91,7 +91,7 @@ California residents have the right to:
 ## 10. How to Exercise Your Rights
 
 - **Self-service:** edit profile data in Settings (correct); delete content items or your entire account in the Service (delete).
-- **By request:** email `info@ababilx.cloud` with "California Privacy Request" in the subject. We verify your identity via your account email (and reasonable follow-up where needed), confirm receipt within 10 business days, and respond within **45 days** (extendable once by 45 days with notice).
+- **By request:** email `info@ababilx.com` with "California Privacy Request" in the subject. We verify your identity via your account email (and reasonable follow-up where needed), confirm receipt within 10 business days, and respond within **45 days** (extendable once by 45 days with notice).
 - **Authorized agents** may submit requests with proof of written authorization; we may still require you to verify identity directly.
 - We do not charge for requests unless they are manifestly unfounded or excessive.
 
@@ -109,7 +109,7 @@ Changes are versioned in Section 15. This Statement is reviewed at least annuall
 
 ## 14. Contact
 
-California privacy requests: `info@ababilx.cloud` (subject: "California Privacy Request")
+California privacy requests: `info@ababilx.com` (subject: "California Privacy Request")
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 15. Revision History

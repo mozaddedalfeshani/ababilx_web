@@ -34,7 +34,7 @@
 
 This Data Processing Addendum ("DPA") forms part of the agreement between AbabilX and the customer accepting it ("Customer") under the [Terms of Service](./terms-of-service.md) (together, the "Agreement"), and applies where AbabilX processes Personal Data subject to Data Protection Law on Customer's behalf. In case of conflict regarding the processing of Personal Data, this DPA prevails over the Agreement; executed Standard Contractual Clauses prevail over this DPA.
 
-This DPA is accepted by using the Service as a business or organization, or by countersignature where a signed copy is requested (`info@ababilx.cloud`).
+This DPA is accepted by using the Service as a business or organization, or by countersignature where a signed copy is requested (`info@ababilx.com`).
 
 ## 2. Definitions
 
@@ -76,7 +76,7 @@ Customer shall:
 ## 7. Subprocessing
 
 1. Customer grants general written authorization for the Subprocessors listed in the [Subprocessor List](./subprocessors.md).
-2. AbabilX will update the list at least **14 days** before adding or replacing a Subprocessor. Customer may subscribe to updates by emailing `info@ababilx.cloud`.
+2. AbabilX will update the list at least **14 days** before adding or replacing a Subprocessor. Customer may subscribe to updates by emailing `info@ababilx.com`.
 3. Customer may object on reasonable data-protection grounds within that period; if the parties cannot resolve the objection, Customer may terminate the affected services and receive a pro-rated refund of prepaid, unused fees.
 4. AbabilX imposes data-protection obligations on each Subprocessor materially equivalent to this DPA and remains liable for its Subprocessors' performance.
 
@@ -148,7 +148,7 @@ As detailed in the [Security Policy](./security-policy.md):
 
 ## 18. Contact
 
-DPA execution and questions: `info@ababilx.cloud` · Privacy: `info@ababilx.cloud`
+DPA execution and questions: `info@ababilx.com` · Privacy: `info@ababilx.com`
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 19. Revision History

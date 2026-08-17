@@ -40,7 +40,7 @@ Content hosted on AbabilX that may be subject to a Notice includes: wall posts a
 
 ## 4. Submitting a Copyright Notice
 
-Send Notices to `info@ababilx.cloud` (or by post to the address in Section 12) including **all** of the following:
+Send Notices to `info@ababilx.com` (or by post to the address in Section 12) including **all** of the following:
 
 1. identification of the copyrighted work claimed to be infringed (or a representative list for multiple works);
 2. identification of the allegedly infringing material and information reasonably sufficient for us to locate it (URLs, team/board identifiers, or screenshots with context);
@@ -66,7 +66,7 @@ We may decline to act on Notices that are incomplete, plainly meritless, or abus
 
 ## 6. Counter-Notices
 
-If your content was removed and you believe the removal was mistaken or the material was misidentified, send a Counter-Notice to `info@ababilx.cloud` including:
+If your content was removed and you believe the removal was mistaken or the material was misidentified, send a Counter-Notice to `info@ababilx.com` including:
 
 1. identification of the removed material and its location before removal;
 2. a statement under penalty of perjury that you have a good-faith belief the material was removed as a result of mistake or misidentification;
@@ -86,7 +86,7 @@ Knowingly materially misrepresenting that content is infringing, or that it was 
 
 ## 9. Trademark Complaints
 
-Trademark concerns (impersonation, misleading use of a mark in usernames, teams, or content) should be sent to `info@ababilx.cloud` with: the mark, registration details or basis of rights, the offending content's location, and the requested action. We review trademark complaints case-by-case under the [Acceptable Use Policy](./acceptable-use-policy.md), Sections 4.5 and 4.7.
+Trademark concerns (impersonation, misleading use of a mark in usernames, teams, or content) should be sent to `info@ababilx.com` with: the mark, registration details or basis of rights, the offending content's location, and the requested action. We review trademark complaints case-by-case under the [Acceptable Use Policy](./acceptable-use-policy.md), Sections 4.5 and 4.7.
 
 ## 10. Content on Third-Party Platforms
 
@@ -99,9 +99,9 @@ Changes are versioned in Section 13. The process in force when a Notice is recei
 ## 12. Contact
 
 **Designated Agent — Copyright:**
-Email: `info@ababilx.cloud`
+Email: `info@ababilx.com`
 Post: AbabilX — Copyright Agent, Sector 4, Uttara, Dhaka, Bangladesh
-Other legal matters: `info@ababilx.cloud`
+Other legal matters: `info@ababilx.com`
 
 ## 13. Revision History
 

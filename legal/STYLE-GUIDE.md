@@ -32,7 +32,7 @@ Use these values consistently. Never invent alternatives.
 - **Service name:** AbabilX (never "Ababil X", "AbabilX.com", or "the App")
 - **Operator:** AbabilX ("AbabilX," "we," "us," "our")
 - **Location:** Sector 4, Uttara, Dhaka, Bangladesh
-- **Contact:** `info@ababilx.cloud`
+- **Contact:** `info@ababilx.com`
 - **Plans:** Free and Premium (no enterprise tier is currently sold; documents may reference organization/team features)
 - **Current document version:** 1.0.0 — Effective July 9, 2026
 - **AI provider:** DeepSeek (via API)

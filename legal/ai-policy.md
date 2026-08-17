@@ -118,7 +118,7 @@ We operate controls around AI Features, including:
 
 Content processed by AI Features may include text written by others (commit messages, PR comments, task descriptions). Such text can contain **prompt-injection** attempts — instructions embedded in content intended to manipulate the model.
 
-Our mitigations include separating system instructions from user content, constraining what actions the assistant can take (state-changing actions require your explicit confirmation in the interface), and scoping every request to your existing permissions: the model cannot read or act on anything your account could not already access. No mitigation is perfect; treat Output derived from untrusted content with corresponding skepticism, and report suspected injection issues to `info@ababilx.cloud` under our [Vulnerability Disclosure Policy](./vulnerability-disclosure-policy.md).
+Our mitigations include separating system instructions from user content, constraining what actions the assistant can take (state-changing actions require your explicit confirmation in the interface), and scoping every request to your existing permissions: the model cannot read or act on anything your account could not already access. No mitigation is perfect; treat Output derived from untrusted content with corresponding skepticism, and report suspected injection issues to `info@ababilx.com` under our [Vulnerability Disclosure Policy](./vulnerability-disclosure-policy.md).
 
 ## 12. Usage Limits and Fair Use
 
@@ -147,7 +147,7 @@ We will update this Policy as AI Features and providers evolve, recording change
 
 ## 16. Contact
 
-AI questions: `info@ababilx.cloud` · Privacy: `info@ababilx.cloud` · Security: `info@ababilx.cloud`
+AI questions: `info@ababilx.com` · Privacy: `info@ababilx.com` · Security: `info@ababilx.com`
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 17. Revision History

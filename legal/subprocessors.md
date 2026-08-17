@@ -42,7 +42,7 @@ Before engaging a Subprocessor we assess its security posture and data-protectio
 | **Transactional email provider** | Sends account, security, and notification emails | Recipient email address; message content | Provider's infrastructure |
 | **Payment processor(s)** | Processes Premium plan payments | Payment credentials (held by the processor, not by us); transaction records | Provider's infrastructure |
 
-> **Note:** Where a row names a function rather than a single vendor, the engaged vendor for your account is available on request to `info@ababilx.cloud`; the contractual protections in Section 3 apply identically.
+> **Note:** Where a row names a function rather than a single vendor, the engaged vendor for your account is available on request to `info@ababilx.com`; the contractual protections in Section 3 apply identically.
 
 ## 5. Connected Platforms (Not Subprocessors)
 
@@ -58,11 +58,11 @@ Disconnecting an integration in AbabilX stops our access but does not delete dat
 
 ## 6. Change Notification
 
-We update this list at least **14 days** before adding or replacing a Subprocessor. Business customers under the [DPA](./data-processing-addendum.md) may subscribe to change notices and object as described in DPA Section 7 by emailing `info@ababilx.cloud` with the subject "Subprocessor notifications." Every change is recorded in Section 8.
+We update this list at least **14 days** before adding or replacing a Subprocessor. Business customers under the [DPA](./data-processing-addendum.md) may subscribe to change notices and object as described in DPA Section 7 by emailing `info@ababilx.com` with the subject "Subprocessor notifications." Every change is recorded in Section 8.
 
 ## 7. Contact
 
-Questions and notification subscriptions: `info@ababilx.cloud`
+Questions and notification subscriptions: `info@ababilx.com`
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 8. Revision History

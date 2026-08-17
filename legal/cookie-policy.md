@@ -94,7 +94,7 @@ We will update this Policy when our use of cookies or storage changes, revising 
 
 ## 10. Contact
 
-Questions about this Policy: `info@ababilx.cloud`.
+Questions about this Policy: `info@ababilx.com`.
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 11. Revision History

@@ -32,7 +32,7 @@ Terms defined in the [Terms of Service](./terms-of-service.md) and [Privacy Poli
 
 ## 3. General Standard
 
-Use the Service lawfully, honestly, and without harming the Service, other users, third-party platforms, or third parties. Where a specific behavior is not listed below but is of the same character as a listed prohibition, it is equally prohibited. If you are unsure whether a use is acceptable, ask `info@ababilx.cloud` before proceeding.
+Use the Service lawfully, honestly, and without harming the Service, other users, third-party platforms, or third parties. Where a specific behavior is not listed below but is of the same character as a listed prohibition, it is equally prohibited. If you are unsure whether a use is acceptable, ask `info@ababilx.com` before proceeding.
 
 ## 4. Prohibited Conduct
 
@@ -218,7 +218,7 @@ You may not:
 
 ## 6. Reporting Violations
 
-Report suspected violations to `info@ababilx.cloud` (or `info@ababilx.cloud` for security matters) with the relevant account, content, or URL and a description. We review reports promptly and keep reporter identities confidential except where disclosure is legally required.
+Report suspected violations to `info@ababilx.com` (or `info@ababilx.com` for security matters) with the relevant account, content, or URL and a description. We review reports promptly and keep reporter identities confidential except where disclosure is legally required.
 
 ## 7. Enforcement
 
@@ -236,7 +236,7 @@ For minor, curable violations we will ordinarily warn first. Violations involvin
 
 ## 8. Appeals
 
-If you believe an enforcement action was mistaken, reply to the enforcement notice or write to `info@ababilx.cloud` within 30 days with the facts you believe we got wrong. A person not involved in the original decision will review the appeal and respond.
+If you believe an enforcement action was mistaken, reply to the enforcement notice or write to `info@ababilx.com` within 30 days with the facts you believe we got wrong. A person not involved in the original decision will review the appeal and respond.
 
 ## 9. Changes to This Policy
 
@@ -244,7 +244,7 @@ We may revise this AUP as new abuse patterns emerge, recording changes in Sectio
 
 ## 10. Contact
 
-Abuse reports: `info@ababilx.cloud` · Security: `info@ababilx.cloud` · Legal: `info@ababilx.cloud`
+Abuse reports: `info@ababilx.com` · Security: `info@ababilx.com` · Legal: `info@ababilx.com`
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 11. Revision History

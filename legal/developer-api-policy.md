@@ -52,7 +52,7 @@ You must:
 3. transmit Credentials only over TLS and only to AbabilX endpoints;
 4. use the token-refresh flow rather than persisting long-lived access tokens;
 5. revoke Credentials you no longer need (sign out, regenerate pairing codes, delete webhooks);
-6. report suspected Credential compromise to `info@ababilx.cloud` immediately.
+6. report suspected Credential compromise to `info@ababilx.com` immediately.
 
 You must not share Credentials between users, embed a user's Credentials in a multi-tenant service, or solicit users' Credentials outside AbabilX's authentication flows.
 
@@ -62,7 +62,7 @@ You must not share Credentials between users, embed a user's Credentials in a mu
 2. Exceeding a limit returns **HTTP 429** with retry guidance. Integrations must honor `Retry-After` and implement exponential backoff with jitter.
 3. Deliberate evasion — rotating accounts, IP addresses, or request signatures to exceed limits — violates the [Acceptable Use Policy](./acceptable-use-policy.md) (items 25–26) and this Policy.
 4. Plan-based quotas (AI usage, automation limits) apply equally to API-originated usage.
-5. If your legitimate use case requires higher limits, contact `info@ababilx.cloud` before engineering around them.
+5. If your legitimate use case requires higher limits, contact `info@ababilx.com` before engineering around them.
 
 ## 6. Data Use and Storage by Integrations
 
@@ -129,7 +129,7 @@ Changes are versioned in Section 15; material changes are announced through the 
 
 ## 14. Contact
 
-Developer questions: `info@ababilx.cloud` · Security: `info@ababilx.cloud`
+Developer questions: `info@ababilx.com` · Security: `info@ababilx.com`
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 15. Revision History

@@ -50,7 +50,7 @@ export default function DataDeletionPage() {
                 For bulk data deletion or to delete all personal data except your account:
               </p>
               <a
-                href="mailto:info@ababilx.cloud?subject=Data%20Deletion%20Request"
+                href="mailto:info@ababilx.com?subject=Data%20Deletion%20Request"
                 className="inline-block bg-[#6366f1] hover:bg-[#4f46e5] text-white font-semibold py-3 px-6 rounded-lg transition-colors text-sm"
               >
                 Request Data Deletion
@@ -178,7 +178,7 @@ export default function DataDeletionPage() {
               deletion, contact us:
             </p>
             <a
-              href="mailto:info@ababilx.cloud?subject=Bulk%20Data%20Deletion%20Request"
+              href="mailto:info@ababilx.com?subject=Bulk%20Data%20Deletion%20Request"
               className="inline-block bg-[#6366f1] hover:bg-[#4f46e5] text-white font-semibold py-3 px-6 rounded-lg transition-colors"
             >
               Send Bulk Deletion Request
@@ -196,8 +196,8 @@ export default function DataDeletionPage() {
                 <h3 className="font-semibold text-[#f1f5f9] mb-2">Send Request</h3>
                 <p className="text-[#cbd5e1] text-sm">
                   Email{" "}
-                  <a href="mailto:info@ababilx.cloud" className="text-[#6366f1] hover:underline">
-                    info@ababilx.cloud
+                  <a href="mailto:info@ababilx.com" className="text-[#6366f1] hover:underline">
+                    info@ababilx.com
                   </a>{" "}
                   with your request. Specify what data you want deleted (e.g., "all jobs", "all rules", "all
                   personal data").
@@ -382,14 +382,14 @@ export default function DataDeletionPage() {
             <ul className="space-y-2 text-[#cbd5e1]">
               <li>
                 <strong>Privacy:</strong>{" "}
-                <a href="mailto:info@ababilx.cloud" className="text-[#6366f1] hover:underline">
-                  info@ababilx.cloud
+                <a href="mailto:info@ababilx.com" className="text-[#6366f1] hover:underline">
+                  info@ababilx.com
                 </a>
               </li>
               <li>
                 <strong>Support:</strong>{" "}
-                <a href="mailto:info@ababilx.cloud" className="text-[#6366f1] hover:underline">
-                  info@ababilx.cloud
+                <a href="mailto:info@ababilx.com" className="text-[#6366f1] hover:underline">
+                  info@ababilx.com
                 </a>
               </li>
               <li>

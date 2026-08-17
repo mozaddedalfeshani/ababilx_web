@@ -90,7 +90,7 @@ This Policy does not apply to:
 
 ## 5. Eligibility and Children
 
-The Service is intended for users aged **18 or older**. We do not knowingly collect Personal Data from anyone under 18. If we learn that we have collected Personal Data from a person under 18, we will delete that data and terminate the associated Account. If you believe a minor has provided us Personal Data, contact `info@ababilx.cloud`.
+The Service is intended for users aged **18 or older**. We do not knowingly collect Personal Data from anyone under 18. If we learn that we have collected Personal Data from a person under 18, we will delete that data and terminate the associated Account. If you believe a minor has provided us Personal Data, contact `info@ababilx.com`.
 
 ## 6. Information We Collect
 
@@ -277,17 +277,17 @@ Depending on your jurisdiction, you may have the right to:
 5. **Objection** — object to processing based on legitimate interests.
 6. **Restriction** — restrict processing in the circumstances defined by applicable law.
 7. **Withdraw consent** — where processing is based on consent, withdraw it at any time without affecting prior processing.
-8. **Complain** — lodge a complaint with your local supervisory authority. We would appreciate the chance to address your concern first at `info@ababilx.cloud`.
+8. **Complain** — lodge a complaint with your local supervisory authority. We would appreciate the chance to address your concern first at `info@ababilx.com`.
 
 **Self-service controls** available in the Service include: editing profile data, disconnecting GitHub/Slack integrations, revoking sessions by signing out, disabling email/desktop/push notifications, changing language and privacy mode, and deleting your Account.
 
-To exercise a right that lacks a self-service control, email `info@ababilx.cloud`. We verify requests using your account email and respond within 30 days (or the shorter period local law requires). We do not discriminate against you for exercising your rights.
+To exercise a right that lacks a self-service control, email `info@ababilx.com`. We verify requests using your account email and respond within 30 days (or the shorter period local law requires). We do not discriminate against you for exercising your rights.
 
 California-specific rights are described in our [CCPA/CPRA Compliance Statement](./ccpa-compliance.md); EEA/UK-specific detail is in our [GDPR Compliance Statement](./gdpr-compliance.md).
 
 ## 14. Account Closure and Deletion
 
-You may delete your Account at any time from within the Service or by emailing `info@ababilx.cloud` from your account email. On deletion:
+You may delete your Account at any time from within the Service or by emailing `info@ababilx.com` from your account email. On deletion:
 
 - your profile, configurations, content, tokens, and stored Output are permanently deleted from production systems;
 - active sessions and refresh credentials are revoked;
@@ -336,15 +336,15 @@ California residents have rights to know, delete, correct, and opt out of "sale"
 
 ### 17.3 Brazil (LGPD)
 
-If the Lei Geral de Proteção de Dados applies to you, you have rights of confirmation, access, correction, anonymization, portability, deletion, and information about sharing, exercisable via `info@ababilx.cloud`. Our legal bases parallel those in Section 8.
+If the Lei Geral de Proteção de Dados applies to you, you have rights of confirmation, access, correction, anonymization, portability, deletion, and information about sharing, exercisable via `info@ababilx.com`. Our legal bases parallel those in Section 8.
 
 ### 17.4 Singapore (PDPA)
 
-We collect, use, and disclose Personal Data with consent or under recognized exceptions, for reasonable purposes we have notified. You may withdraw consent and request access or correction via `info@ababilx.cloud`.
+We collect, use, and disclose Personal Data with consent or under recognized exceptions, for reasonable purposes we have notified. You may withdraw consent and request access or correction via `info@ababilx.com`.
 
 ### 17.5 India (DPDP Act)
 
-Where the Digital Personal Data Protection Act, 2023 applies, we process personal data for the lawful purposes described here with your consent or for legitimate uses recognized by the Act, and you may exercise rights of access, correction, erasure, and grievance redressal via `info@ababilx.cloud`.
+Where the Digital Personal Data Protection Act, 2023 applies, we process personal data for the lawful purposes described here with your consent or for legitimate uses recognized by the Act, and you may exercise rights of access, correction, erasure, and grievance redressal via `info@ababilx.com`.
 
 ### 17.6 Bangladesh
 
@@ -358,7 +358,7 @@ We may update this Policy to reflect changes in the Service, our practices, or l
 
 | Purpose | Contact |
 |---|---|
-| All inquiries (privacy, support, security, legal) | `info@ababilx.cloud` |
+| All inquiries (privacy, support, security, legal) | `info@ababilx.com` |
 
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 

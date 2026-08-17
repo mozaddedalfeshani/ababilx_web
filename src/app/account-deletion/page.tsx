@@ -31,7 +31,7 @@ export default function AccountDeletionPage() {
             To delete your account and associated data, send a request to:
           </p>
           <a
-            href="mailto:info@ababilx.cloud?subject=Account%20Deletion%20Request"
+            href="mailto:info@ababilx.com?subject=Account%20Deletion%20Request"
             className="inline-block bg-[#6366f1] hover:bg-[#4f46e5] text-white font-semibold py-3 px-6 rounded-lg transition-colors"
           >
             Request Account Deletion
@@ -53,10 +53,10 @@ export default function AccountDeletionPage() {
                 <p className="text-[#cbd5e1]">
                   Email{" "}
                   <a
-                    href="mailto:info@ababilx.cloud"
+                    href="mailto:info@ababilx.com"
                     className="text-[#6366f1] hover:underline"
                   >
-                    info@ababilx.cloud
+                    info@ababilx.com
                   </a>{" "}
                   with the subject "Account Deletion Request". Include your account email address or GitHub
                   username so we can identify your account.
@@ -287,14 +287,14 @@ export default function AccountDeletionPage() {
             <ul className="space-y-2 text-[#cbd5e1]">
               <li>
                 <strong>Privacy Inquiries:</strong>{" "}
-                <a href="mailto:info@ababilx.cloud" className="text-[#6366f1] hover:underline">
-                  info@ababilx.cloud
+                <a href="mailto:info@ababilx.com" className="text-[#6366f1] hover:underline">
+                  info@ababilx.com
                 </a>
               </li>
               <li>
                 <strong>Support:</strong>{" "}
-                <a href="mailto:info@ababilx.cloud" className="text-[#6366f1] hover:underline">
-                  info@ababilx.cloud
+                <a href="mailto:info@ababilx.com" className="text-[#6366f1] hover:underline">
+                  info@ababilx.com
                 </a>
               </li>
               <li>

@@ -65,7 +65,7 @@ Fees exclude taxes unless expressly stated. You are responsible for value-added,
 
 ## 8. Cancellation
 
-You may cancel at any time in the Service or by writing to `info@ababilx.cloud` from your account email. Cancellation:
+You may cancel at any time in the Service or by writing to `info@ababilx.com` from your account email. Cancellation:
 
 1. stops future renewals — you are not charged again;
 2. does **not** shorten the current cycle: Premium features remain active until the end of the period already paid;
@@ -103,7 +103,7 @@ We do not refund: partial-cycle cancellations outside Section 10.2; dissatisfact
 
 ### 10.4 How to Request
 
-Email `info@ababilx.cloud` from your account email with the charge date and reason. We respond within 7 business days; approved refunds are issued to the original payment method and may take 5–10 business days to appear, depending on the provider.
+Email `info@ababilx.com` from your account email with the charge date and reason. We respond within 7 business days; approved refunds are issued to the original payment method and may take 5–10 business days to appear, depending on the provider.
 
 ## 11. Failed Payments
 
@@ -119,7 +119,7 @@ We may change prices prospectively. Price changes to an active subscription take
 
 ## 14. Invoices and Records
 
-Subscription records and invoices are available in the Service or on request to `info@ababilx.cloud`. We retain billing records for the period required by tax and accounting law ([Privacy Policy](./privacy-policy.md), Section 12).
+Subscription records and invoices are available in the Service or on request to `info@ababilx.com`. We retain billing records for the period required by tax and accounting law ([Privacy Policy](./privacy-policy.md), Section 12).
 
 ## 15. Changes to This Policy
 
@@ -127,7 +127,7 @@ Updates are versioned in Section 17. Changes reducing your refund rights apply o
 
 ## 16. Contact
 
-Billing questions and refund requests: `info@ababilx.cloud`
+Billing questions and refund requests: `info@ababilx.com`
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 17. Revision History

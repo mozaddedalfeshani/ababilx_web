@@ -47,7 +47,7 @@ function OrganizationJsonLd() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
-      email: "info@ababilx.cloud",
+      email: "info@ababilx.com",
     },
     makesOffer: [
       {

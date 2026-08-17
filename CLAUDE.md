@@ -35,5 +35,5 @@ pnpm build
 
 - Package manager: **pnpm**
 - Hardcoded light theme
-- Auth: `NEXT_PUBLIC_API_URL` (default `https://api.ababilx.cloud`) + `/auth/google`
+- Auth: `NEXT_PUBLIC_API_URL` (default `https://api.ababilx.com`) + `/auth/google`
 - Swap hero via `public/hero.png`

@@ -144,7 +144,7 @@ Our incident-response process covers:
 
 ## 15. Responsible Disclosure
 
-We welcome good-faith security research. If you believe you have found a vulnerability, report it to `info@ababilx.cloud` following our [Vulnerability Disclosure Policy](./vulnerability-disclosure-policy.md), which defines scope, safe-harbor commitments, and reporting expectations. Do not access other users' data, disrupt the Service, or publicly disclose an issue before we have had a reasonable opportunity to remediate.
+We welcome good-faith security research. If you believe you have found a vulnerability, report it to `info@ababilx.com` following our [Vulnerability Disclosure Policy](./vulnerability-disclosure-policy.md), which defines scope, safe-harbor commitments, and reporting expectations. Do not access other users' data, disrupt the Service, or publicly disclose an issue before we have had a reasonable opportunity to remediate.
 
 ## 16. Shared Responsibility
 
@@ -162,7 +162,7 @@ We update this Policy as our practices evolve, recording changes in Section 19. 
 
 ## 18. Contact
 
-Security reports: `info@ababilx.cloud` · General: `info@ababilx.cloud`
+Security reports: `info@ababilx.com` · General: `info@ababilx.com`
 **Postal:** AbabilX, Sector 4, Uttara, Dhaka, Bangladesh.
 
 ## 19. Revision History

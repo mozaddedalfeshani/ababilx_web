@@ -1,4 +1,4 @@
-const DEFAULT_SITE_URL = "https://ababilx.cloud";
+const DEFAULT_SITE_URL = "https://ababilx.com";
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? DEFAULT_SITE_URL;
@@ -16,8 +16,8 @@ export const DEFAULT_DESCRIPTION_BN =
 export const FOUNDER_NAME = "Murad";
 
 export const GITHUB_ORG_URL = "https://github.com/AbabilX";
-export const PAPER_URL = "https://paper.ababilx.cloud";
-export const WORKSPACE_URL = "https://workspace.ababilx.cloud";
+export const PAPER_URL = "https://paper.ababilx.com";
+export const WORKSPACE_URL = "https://workspace.ababilx.com";
 
 export function absoluteUrl(path: string): string {
   const normalized = path.startsWith("/") ? path : `/${path}`;
