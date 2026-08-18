@@ -1,28 +1,72 @@
 /* eslint-disable react/no-unescaped-entities -- legal prose */
 import type { Metadata } from "next";
+import {
+  buildPageMetadata,
+  generateBreadcrumbSchema,
+} from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Account & Data Deletion",
+export const metadata: Metadata = buildPageMetadata({
+  title: "Account & Data Deletion Guide",
   description:
-    "Request deletion of your AbabilX account and associated data. Step-by-step guide and processing timeline.",
-  alternates: {
-    canonical: "/account-deletion",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+    "Step-by-step guide and request procedure for deleting your AbabilX account and associated data.",
+  path: "/account-deletion",
+});
+
+function AccountDeletionStructuredData() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateBreadcrumbSchema([
+        { name: "Home", item: "/" },
+        { name: "Account Deletion", item: "/account-deletion" },
+      ]),
+      {
+        "@type": "HowTo",
+        name: "How to Delete Your AbabilX Account",
+        description: "Official guide to requesting permanent deletion of your AbabilX account and data.",
+        step: [
+          {
+            "@type": "HowToStep",
+            position: 1,
+            name: "Send Deletion Request",
+            text: "Email info@ababilx.com with the subject 'Account Deletion Request' from your registered email.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 2,
+            name: "Identity Verification",
+            text: "Confirm ownership of your account through email verification.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 3,
+            name: "Processing & Deletion",
+            text: "Your account and all related metadata will be permanently deleted within 30 days.",
+          },
+        ],
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
 
 export default function AccountDeletionPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#050508] to-[#0c0c14] text-[#f1f5f9] py-12 px-4">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-2">Account & Data Deletion</h1>
-          <p className="text-[#94a3b8]">Request to delete your AbabilX account and associated data</p>
-        </div>
+    <>
+      <AccountDeletionStructuredData />
+      <div className="min-h-screen bg-gradient-to-b from-[#050508] to-[#0c0c14] text-[#f1f5f9] py-12 px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="mb-12">
+            <h1 className="text-4xl font-bold mb-2">Account & Data Deletion</h1>
+            <p className="text-[#94a3b8]">Request to delete your AbabilX account and associated data</p>
+          </div>
 
         {/* Quick Actions */}
         <div className="bg-[#0c0c14] border border-[#6366f1] rounded-lg p-6 mb-10">
@@ -339,5 +383,6 @@ export default function AccountDeletionPage() {
         </div>
       </div>
     </div>
-  );
+  </>
+);
 }

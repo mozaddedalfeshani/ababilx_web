@@ -1,28 +1,72 @@
 /* eslint-disable react/no-unescaped-entities -- legal prose */
 import type { Metadata } from "next";
+import {
+  buildPageMetadata,
+  generateBreadcrumbSchema,
+} from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Data Deletion Request",
+export const metadata: Metadata = buildPageMetadata({
+  title: "Data Deletion Request Guide",
   description:
-    "Delete specific data from your AbabilX account while keeping your account active. Self-service and bulk deletion options.",
-  alternates: {
-    canonical: "/data-deletion",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+    "Self-service and guided instructions for deleting specific datasets and connected integrations from AbabilX.",
+  path: "/data-deletion",
+});
+
+function DataDeletionStructuredData() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateBreadcrumbSchema([
+        { name: "Home", item: "/" },
+        { name: "Data Deletion", item: "/data-deletion" },
+      ]),
+      {
+        "@type": "HowTo",
+        name: "How to Request Data Deletion from AbabilX",
+        description: "Official guide to deleting specific data and connected integrations from AbabilX.",
+        step: [
+          {
+            "@type": "HowToStep",
+            position: 1,
+            name: "Self-Service Deletion",
+            text: "Disconnect integrations or delete specific rules/jobs directly from profile settings.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 2,
+            name: "Email Request",
+            text: "Email info@ababilx.com with the subject 'Data Deletion Request' for bulk or assisted data purge.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 3,
+            name: "Confirmation",
+            text: "Receive confirmation of data deletion within 30 days under GDPR and CCPA guidelines.",
+          },
+        ],
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
 
 export default function DataDeletionPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#050508] to-[#0c0c14] text-[#f1f5f9] py-12 px-4">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-2">Data Deletion Request</h1>
-          <p className="text-[#94a3b8]">Request to delete specific data while keeping your account active</p>
-        </div>
+    <>
+      <DataDeletionStructuredData />
+      <div className="min-h-screen bg-gradient-to-b from-[#050508] to-[#0c0c14] text-[#f1f5f9] py-12 px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="mb-12">
+            <h1 className="text-4xl font-bold mb-2">Data Deletion Request</h1>
+            <p className="text-[#94a3b8]">Request to delete specific data while keeping your account active</p>
+          </div>
 
         {/* Quick Action */}
         <div className="bg-[#0c0c14] border border-[#6366f1] rounded-lg p-6 mb-10">
@@ -415,5 +459,6 @@ export default function DataDeletionPage() {
         </div>
       </div>
     </div>
-  );
+  </>
+);
 }

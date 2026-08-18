@@ -3,12 +3,10 @@ import HomePageClient from "@/components/home/home-page-client";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
-  FOUNDER_NAME,
-  GITHUB_ORG_URL,
-  PAPER_URL,
+  KEYWORDS,
   SITE_NAME,
   SITE_URL,
-  WORKSPACE_URL,
+  generateSoftwareApplicationSchema,
 } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -16,6 +14,7 @@ export const metadata: Metadata = {
     absolute: DEFAULT_TITLE,
   },
   description: DEFAULT_DESCRIPTION,
+  keywords: KEYWORDS,
   alternates: {
     canonical: "/",
   },
@@ -23,54 +22,29 @@ export const metadata: Metadata = {
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
+    siteName: SITE_NAME,
+    type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: DEFAULT_TITLE,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
+    images: ["/opengraph-image"],
   },
 };
 
-function OrganizationJsonLd() {
+function HomeProductsJsonLd() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: SITE_NAME,
-    url: SITE_URL,
-    logo: `${SITE_URL}/logo.png`,
-    description: DEFAULT_DESCRIPTION,
-    founder: {
-      "@type": "Person",
-      name: FOUNDER_NAME,
-    },
-    sameAs: [GITHUB_ORG_URL],
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "customer support",
-      email: "info@ababilx.com",
-    },
-    makesOffer: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "SoftwareApplication",
-          name: "Paper",
-          url: PAPER_URL,
-          applicationCategory: "DeveloperApplication",
-          operatingSystem: "Web",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "SoftwareApplication",
-          name: "Workspace",
-          url: WORKSPACE_URL,
-          applicationCategory: "DeveloperApplication",
-          operatingSystem: "Web",
-        },
-      },
-    ],
+    "@graph": generateSoftwareApplicationSchema(),
   };
 
   return (
@@ -84,7 +58,7 @@ function OrganizationJsonLd() {
 export default function Home() {
   return (
     <>
-      <OrganizationJsonLd />
+      <HomeProductsJsonLd />
       <HomePageClient />
     </>
   );

@@ -3,18 +3,19 @@ import Link from "next/link";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import LegalMarkdown from "@/components/legal/legal-markdown";
+import {
+  SITE_NAME,
+  SITE_URL,
+  buildPageMetadata,
+  generateBreadcrumbSchema,
+} from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Legal Policies",
-  description: "All AbabilX legal policies on one page.",
-  alternates: {
-    canonical: "/privacy-policy",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: "Legal Policies & Privacy",
+  description:
+    "Review AbabilX Terms of Service, Privacy Policy, DPA, GDPR, CCPA, and Cookie policies in one unified legal center.",
+  path: "/privacy-policy",
+});
 
 type LegalDocument = {
   slug: string;
@@ -55,48 +56,81 @@ async function loadDocuments() {
   );
 }
 
+function PrivacyPolicyStructuredData() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateBreadcrumbSchema([
+        { name: "Home", item: "/" },
+        { name: "Legal Policies", item: "/privacy-policy" },
+      ]),
+      {
+        "@type": "WebPage",
+        "@id": `${SITE_URL}/privacy-policy/#webpage`,
+        url: `${SITE_URL}/privacy-policy`,
+        name: `Legal Policies & Privacy | ${SITE_NAME}`,
+        description:
+          "Official legal terms, privacy policies, GDPR and compliance documentation for AbabilX.",
+        isPartOf: {
+          "@id": `${SITE_URL}/#website`,
+        },
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default async function PrivacyPolicyPage() {
   const documents = await loadDocuments();
 
   return (
-    <div className="h-screen overflow-y-auto bg-gradient-to-b from-[#050508] to-[#0c0c14] text-[#f1f5f9] py-12 px-4">
-      <div className="max-w-5xl mx-auto">
-        <div className="mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">AbabilX Legal Policies</h1>
-          <p className="text-[#94a3b8]">
-            All legal documents are available on this single page for easy review and policy acceptance.
-          </p>
-        </div>
+    <>
+      <PrivacyPolicyStructuredData />
+      <div className="h-screen overflow-y-auto bg-gradient-to-b from-[#050508] to-[#0c0c14] text-[#f1f5f9] py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <header className="mb-10">
+            <h1 className="text-3xl md:text-4xl font-bold mb-2">AbabilX Legal Policies</h1>
+            <p className="text-[#94a3b8]">
+              All legal documents are available on this single page for easy review and policy acceptance.
+            </p>
+          </header>
 
-        <section className="mb-8 rounded-xl border border-[#1e293b] bg-[#0c0c14] p-5">
-          <h2 className="text-lg font-semibold mb-3">Quick Navigation</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+          <nav aria-label="Legal document table of contents" className="mb-8 rounded-xl border border-[#1e293b] bg-[#0c0c14] p-5">
+            <h2 className="text-lg font-semibold mb-3">Quick Navigation</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+              {documents.map((doc) => (
+                <a key={doc.slug} href={`#${doc.slug}`} className="text-sm text-[#818cf8] hover:underline">
+                  {doc.title}
+                </a>
+              ))}
+            </div>
+          </nav>
+
+          <main className="space-y-8">
             {documents.map((doc) => (
-              <a key={doc.slug} href={`#${doc.slug}`} className="text-sm text-[#818cf8] hover:underline">
-                {doc.title}
-              </a>
+              <section
+                key={doc.slug}
+                id={doc.slug}
+                className="scroll-mt-24 rounded-xl border border-[#1e293b] bg-[#0c0c14] p-6"
+              >
+                <LegalMarkdown text={doc.text} sectionSlug={doc.slug} />
+              </section>
             ))}
-          </div>
-        </section>
+          </main>
 
-        <div className="space-y-8">
-          {documents.map((doc) => (
-            <section
-              key={doc.slug}
-              id={doc.slug}
-              className="scroll-mt-24 rounded-xl border border-[#1e293b] bg-[#0c0c14] p-6"
-            >
-              <LegalMarkdown text={doc.text} sectionSlug={doc.slug} />
-            </section>
-          ))}
-        </div>
-
-        <div className="mt-10 pt-6 border-t border-[#1e293b] text-sm text-[#94a3b8]">
-          <Link href="/" className="text-[#818cf8] hover:underline">
-            Back to Home
-          </Link>
+          <footer className="mt-10 pt-6 border-t border-[#1e293b] text-sm text-[#94a3b8]">
+            <Link href="/" className="text-[#818cf8] hover:underline">
+              Back to Home
+            </Link>
+          </footer>
         </div>
       </div>
-    </div>
+    </>
   );
 }
