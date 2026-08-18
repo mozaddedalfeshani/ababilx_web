@@ -1,4 +1,4 @@
-const DEFAULT_SITE_URL = "https://ababilx.com";
+const DEFAULT_SITE_URL = "https://www.ababilx.com";
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? DEFAULT_SITE_URL;
