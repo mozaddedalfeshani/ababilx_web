@@ -1,8 +1,10 @@
 # AbabilX Privacy Policy
 
-**Effective Date:** July 9, 2026
-**Last Updated:** July 9, 2026
-**Version:** 1.0.0
+**Effective Date:** September 19, 2026
+**Last Updated:** September 19, 2026
+**Version:** 1.1.0
+
+> **World-class secured messaging, built so you can trust it.** Your chats are end-to-end encrypted. No government, no military, no hacker — not even AbabilX — can read them. Seize our servers and all anyone gets is locked text. The details, and the honest limits, are in [Section 1.1](#11-your-chats-are-end-to-end-encrypted).
 
 ---
 
@@ -37,13 +39,38 @@ AbabilX ("AbabilX," "we," "us," or "our") provides an AI-powered platform that h
 
 This Privacy Policy explains what information we collect, why we collect it, how we use and share it, how long we keep it, and the rights and choices available to you. It is written to be read; where we must use a technical or legal term, we define it in Section 2.
 
-**Your security and privacy come first.** AbabilX is built with a user-first approach to data protection. We encrypt data across its full journey through our platform — protected in transit between your devices and our servers (TLS/HTTPS) and encrypted at rest in storage. We share Personal Data only for the limited purposes described in this Policy, never sell it, and give you controls to disconnect integrations and delete your account at any time.
+**Your security and privacy come first.** Your messages are end-to-end encrypted: they are locked on your device and can be opened only on the devices of the people you are talking to. We share Personal Data only for the limited purposes described in this Policy, never sell it, and give you controls to delete your chats and your account at any time.
 
 **No tracking. No third-party telemetry.** We do not embed advertising trackers, analytics pixels, or behavioral-profiling SDKs in our website, apps, or clients. We do not track you across other websites, build marketing profiles, or sell your activity to data brokers. Operational server logs exist only for security, abuse prevention, and keeping the Service running — not for surveillance or ads.
 
 By creating an account or using the Service, you acknowledge this Privacy Policy. Where local law requires consent for specific processing (for example, certain cookies or marketing communications), we ask for it separately.
 
 > **Note:** This Policy describes our practices. Contractual commitments to business customers regarding the processing of Personal Data are set out in our [Data Processing Addendum](./data-processing-addendum.md).
+
+### 1.1 Your Chats Are End-to-End Encrypted
+
+**Our promise.** Direct messages and group messages in AbabilX are end-to-end encrypted. Each message is locked on the sender's device with a key that exists only on the devices of the people in that conversation. Our servers carry and store only the locked form. **We cannot read your messages — and because we do not hold the keys, there is nothing we could hand to a government, a military, a court, or an attacker who breaks into our systems.**
+
+- **Your key stays with you.** Your message key is created on your device and never sent to us in a form we can open. It is backed up only under a 256-bit recovery code that is generated on your device and shown to you alone. We never see that code, and we cannot reset or recover it for you.
+- **Ghost Chat is never stored.** A Ghost Chat travels directly from phone to phone. Its text and files never touch our servers or your chat history, and one tap wipes it from both phones.
+- **You can check for eavesdroppers.** Every conversation has a safety number. Compare it with the other person; if the numbers match, nobody is sitting between you. Your app also warns you if a contact's key ever changes.
+- **Your notifications stay locked.** On Android, notifications for encrypted messages carry only the locked text, and your phone unlocks it for display.
+- **No ads, no trackers, no selling your data. Ever.**
+
+### 1.2 What We Can and Cannot See
+
+We would rather tell you the limits plainly than overpromise.
+
+| We **cannot** see | We **can** see |
+|---|---|
+| The text of your direct and group messages | Your account details (name, username, email, and phone number if you add one) |
+| Your message keys and your recovery code | Who is in a conversation and when messages are sent, so we can deliver them |
+| Anything sent in Ghost Chat | Photos, videos, and files you send in chats — these are encrypted in transit and in storage, but **not yet** end-to-end encrypted, and anyone holding a file's link can open it |
+| | Group calls, which pass through our media server encrypted in transit but not end-to-end |
+
+**Calls.** One-to-one calls connect directly between devices and are encrypted by the call protocol itself; when a direct path is blocked, the call passes through our relay, which cannot decrypt it.
+
+**Exceptions.** Messages posted into a conversation by an outside integration (a webhook feed) arrive from outside AbabilX and are not end-to-end encrypted. A group converted from an older workspace channel stays unencrypted until a member's app sets up its key; messages sent before that remain unencrypted.
 
 ## 2. Definitions
 
@@ -64,7 +91,7 @@ By creating an account or using the Service, you acknowledge this Privacy Policy
 4. **No AI training on your content without notice.** We do not use Customer Content to train machine-learning models, and we contractually restrict our AI Subprocessors from doing so. See Section 9 and our [AI Policy](./ai-policy.md).
 5. **Security by design.** Token handling, session management, and transport security follow the practices described in Section 15 and our [Security Policy](./security-policy.md).
 6. **Transparency.** Material changes to this Policy are versioned, announced, and — where the change is significant — require your re-acceptance before continued use.
-7. **End-to-end protection.** Personal Data and authentication credentials are encrypted in transit (TLS) and protected at rest. We apply layered controls from sign-in through storage, processing, and deletion.
+7. **End-to-end encrypted chats.** Direct and group messages are end-to-end encrypted, and we hold no key that can open them (Section 1.1). All other Personal Data and authentication credentials are encrypted in transit (TLS) and protected at rest.
 8. **Controlled data sharing.** We share Personal Data only with the categories of recipients in Section 10, for defined purposes, under contract where applicable, and never for advertising resale.
 9. **No tracking or profiling.** We do not use third-party analytics, advertising telemetry, cross-site tracking, or behavioral profiling. Your use of AbabilX is not monitored for marketing purposes.
 
@@ -118,7 +145,7 @@ We store the settings you create in the Service, including standup rules (channe
 
 #### 6.1.4 Content You Create
 
-We store content you author in the Service: wall posts and comments, kanban tasks, notes and attachments, chat messages, work-log entries, standup message overrides, and prompts you send to AI features.
+We store content you author in the Service: wall posts and comments, kanban tasks, notes and attachments, work-log entries, standup message overrides, and prompts you send to AI features. Chat messages are stored only in their end-to-end encrypted form, which we cannot read (Section 1.1); Ghost Chat content is not stored at all.
 
 #### 6.1.5 Billing Information
 
@@ -228,7 +255,7 @@ If your Account belongs to a team, content you create in team features (wall, bo
 
 ### 10.4 Legal Requirements
 
-We may disclose information if we believe in good faith that disclosure is required by law, regulation, legal process, or enforceable governmental request. Where lawful and practicable, we will notify you before disclosing your data so you can seek protective measures. We object to requests we believe are overbroad.
+We may disclose information if we believe in good faith that disclosure is required by law, regulation, legal process, or enforceable governmental request. Where lawful and practicable, we will notify you before disclosing your data so you can seek protective measures. We object to requests we believe are overbroad. **We cannot disclose the content of your end-to-end encrypted messages to anyone, because we do not have the keys to read them** (Section 1.1).
 
 ### 10.5 Business Transfers
 
@@ -256,7 +283,9 @@ We retain Personal Data only as long as needed for the purposes described in thi
 |---|---|
 | Account Data | Life of the Account; deleted on account deletion (Section 14) |
 | OAuth tokens | Until you disconnect the integration, the token expires or is revoked, or the Account is deleted |
-| Customer Content (posts, tasks, messages, configurations) | Life of the Account or until you delete the item; team content may persist for the team per its settings |
+| Chat messages (end-to-end encrypted) | Up to 6 months on our servers, in locked form only; your devices keep your history. Deleted from our servers once every member of the conversation has deleted the chat |
+| Ghost Chat | Never stored |
+| Customer Content (posts, tasks, configurations) | Life of the Account or until you delete the item; team content may persist for the team per its settings |
 | AI prompts and Output stored in your Account | Life of the Account or until you delete the item |
 | Slack messages sent via the Service (history/replay) | Until you delete the rule/message or the Account |
 | Billing and subscription records | Duration required by tax and accounting law |
@@ -305,7 +334,8 @@ Protecting your data is central to how we build AbabilX. We apply defense-in-dep
 
 We protect Personal Data using administrative, technical, and physical safeguards appropriate to its sensitivity, described in detail in our [Security Policy](./security-policy.md). Key measures include:
 
-- **Encryption end to end across our platform.** Data traveling between your browser, desktop or mobile apps, and our APIs is encrypted with HTTPS/TLS. Data at rest in our databases, backups, and object storage uses provider-managed encryption. Together, these layers protect your information from your device through our systems.
+- **End-to-end encrypted messages.** Direct and group messages are encrypted on your device with keys we never hold (Section 1.1), so a breach of our systems does not expose their content.
+- **Encryption in transit and at rest.** Everything else traveling between your browser, desktop or mobile apps, and our APIs is encrypted with HTTPS/TLS. Data at rest in our databases, backups, and object storage uses provider-managed encryption.
 - **Token and session protection.** API authentication uses short-lived JSON Web Tokens. Long-lived web session refresh uses rotating tokens delivered in `HttpOnly`, `Secure`, `SameSite` cookies inaccessible to client-side scripts. Sign-in and account-linking flows use one-time exchange codes and tickets so credentials never appear in URLs, logs, or referrer headers.
 - **Access control.** Every API request is authorized against the requesting account; administrative functions are restricted to a small set of authorized personnel under least-privilege principles.
 - **Rate limiting.** Authentication endpoints and APIs are rate-limited per client and per account to resist brute-force and abuse.
@@ -368,4 +398,5 @@ We aim to acknowledge privacy inquiries within 7 days and resolve them within 30
 
 | Version | Date | Summary |
 |---|---|---|
+| 1.1.0 | September 19, 2026 | Added Section 1.1 (end-to-end encrypted chats, recovery code, Ghost Chat, safety numbers) and Section 1.2 (what we can and cannot see). Clarified that chat messages are stored only in encrypted form, that encrypted message content cannot be disclosed, and the chat retention schedule. |
 | 1.0.0 | July 9, 2026 | Initial publication of the restructured Privacy Policy, replacing the May 28, 2026 policy page. Added AI data handling (Section 9), token/session security detail (Section 15), breach notification (Section 16), and regional disclosures (Section 17). |

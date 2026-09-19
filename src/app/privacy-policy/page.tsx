@@ -3,6 +3,7 @@ import Link from "next/link";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import LegalMarkdown from "@/components/legal/legal-markdown";
+import PrivacyPromise from "@/components/legal/privacy-promise";
 import {
   SITE_NAME,
   SITE_URL,
@@ -100,6 +101,8 @@ export default async function PrivacyPolicyPage() {
               All legal documents are available on this single page for easy review and policy acceptance.
             </p>
           </header>
+
+          <PrivacyPromise />
 
           <nav aria-label="Legal document table of contents" className="mb-8 rounded-xl border border-[#1e293b] bg-[#0c0c14] p-5">
             <h2 className="text-lg font-semibold mb-3">Quick Navigation</h2>
