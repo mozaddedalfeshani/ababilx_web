@@ -1,10 +1,10 @@
 # AbabilX Privacy Policy
 
-**Effective Date:** September 19, 2026
-**Last Updated:** September 19, 2026
-**Version:** 1.1.0
+**Effective Date:** September 23, 2026
+**Last Updated:** September 23, 2026
+**Version:** 1.2.0
 
-> **World-class secured messaging, built so you can trust it.** Your chats are end-to-end encrypted. No government, no military, no hacker — not even AbabilX — can read them. Seize our servers and all anyone gets is locked text. The details, and the honest limits, are in [Section 1.1](#11-your-chats-are-end-to-end-encrypted).
+> **World-class secured messaging, built so you can trust it.** Your chats are end-to-end encrypted. No government, no military, no hacker — not even AbabilX — can read them. Seize our servers and all anyone gets is locked text. Turn on Privacy Mode and the people you message stop seeing when you are online, typing, or reading, and nobody can find you by search. The details, and the honest limits, are in [Section 1.1](#11-your-chats-are-end-to-end-encrypted) and [Section 1.3](#13-privacy-mode).
 
 ---
 
@@ -52,7 +52,7 @@ By creating an account or using the Service, you acknowledge this Privacy Policy
 **Our promise.** Direct messages and group messages in AbabilX are end-to-end encrypted. Each message is locked on the sender's device with a key that exists only on the devices of the people in that conversation. Our servers carry and store only the locked form. **We cannot read your messages — and because we do not hold the keys, there is nothing we could hand to a government, a military, a court, or an attacker who breaks into our systems.**
 
 - **Your key stays with you.** Your message key is created on your device and never sent to us in a form we can open. It is backed up only under a 256-bit recovery code that is generated on your device and shown to you alone. We never see that code, and we cannot reset or recover it for you.
-- **Ghost Chat is never stored.** A Ghost Chat travels directly from phone to phone. Its text and files never touch our servers or your chat history, and one tap wipes it from both phones.
+- **Ghost Chat is never stored.** A Ghost Chat travels directly from phone to phone. Its text and files never touch our servers or your chat history, and one tap wipes it from both phones. You choose, for each photo or file, whether it disappears after a set time and whether the other person may save it.
 - **You can check for eavesdroppers.** Every conversation has a safety number. Compare it with the other person; if the numbers match, nobody is sitting between you. Your app also warns you if a contact's key ever changes.
 - **Your notifications stay locked.** On Android, notifications for encrypted messages carry only the locked text, and your phone unlocks it for display.
 - **No ads, no trackers, no selling your data. Ever.**
@@ -71,6 +71,21 @@ We would rather tell you the limits plainly than overpromise.
 **Calls.** One-to-one calls connect directly between devices and are encrypted by the call protocol itself; when a direct path is blocked, the call passes through our relay, which cannot decrypt it.
 
 **Exceptions.** Messages posted into a conversation by an outside integration (a webhook feed) arrive from outside AbabilX and are not end-to-end encrypted. A group converted from an older workspace channel stays unencrypted until a member's app sets up its key; messages sent before that remain unencrypted.
+
+### 1.3 Privacy Mode
+
+Privacy Mode is a single switch in Settings. It is free and applies to your direct messages and one-to-one calls. Groups are not affected. When it is on:
+
+- **Nobody sees your activity.** The people you message directly stop seeing when you are online, when you are typing, and whether you have received or read their messages. Their call screen shows "Calling" and never "Ringing."
+- **Nobody can find you.** Your account does not appear in username, email, or phone number search, and your QR code cannot be scanned to reach you. Your discovery settings are kept unchanged and apply again when you turn Privacy Mode off.
+- **Nobody can add you to a group.** Groups you are already in stay as they are, and you can still create groups and add other people.
+- **Connected calls leave no trace on the other side.** When a one-to-one call with you connects, no record of it remains in the other person's chat history. Missed and declined calls still appear, so a person knows you tried to reach them.
+- **Screenshots are blocked on the other person's phone.** While the other person has your conversation or your call open on Android, their phone refuses screenshots and screen recordings.
+- **You control each photo you send.** After you pick a photo, you choose whether it disappears after it is viewed (once, or after 5, 10, or 30 seconds) and whether the other person may save it. A photo with a timer can never be saved. When the timer ends, the photo is deleted from our storage and from both phones.
+
+Privacy Mode is one-way: it limits what leaves your account. You still see the other person's activity unless they turn it on too.
+
+**Honest limits.** Screenshot blocking works on Android only; it does not work on iPhone, on the web, or on desktop, and nothing can stop someone from photographing a screen with another camera or using a modified app. A photo with a timer tells its sender when it was opened. Until a timed photo expires, it is stored like any other attachment (Section 1.2): encrypted in transit and in storage, but not end-to-end encrypted.
 
 ## 2. Definitions
 
@@ -285,6 +300,8 @@ We retain Personal Data only as long as needed for the purposes described in thi
 | OAuth tokens | Until you disconnect the integration, the token expires or is revoked, or the Account is deleted |
 | Chat messages (end-to-end encrypted) | Up to 6 months on our servers, in locked form only; your devices keep your history. Deleted from our servers once every member of the conversation has deleted the chat |
 | Ghost Chat | Never stored |
+| Timed photos (Privacy Mode) | Deleted from our storage and from both phones when the timer ends; the timer starts when the recipient opens the photo |
+| Call history for a connected call with a Privacy Mode user | Removed from the other participant's chat history when the call connects |
 | Customer Content (posts, tasks, configurations) | Life of the Account or until you delete the item; team content may persist for the team per its settings |
 | AI prompts and Output stored in your Account | Life of the Account or until you delete the item |
 | Slack messages sent via the Service (history/replay) | Until you delete the rule/message or the Account |
@@ -308,7 +325,7 @@ Depending on your jurisdiction, you may have the right to:
 7. **Withdraw consent** — where processing is based on consent, withdraw it at any time without affecting prior processing.
 8. **Complain** — lodge a complaint with your local supervisory authority. We would appreciate the chance to address your concern first at `info@ababilx.com`.
 
-**Self-service controls** available in the Service include: editing profile data, disconnecting GitHub/Slack integrations, revoking sessions by signing out, disabling email/desktop/push notifications, changing language and privacy mode, and deleting your Account.
+**Self-service controls** available in the Service include: editing profile data, disconnecting GitHub/Slack integrations, revoking sessions by signing out, disabling email/desktop/push notifications, changing language, turning Privacy Mode on or off (Section 1.3), and deleting your Account.
 
 To exercise a right that lacks a self-service control, email `info@ababilx.com`. We verify requests using your account email and respond within 30 days (or the shorter period local law requires). We do not discriminate against you for exercising your rights.
 
@@ -398,5 +415,6 @@ We aim to acknowledge privacy inquiries within 7 days and resolve them within 30
 
 | Version | Date | Summary |
 |---|---|---|
+| 1.2.0 | September 23, 2026 | Added Section 1.3 (Privacy Mode: hidden activity, search and group-add opt-out, call history, screenshot blocking, timed photos) and its honest limits. Added Ghost Chat photo and file controls to Section 1.1 and timed-photo retention to Section 12. |
 | 1.1.0 | September 19, 2026 | Added Section 1.1 (end-to-end encrypted chats, recovery code, Ghost Chat, safety numbers) and Section 1.2 (what we can and cannot see). Clarified that chat messages are stored only in encrypted form, that encrypted message content cannot be disclosed, and the chat retention schedule. |
 | 1.0.0 | July 9, 2026 | Initial publication of the restructured Privacy Policy, replacing the May 28, 2026 policy page. Added AI data handling (Section 9), token/session security detail (Section 15), breach notification (Section 16), and regional disclosures (Section 17). |

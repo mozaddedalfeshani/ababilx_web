@@ -4,6 +4,14 @@ const PROMISES = [
     body: "No government, no military, no hacker — not even us — can read your chats. Seize our servers and all anyone gets is locked text.",
   },
   {
+    title: "Privacy mode",
+    body: "One switch. Nobody sees you online, typing, or reading, nobody can find you by search, and nobody can add you to a group.",
+  },
+  {
+    title: "Photos that disappear",
+    body: "Pick a timer and the photo is deleted from both phones and our storage once it is seen. Or just turn off saving.",
+  },
+  {
     title: "Ghost Chat",
     body: "Phone to phone, never stored. One tap on the flame wipes it from both phones.",
   },
@@ -46,8 +54,8 @@ export default function PrivacyPromise() {
         ))}
       </ul>
       <p className="mt-4 text-sm text-[#94a3b8]">
-        What we can and cannot see is spelled out in Sections 1.1 and 1.2 of
-        the Privacy Policy below.
+        What we can and cannot see, and where these protections stop, is
+        spelled out in Sections 1.1 to 1.3 of the Privacy Policy below.
       </p>
     </section>
   );

@@ -25,11 +25,11 @@ export const HOME_COPY_EN: HomeCopy = {
     workspace: "Workspace",
   },
   hero: {
-    badge: "Founded by Murad",
-    headline: "Build useful tools.",
-    headlineAccent: "My own way.",
+    badge: "End-to-end encrypted",
+    headline: "Your chats.",
+    headlineAccent: "Nobody else's.",
     tagline:
-      "AbabilX builds Paper and Workspace — practical software for developers and learners.",
+      "Messages locked on your phone — not even we can read them. Privacy mode, disappearing photos and Ghost Chat. No ads, no trackers.",
   },
   languageEn: "English",
   languageBn: "বাংলা",
@@ -42,11 +42,11 @@ export const HOME_COPY_BN: HomeCopy = {
     workspace: "Workspace",
   },
   hero: {
-    badge: "প্রতিষ্ঠাতা Murad",
-    headline: "দরকারি টুল বানাও।",
-    headlineAccent: "নিজের মতো করে।",
+    badge: "এন্ড-টু-এন্ড এনক্রিপ্টেড",
+    headline: "তোমার চ্যাট।",
+    headlineAccent: "শুধুই তোমার।",
     tagline:
-      "AbabilX তৈরি করে Paper ও Workspace — ডেভেলপার ও লার্নারদের জন্য ব্যবহারিক সফটওয়্যার।",
+      "মেসেজ লক থাকে তোমার ফোনেই — আমরাও পড়তে পারি না। প্রাইভেসি মোড, হারিয়ে যাওয়া ছবি আর Ghost Chat। কোনো বিজ্ঞাপন নেই, কোনো ট্র্যাকার নেই।",
   },
   languageEn: "English",
   languageBn: "বাংলা",

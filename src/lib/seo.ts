@@ -10,10 +10,10 @@ export const SITE_NAME = "AbabilX";
 export const DEFAULT_TITLE = `${SITE_NAME} — Paper & Workspace`;
 
 export const DEFAULT_DESCRIPTION =
-  "AbabilX builds Paper and Workspace — practical software for developers and learners. Founded by Murad.";
+  "End-to-end encrypted messaging — not even AbabilX can read your chats. Privacy mode, disappearing photos and Ghost Chat, with no ads and no trackers.";
 
 export const DEFAULT_DESCRIPTION_BN =
-  "AbabilX তৈরি করে Paper ও Workspace — ডেভেলপার ও লার্নারদের জন্য ব্যবহারিক সফটওয়্যার। প্রতিষ্ঠাতা Murad।";
+  "এন্ড-টু-এন্ড এনক্রিপ্টেড মেসেজিং — AbabilX-ও তোমার চ্যাট পড়তে পারে না। প্রাইভেসি মোড, হারিয়ে যাওয়া ছবি আর Ghost Chat, কোনো বিজ্ঞাপন বা ট্র্যাকার ছাড়া।";
 
 export const FOUNDER_NAME = "Murad";
 
@@ -27,6 +27,10 @@ export const KEYWORDS = [
   "Murad",
   "AbabilX Paper",
   "AbabilX Workspace",
+  "private messaging",
+  "end-to-end encrypted chat",
+  "privacy mode",
+  "disappearing photos",
   "developer tools",
   "software engineering",
   "productivity tools",

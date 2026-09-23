@@ -1,6 +1,6 @@
 "use client";
 
-import { SparklesIcon } from "hugeicons-react";
+import { SecurityLockIcon } from "hugeicons-react";
 
 import AuthActions from "../navbar/auth-actions";
 import { useHomeLocale } from "../shared/use-home-locale";
@@ -12,7 +12,7 @@ export default function HeroContent() {
   return (
     <div className="hero-content">
       <span className="hero-badge">
-        <SparklesIcon size={16} aria-hidden="true" />
+        <SecurityLockIcon size={16} aria-hidden="true" />
         {hero.badge}
       </span>
 

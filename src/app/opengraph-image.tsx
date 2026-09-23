@@ -55,7 +55,7 @@ export default function OpenGraphImage() {
             maxWidth: 900,
           }}
         >
-          Build useful tools. My own way.
+          {"Your chats. Nobody else's."}
         </div>
         <div
           style={{
@@ -66,8 +66,8 @@ export default function OpenGraphImage() {
             lineHeight: 1.4,
           }}
         >
-          AbabilX builds Paper & Workspace — practical software for developers
-          and learners. Founded by Murad.
+          End-to-end encrypted messaging — not even we can read it. Privacy
+          mode, disappearing photos and Ghost Chat.
         </div>
       </div>
     ),
