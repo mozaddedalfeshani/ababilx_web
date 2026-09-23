@@ -35,5 +35,6 @@ pnpm build
 
 - Package manager: **pnpm**
 - Hardcoded light theme
-- Auth: `NEXT_PUBLIC_API_URL` (default `https://api.ababilx.com`) + `/auth/google`
+- Auth / outbound links: `NEXT_PUBLIC_API_URL` (default `https://api.ababilx.com`) + `/auth/google`; Paper / Workspace / Play Store URLs in `src/lib/seo.ts`
+- Hero CTAs: Paper, Workspace, Play Store download (`AuthActions`)
 - Swap hero via `public/hero.png`

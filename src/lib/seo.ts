@@ -20,6 +20,8 @@ export const FOUNDER_NAME = "Murad";
 export const GITHUB_ORG_URL = "https://github.com/AbabilX";
 export const PAPER_URL = "https://paper.ababilx.com";
 export const WORKSPACE_URL = "https://workspace.ababilx.com";
+export const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.ababilx.app";
 export const CONTACT_EMAIL = "info@ababilx.com";
 
 export const KEYWORDS = [
@@ -81,7 +83,7 @@ export function generateOrganizationSchema() {
       name: FOUNDER_NAME,
       url: SITE_URL,
     },
-    sameAs: [GITHUB_ORG_URL],
+    sameAs: [GITHUB_ORG_URL, PLAY_STORE_URL],
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",

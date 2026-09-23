@@ -1,7 +1,9 @@
 "use client";
 
+import { Download01Icon } from "hugeicons-react";
+
 import { Button } from "@/components/ui/button";
-import { openPaper, openWorkspace } from "@/lib/auth";
+import { openPaper, openPlayStore, openWorkspace } from "@/lib/auth";
 import { cn } from "@/lib/utils";
 import { useHomeLocale } from "../shared/use-home-locale";
 
@@ -10,7 +12,7 @@ interface AuthActionsProps {
   className?: string;
 }
 
-/** Hero CTAs: Paper + Workspace */
+/** Hero CTAs: Paper + Workspace + Play Store download */
 export default function AuthActions({
   size = "lg",
   className,
@@ -26,7 +28,7 @@ export default function AuthActions({
   return (
     <div
       className={cn(
-        "flex flex-col justify-center gap-3 sm:flex-row",
+        "flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap",
         className,
       )}
     >
@@ -40,6 +42,19 @@ export default function AuthActions({
         className={cn("gap-2", heroSize)}
       >
         {labels.workspace}
+      </Button>
+      <Button
+        onClick={openPlayStore}
+        size={size}
+        variant="secondary"
+        className={cn(
+          "gap-2 whitespace-normal text-left leading-snug h-auto min-h-11 py-2.5 sm:min-h-12",
+          size === "lg" ? "px-6 text-base sm:px-7" : undefined,
+        )}
+        aria-label={labels.download}
+      >
+        <Download01Icon size={18} aria-hidden="true" className="shrink-0" />
+        {labels.download}
       </Button>
     </div>
   );

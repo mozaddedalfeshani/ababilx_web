@@ -7,6 +7,7 @@ export type HomeCopy = {
   auth: {
     paper: string;
     workspace: string;
+    download: string;
   };
   hero: {
     badge: string;
@@ -23,6 +24,7 @@ export const HOME_COPY_EN: HomeCopy = {
   auth: {
     paper: "Paper",
     workspace: "Workspace",
+    download: "Download the most secure chatting app you'll ever see",
   },
   hero: {
     badge: "End-to-end encrypted",
@@ -40,6 +42,8 @@ export const HOME_COPY_BN: HomeCopy = {
   auth: {
     paper: "Paper",
     workspace: "Workspace",
+    download:
+      "যে চ্যাটিং অ্যাপ দেখেছো, তার মধ্যে সবচেয়ে নিরাপদ — ডাউনলোড করো",
   },
   hero: {
     badge: "এন্ড-টু-এন্ড এনক্রিপ্টেড",
@@ -59,6 +63,7 @@ export function getHomeCopy(locale: HomeLocale): HomeCopy {
 export {
   GITHUB_ORG_URL,
   PAPER_URL,
+  PLAY_STORE_URL,
   SITE_URL,
   WORKSPACE_URL,
 } from "@/lib/seo";
