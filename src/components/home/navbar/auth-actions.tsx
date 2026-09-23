@@ -12,49 +12,52 @@ interface AuthActionsProps {
   className?: string;
 }
 
-/** Hero CTAs: Paper + Workspace + Play Store download */
+/** Hero CTAs: Paper + Workspace + Play Store download (responsive) */
 export default function AuthActions({
   size = "lg",
   className,
 }: AuthActionsProps) {
   const { copy } = useHomeLocale();
   const labels = copy.auth;
-
-  const heroSize =
-    size === "lg"
-      ? "h-11 gap-2 px-6 text-base sm:h-12 sm:px-7"
-      : undefined;
+  const isHero = size === "lg";
 
   return (
-    <div
-      className={cn(
-        "flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap",
-        className,
-      )}
-    >
-      <Button onClick={openPaper} size={size} className={cn("gap-2", heroSize)}>
-        {labels.paper}
-      </Button>
-      <Button
-        onClick={openWorkspace}
-        size={size}
-        variant="outline"
-        className={cn("gap-2", heroSize)}
-      >
-        {labels.workspace}
-      </Button>
+    <div className={cn("hero-actions", className)}>
+      <div className="hero-actions-row">
+        <Button
+          onClick={openPaper}
+          size={size}
+          className={cn("hero-actions-btn", isHero && "hero-actions-btn-lg")}
+        >
+          {labels.paper}
+        </Button>
+        <Button
+          onClick={openWorkspace}
+          size={size}
+          variant="outline"
+          className={cn("hero-actions-btn", isHero && "hero-actions-btn-lg")}
+        >
+          {labels.workspace}
+        </Button>
+      </div>
+
       <Button
         onClick={openPlayStore}
         size={size}
         variant="secondary"
         className={cn(
-          "gap-2 whitespace-normal text-left leading-snug h-auto min-h-11 py-2.5 sm:min-h-12",
-          size === "lg" ? "px-6 text-base sm:px-7" : undefined,
+          "hero-actions-download whitespace-normal",
+          isHero && "hero-actions-download-lg",
         )}
         aria-label={labels.download}
       >
         <Download01Icon size={18} aria-hidden="true" className="shrink-0" />
-        {labels.download}
+        <span className="hero-actions-download-label">
+          <span className="hero-actions-download-short">
+            {labels.downloadShort}
+          </span>
+          <span className="hero-actions-download-full">{labels.download}</span>
+        </span>
       </Button>
     </div>
   );

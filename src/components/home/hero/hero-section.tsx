@@ -14,8 +14,8 @@ export default function HeroSection() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 mx-auto flex h-full w-11/12 max-w-7xl items-center px-6 pt-14 pb-16">
-        <div className="w-full lg:w-[45%] lg:shrink-0">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-end px-4 pt-16 pb-10 sm:items-center sm:px-6 sm:pt-14 sm:pb-16 md:w-11/12">
+        <div className="w-full max-w-xl lg:w-[45%] lg:max-w-none lg:shrink-0">
           <HeroContent />
         </div>
       </div>

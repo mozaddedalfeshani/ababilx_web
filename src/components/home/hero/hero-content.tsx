@@ -24,7 +24,7 @@ export default function HeroContent() {
 
       <p className="hero-tagline">{hero.tagline}</p>
 
-      <AuthActions className="sm:justify-start" />
+      <AuthActions />
     </div>
   );
 }
