@@ -26,14 +26,14 @@ ababilx_main/
 ## Commands
 
 ```bash
-pnpm dev
-pnpm lint
-pnpm build
+bun run dev
+bun run lint
+bun run build
 ```
 
 ## Notes
 
-- Package manager: **pnpm**
+- Package manager: **bun**
 - Hardcoded light theme
 - Auth / outbound links: `NEXT_PUBLIC_API_URL` (default `https://api.ababilx.com`) + `/auth/google`; Paper / Workspace / Play Store URLs in `src/lib/seo.ts`
 - Hero CTAs: Paper, Workspace, Play Store download (`AuthActions`)
