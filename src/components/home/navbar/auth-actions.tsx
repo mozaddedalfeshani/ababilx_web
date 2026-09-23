@@ -1,6 +1,6 @@
 "use client";
 
-import { Download01Icon } from "hugeicons-react";
+import { FaGooglePlay } from "react-icons/fa";
 
 import { Button } from "@/components/ui/button";
 import { openPaper, openPlayStore, openWorkspace } from "@/lib/auth";
@@ -12,7 +12,7 @@ interface AuthActionsProps {
   className?: string;
 }
 
-/** Hero CTAs: Paper + Workspace + Play Store download (responsive) */
+/** Hero CTAs: Paper + Workspace + Play Store download */
 export default function AuthActions({
   size = "lg",
   className,
@@ -23,41 +23,30 @@ export default function AuthActions({
 
   return (
     <div className={cn("hero-actions", className)}>
-      <div className="hero-actions-row">
-        <Button
-          onClick={openPaper}
-          size={size}
-          className={cn("hero-actions-btn", isHero && "hero-actions-btn-lg")}
-        >
-          {labels.paper}
-        </Button>
-        <Button
-          onClick={openWorkspace}
-          size={size}
-          variant="outline"
-          className={cn("hero-actions-btn", isHero && "hero-actions-btn-lg")}
-        >
-          {labels.workspace}
-        </Button>
-      </div>
-
+      <Button
+        onClick={openPaper}
+        size={size}
+        className={cn("hero-actions-btn", isHero && "hero-actions-btn-lg")}
+      >
+        {labels.paper}
+      </Button>
+      <Button
+        onClick={openWorkspace}
+        size={size}
+        variant="outline"
+        className={cn("hero-actions-btn", isHero && "hero-actions-btn-lg")}
+      >
+        {labels.workspace}
+      </Button>
       <Button
         onClick={openPlayStore}
         size={size}
         variant="secondary"
-        className={cn(
-          "hero-actions-download whitespace-normal",
-          isHero && "hero-actions-download-lg",
-        )}
+        className={cn("hero-actions-btn", isHero && "hero-actions-btn-lg")}
         aria-label={labels.download}
       >
-        <Download01Icon size={18} aria-hidden="true" className="shrink-0" />
-        <span className="hero-actions-download-label">
-          <span className="hero-actions-download-short">
-            {labels.downloadShort}
-          </span>
-          <span className="hero-actions-download-full">{labels.download}</span>
-        </span>
+        <FaGooglePlay aria-hidden="true" className="size-[18px] shrink-0" />
+        {labels.download}
       </Button>
     </div>
   );

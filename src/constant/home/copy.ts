@@ -7,10 +7,7 @@ export type HomeCopy = {
   auth: {
     paper: string;
     workspace: string;
-    /** Full marketing line — tablet/desktop */
     download: string;
-    /** Compact line — phones */
-    downloadShort: string;
   };
   hero: {
     badge: string;
@@ -27,8 +24,7 @@ export const HOME_COPY_EN: HomeCopy = {
   auth: {
     paper: "Paper",
     workspace: "Workspace",
-    download: "Download the most secure chatting app you'll ever see",
-    downloadShort: "Download on Google Play",
+    download: "Download the app",
   },
   hero: {
     badge: "End-to-end encrypted",
@@ -46,9 +42,7 @@ export const HOME_COPY_BN: HomeCopy = {
   auth: {
     paper: "Paper",
     workspace: "Workspace",
-    download:
-      "যে চ্যাটিং অ্যাপ দেখেছো, তার মধ্যে সবচেয়ে নিরাপদ — ডাউনলোড করো",
-    downloadShort: "Google Play-এ ডাউনলোড",
+    download: "অ্যাপ ডাউনলোড",
   },
   hero: {
     badge: "এন্ড-টু-এন্ড এনক্রিপ্টেড",

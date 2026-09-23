@@ -189,25 +189,18 @@
   line-height: 1.625;
 }
 
-/* Hero CTAs — phones stack/grid; tablet+ keeps Paper/Workspace inline */
+/* Hero CTAs — equal buttons, wrap on narrow screens */
 .hero-actions {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: stretch;
   gap: 0.75rem;
   width: 100%;
-  max-width: min(100%, 28rem);
-}
-
-.hero-actions-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-  width: 100%;
+  max-width: min(100%, 40rem);
 }
 
 .hero-actions-btn {
-  width: 100%;
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -218,105 +211,23 @@
   font-size: 0.95rem;
 }
 
-.hero-actions-download {
-  display: inline-flex;
-  width: 100%;
-  min-width: 0;
-  height: auto;
-  min-height: 2.75rem;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.65rem 1rem;
-  white-space: normal;
-  text-align: center;
-  line-height: 1.35;
-}
-
-.hero-actions-download-lg {
-  font-size: 0.95rem;
-}
-
-.hero-actions-download-label {
-  min-width: 0;
-  flex: 1 1 auto;
-}
-
-.hero-actions-download-full {
-  display: none;
-}
-
-.hero-actions-download-short {
-  display: inline;
-}
-
 @media (min-width: 480px) {
-  .hero-actions {
-    max-width: min(100%, 36rem);
-  }
-
-  .hero-actions-btn-lg,
-  .hero-actions-download-lg {
-    font-size: 1rem;
-  }
-
   .hero-actions-btn-lg {
     height: 3rem;
     padding-inline: 1.5rem;
-  }
-
-  .hero-actions-download {
-    min-height: 3rem;
-    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 640px) {
-  .hero-actions {
-    max-width: min(100%, 40rem);
-  }
-
-  .hero-actions-row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .hero-actions-btn {
-    width: auto;
     flex: 0 0 auto;
-  }
-
-  .hero-actions-download {
-    justify-content: flex-start;
-    text-align: left;
-  }
-
-  .hero-actions-download-short {
-    display: none;
-  }
-
-  .hero-actions-download-full {
-    display: inline;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-actions {
-    max-width: 100%;
   }
 }
 
 @media (max-width: 379px) {
-  .hero-actions-btn-lg,
-  .hero-actions-download-lg {
-    font-size: 0.875rem;
-  }
-
   .hero-actions-btn-lg {
-    padding-inline: 0.75rem;
-  }
-
-  .hero-actions-download {
+    font-size: 0.875rem;
     padding-inline: 0.75rem;
   }
 }
