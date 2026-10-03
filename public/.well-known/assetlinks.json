@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.ababilx.app",
+      "sha256_cert_fingerprints": [
+        "F0:FB:1D:46:87:C6:3D:22:AF:B9:D7:A6:63:AB:1F:5C:8B:43:86:D9:0A:24:A7:33:F9:30:E1:72:FD:4C:22:AB"
+      ]
+    }
+  }
+]
