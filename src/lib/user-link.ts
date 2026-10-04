@@ -1,11 +1,13 @@
 import { PLAY_STORE_URL } from "@/lib/seo";
 
 /**
- * A personal message link: `https://www.ababilx.com/u/<handle>`.
+ * Shared links: `https://www.ababilx.com/u/<handle>` opens a chat with a
+ * person, `/g/<slug>` joins a group through its public link. A group slug
+ * follows the handle rules, so one check serves both.
  *
- * The same handle a personal QR code carries. The page behind it never asks
- * the API who the handle belongs to — the lookup needs a signed-in caller, and
- * a public page that confirmed handles would be an account enumerator.
+ * The pages behind them never ask the API what the value belongs to — both
+ * lookups need a signed-in caller, and a public page that confirmed handles
+ * or group names would be an enumerator.
  */
 export const ANDROID_PACKAGE = "com.ababilx.app";
 
@@ -26,18 +28,23 @@ export function handleFromPath(raw: string): string | null {
   return SHAPE.test(handle) ? handle : null;
 }
 
+export type LinkKind = "user" | "group";
+
+/** The query key each kind carries: `ababilx://user?u=` / `ababilx://group?g=`. */
+const PARAM: Record<LinkKind, string> = { user: "u", group: "g" };
+
 /** What the app's scanner and its intent filter both read. */
-export function appUrl(handle: string): string {
-  return `ababilx://user?u=${encodeURIComponent(handle)}`;
+export function appUrl(kind: LinkKind, value: string): string {
+  return `ababilx://${kind}?${PARAM[kind]}=${encodeURIComponent(value)}`;
 }
 
 /**
  * Chrome on Android: opens the app, or the Play Store when it is not
  * installed. A bare `ababilx://` link there fails silently instead.
  */
-export function androidIntentUrl(handle: string): string {
+export function androidIntentUrl(kind: LinkKind, value: string): string {
   return (
-    `intent://user?u=${encodeURIComponent(handle)}` +
+    `intent://${kind}?${PARAM[kind]}=${encodeURIComponent(value)}` +
     `#Intent;scheme=ababilx;package=${ANDROID_PACKAGE};` +
     `S.browser_fallback_url=${encodeURIComponent(PLAY_STORE_URL)};end`
   );

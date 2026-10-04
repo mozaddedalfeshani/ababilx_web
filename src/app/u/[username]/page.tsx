@@ -26,5 +26,5 @@ export default async function UserLinkPage({ params }: Props) {
   if (!handle) notFound();
 
   const agent = (await headers()).get("user-agent") ?? "";
-  return <UserLinkCard handle={handle} android={/android/i.test(agent)} />;
+  return <UserLinkCard kind="user" value={handle} android={/android/i.test(agent)} />;
 }
