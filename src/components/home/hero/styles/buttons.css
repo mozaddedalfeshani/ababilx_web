@@ -1,0 +1,92 @@
+/* Liquid-glass buttons shared by the header and the hero */
+.vx-btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: var(--btn-h);
+  padding: 0 16px;
+  border-radius: 6px;
+  font-size: var(--btn);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.35s ease, border-color 0.35s ease,
+    box-shadow 0.35s ease, color 0.35s ease, filter 0.35s ease;
+}
+
+.vx-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(115deg, transparent 20%, rgba(255, 255, 255, 0.45) 48%, transparent 76%);
+  transform: translateX(-130%);
+  transition: transform 0.65s ease;
+  pointer-events: none;
+}
+
+.vx-btn:hover::after {
+  transform: translateX(130%);
+}
+
+.vx-btn-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.vx-btn-solid {
+  background: linear-gradient(180deg, #ffffff 0%, #e7e7e7 48%, #cfcfcf 100%);
+  color: #111111;
+  border: 1px solid #ffffff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.vx-btn-solid:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #f3f6ff 42%, #d5def2 100%);
+  border-color: #f2f6ff;
+  box-shadow: inset 0 1px 0 #ffffff, 0 0 22px rgba(186, 208, 255, 0.35),
+    0 8px 18px rgba(255, 255, 255, 0.12);
+}
+
+.vx-btn-ghost {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.45) 50%, rgba(160, 175, 200, 0.08));
+  color: #ffffff;
+  border: 1px solid rgba(198, 198, 198, 0.45);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.vx-btn-ghost:hover {
+  background: linear-gradient(135deg, rgba(210, 225, 255, 0.18), rgba(0, 0, 0, 0.35) 48%, rgba(180, 195, 220, 0.16));
+  border-color: rgba(220, 230, 255, 0.75);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 0 20px rgba(170, 200, 255, 0.22);
+}
+
+/* Hero-sized variants */
+.vx-hero-btn {
+  height: var(--hero-btn-h);
+  padding: 0 18px;
+}
+
+.vx-hero-btn.vx-btn-solid:hover {
+  box-shadow: inset 0 1px 0 #ffffff, 0 0 26px rgba(186, 208, 255, 0.4),
+    0 8px 18px rgba(255, 255, 255, 0.14);
+}
+
+.vx-hero-btn.vx-btn-ghost {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.5) 46%, rgba(150, 170, 200, 0.1));
+  border: 1px solid rgba(198, 198, 198, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.vx-hero-btn.vx-btn-ghost:hover {
+  border-color: rgba(220, 230, 255, 0.8);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 0 24px rgba(170, 200, 255, 0.28);
+}

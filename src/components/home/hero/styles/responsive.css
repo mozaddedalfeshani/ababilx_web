@@ -1,0 +1,171 @@
+/* Width tiers (desktop default ≈1440px lives in base.css) */
+@media (min-width: 1600px) {
+  .vx {
+    --logo: 17px; --logo-mark: 24px; --nav: 15px; --nav-h: 44px;
+    --btn: 15px; --btn-h: 44px; --hero-btn-h: 48px; --h1: 64px;
+    --lede: 18px; --badge: 13.5px; --stat-size: 15px;
+    --header-y: 28px; --header-x: 64px; --stats-x: 96px; --stats-y: 44px;
+    --copy-max: 980px; --lede-max: 540px;
+  }
+  .vx-nav-link { padding: 0 20px; }
+  .vx-badge { margin-bottom: 26px; }
+  .vx-lede { margin-top: 22px; }
+  .vx-hero-actions { margin-top: 30px; gap: 12px; }
+  .vx-stat-icon { width: 22px; height: 22px; }
+  .vx-stat-icon-wide { width: 45px; height: 24px; }
+}
+
+@media (min-width: 1920px) {
+  .vx {
+    --logo: 18px; --logo-mark: 26px; --nav: 16px; --nav-h: 48px;
+    --btn: 16px; --btn-h: 48px; --hero-btn-h: 52px; --h1: 76px;
+    --lede: 20px; --badge: 14.5px; --stat-size: 16px;
+    --header-y: 32px; --header-x: 80px; --stats-x: 120px; --stats-y: 52px;
+    --copy-max: 1120px; --lede-max: 620px;
+  }
+  .vx-nav { gap: 10px; }
+  .vx-nav-link { padding: 0 22px; }
+  .vx-btn, .vx-hero-btn { padding: 0 22px; }
+  .vx-badge { padding: 10px 15px; }
+  .vx-stat-icon-wide { width: 48px; height: 26px; }
+}
+
+@media (min-width: 2560px) {
+  .vx {
+    --h1: 88px; --lede: 22px; --header-x: 120px; --stats-x: 160px;
+    --copy-max: 1280px; --lede-max: 680px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .vx { --h1: 54px; --lede: 16px; --header-x: 48px; --stats-x: 80px; --copy-max: 900px; }
+}
+
+@media (min-width: 901px) and (max-width: 1279px) {
+  .vx {
+    --logo: 15px; --nav: 13px; --nav-h: 36px; --btn: 13px; --btn-h: 38px;
+    --hero-btn-h: 40px; --h1: 42px; --lede: 15px; --badge: 12px;
+    --stat-size: 12.5px; --header-y: 16px; --header-x: 28px;
+    --stats-x: 36px; --stats-y: 28px; --hero-gap: 64px;
+    --copy-max: 760px; --lede-max: 440px;
+  }
+  .vx-nav-link { padding: 0 14px; }
+  .vx-badge { margin-bottom: 16px; }
+  .vx-lede { margin-top: 14px; }
+  .vx-hero-actions { margin-top: 20px; }
+}
+
+/* Short desktop windows */
+@media (min-width: 901px) and (max-height: 850px) {
+  .vx { --header-y: 14px; --stats-y: 24px; --hero-gap: 48px; --h1: 40px; }
+  .vx-badge { margin-bottom: 12px; }
+  .vx-lede { margin-top: 12px; }
+  .vx-hero-actions { margin-top: 16px; }
+}
+
+@media (min-width: 901px) and (max-height: 720px) {
+  .vx {
+    --h1: 34px; --lede: 14px; --hero-gap: 32px; --stats-y: 18px;
+    --nav-h: 30px; --btn-h: 34px; --hero-btn-h: 36px;
+  }
+  .vx-badge { margin-bottom: 8px; }
+}
+
+/* Desktop: one frame, no scroll */
+@media (min-width: 901px) {
+  html:has(.vx),
+  body:has(.vx) {
+    height: 100%;
+    overflow: hidden;
+  }
+  .vx-page {
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+  }
+}
+
+/* Phone */
+@media (max-width: 900px) {
+  html:has(.vx),
+  body:has(.vx) {
+    height: auto;
+    overflow-y: auto;
+  }
+  .vx {
+    --logo: 16px; --btn: 15px; --btn-h: 46px; --hero-btn-h: 48px;
+    --h1: 36px; --lede: 16.5px; --badge: 13.5px; --stat-size: 15px;
+    --header-y: 16px; --header-x: 18px; --stats-x: 20px; --stats-y: 28px;
+    --hero-gap: 36px;
+  }
+  .vx-header {
+    grid-template-columns: 1fr auto auto;
+    gap: 8px;
+    padding-top: max(var(--header-y), env(safe-area-inset-top));
+    padding-left: max(var(--header-x), env(safe-area-inset-left));
+    padding-right: max(var(--header-x), env(safe-area-inset-right));
+  }
+  .vx-logo, .vx-header-cta, .vx-burger { position: relative; z-index: 80; }
+  .vx-burger { display: grid; }
+
+  .vx-menu-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    background: rgba(8, 8, 8, 0.42);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.28s ease, visibility 0.28s ease, backdrop-filter 0.28s ease;
+  }
+  body.vx-menu-open .vx-menu-backdrop {
+    opacity: 1;
+    visibility: visible;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+
+  .vx-nav {
+    position: fixed;
+    inset: 0;
+    z-index: 45;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 96px 22px 32px;
+    padding-top: max(96px, calc(env(safe-area-inset-top) + 88px));
+    background: transparent;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.28s ease, visibility 0.28s ease;
+  }
+  body.vx-menu-open .vx-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .vx-nav-link {
+    width: 100%;
+    height: 56px;
+    justify-content: center;
+    font-size: 19px;
+    border-radius: 10px;
+  }
+  body.vx-menu-open { overflow: hidden; }
+
+  .vx-hero { padding: 20px 20px var(--hero-gap); align-items: flex-end; }
+  .vx-hero-copy, .vx-lede { max-width: 100%; }
+  .vx-stats { flex-direction: column; justify-content: center; gap: 16px; }
+  .vx-stat { white-space: normal; }
+}
+
+@media (max-width: 560px) {
+  .vx { --h1: 34px; --lede: 16px; --header-x: 16px; }
+  .vx-hero-actions { flex-direction: column; width: 100%; }
+  .vx-hero-actions .vx-btn { width: 100%; }
+}
+
+@media (max-width: 380px) {
+  .vx-header-cta { display: none; }
+}

@@ -8,13 +8,18 @@ export type HomeCopy = {
     paper: string;
     workspace: string;
     download: string;
+    github: string;
+    openMenu: string;
+    closeMenu: string;
   };
   hero: {
     badge: string;
     headline: string;
     headlineAccent: string;
     tagline: string;
+    secondaryCta: string;
   };
+  stats: [string, string, string];
   languageEn: string;
   languageBn: string;
 };
@@ -25,6 +30,9 @@ export const HOME_COPY_EN: HomeCopy = {
     paper: "Paper",
     workspace: "Workspace",
     download: "Download the app",
+    github: "GitHub",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
   },
   hero: {
     badge: "End-to-end encrypted",
@@ -32,7 +40,13 @@ export const HOME_COPY_EN: HomeCopy = {
     headlineAccent: "Nobody else's.",
     tagline:
       "Messages locked on your phone — not even we can read them. Privacy mode, disappearing photos and Ghost Chat. No ads, no trackers.",
+    secondaryCta: "Open Workspace",
   },
+  stats: [
+    "End-to-end encrypted by default",
+    "Free on Google Play",
+    "No ads, no trackers",
+  ],
   languageEn: "English",
   languageBn: "বাংলা",
 };
@@ -43,6 +57,9 @@ export const HOME_COPY_BN: HomeCopy = {
     paper: "Paper",
     workspace: "Workspace",
     download: "অ্যাপ ডাউনলোড",
+    github: "GitHub",
+    openMenu: "মেনু খোলো",
+    closeMenu: "মেনু বন্ধ করো",
   },
   hero: {
     badge: "এন্ড-টু-এন্ড এনক্রিপ্টেড",
@@ -50,7 +67,13 @@ export const HOME_COPY_BN: HomeCopy = {
     headlineAccent: "শুধুই তোমার।",
     tagline:
       "মেসেজ লক থাকে তোমার ফোনেই — আমরাও পড়তে পারি না। প্রাইভেসি মোড, হারিয়ে যাওয়া ছবি আর Ghost Chat। কোনো বিজ্ঞাপন নেই, কোনো ট্র্যাকার নেই।",
+    secondaryCta: "Workspace খোলো",
   },
+  stats: [
+    "শুরু থেকেই এন্ড-টু-এন্ড এনক্রিপ্টেড",
+    "Google Play-তে ফ্রি",
+    "কোনো বিজ্ঞাপন নেই, কোনো ট্র্যাকার নেই",
+  ],
   languageEn: "English",
   languageBn: "বাংলা",
 };

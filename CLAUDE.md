@@ -14,11 +14,10 @@ ababilx_main/
 │   ├── account-deletion/page.tsx
 │   └── data-deletion/page.tsx
 ├── src/components/legal/legal-markdown/
-├── src/components/hero/          # landing hero art (Ababil-X-frontend match)
 ├── src/components/home/
-│   ├── navbar/                   # fixed glass navbar + auth
-│   ├── cta/                      # bottom CTA card
-│   └── shared/                   # locale + google icon
+│   ├── hero/                     # whole landing viewport: header + hero + facts row
+│   │   └── styles/               # vx-* CSS (base, header, buttons, hero, motion, responsive)
+│   └── shared/                   # locale
 ├── src/components/ui/            # shadcn
 └── src/lib/auth.ts               # Google OAuth redirect
 ```
@@ -34,7 +33,7 @@ bun run build
 ## Notes
 
 - Package manager: **bun**
-- Hardcoded light theme
+- Hardcoded light theme, except the home page: black single viewport (`.vx`, `body:has(.vx)`), Inter + Instrument Serif via next/font, CloudFront video backdrop (`HERO_VIDEO` in `hero-landing.tsx`)
 - Auth / outbound links: `NEXT_PUBLIC_API_URL` (default `https://api.ababilx.com`) + `/auth/google`; Paper / Workspace / Play Store URLs in `src/lib/seo.ts`
-- Hero CTAs: Paper, Workspace, Play Store download (`AuthActions`)
-- Swap hero via `public/hero.png`
+- Header pills: Paper, Workspace, GitHub; CTAs: Play Store download + Workspace. Copy (EN/BN) in `src/constant/home/copy.ts`
+- Bangla: `.vx[lang=bn]` zeroes letter-spacing and drops the Latin serif italic

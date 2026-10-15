@@ -1,0 +1,140 @@
+/* Hero copy — sits at the bottom, centred */
+.vx-hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 8px 24px var(--hero-gap);
+  min-height: 0;
+}
+
+.vx-hero-copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: var(--copy-max);
+  width: 100%;
+}
+
+.vx-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 22px;
+  padding: 9px 15px;
+  border: 0;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #7d7d7d 0%, #2a2a2a 52%, #0a0a0a 100%);
+  color: #f2f2f2;
+  font-size: var(--badge);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.vx-badge-star {
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.45));
+}
+
+.vx-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-size: var(--h1);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1.12;
+}
+
+.vx-headline-line {
+  display: block;
+  overflow: hidden;
+  padding: 0.06em 0.15em 0.14em;
+}
+
+.vx-headline-inner {
+  display: inline-block;
+}
+
+.vx-headline em {
+  display: inline-block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.08em;
+  letter-spacing: -0.03em;
+  color: #9a9a9a;
+}
+
+.vx-lede {
+  max-width: var(--lede-max);
+  margin-top: 18px;
+  color: #9a9a9a;
+  font-size: var(--lede);
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.015em;
+}
+
+.vx-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+/* Facts row along the bottom edge */
+.vx-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 var(--stats-x) var(--stats-y);
+  padding-bottom: max(var(--stats-y), env(safe-area-inset-bottom));
+  color: var(--stat);
+}
+
+.vx-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-size: var(--stat-size);
+  letter-spacing: -0.015em;
+  white-space: nowrap;
+}
+
+.vx-stat-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #e8e8e8;
+}
+
+.vx-stat-icon-wide {
+  width: 38px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+/* Bangla: tracking splits vowel signs from their consonant, and the Latin
+   serif has no Bengali glyphs to italicise. */
+.vx[lang="bn"] :is(.vx-headline, .vx-headline em, .vx-lede, .vx-badge, .vx-stat, .vx-btn) {
+  letter-spacing: 0;
+}
+
+.vx[lang="bn"] .vx-headline {
+  line-height: 1.3;
+}
+
+.vx[lang="bn"] .vx-headline em {
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+}

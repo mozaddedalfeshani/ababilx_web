@@ -1,0 +1,109 @@
+/* Entrance motion. Resting opacity is 1: `both` applies the 0% frame during
+   the delay, so elements hide then arrive only while animations run. */
+.vx-appear {
+  opacity: 1;
+  animation-duration: 1.05s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  animation-delay: var(--d, 0.08s);
+}
+
+.vx-appear--scale { animation-name: vx-in-scale; }
+.vx-appear--soft { animation-name: vx-in-soft; }
+.vx-appear--mask { animation-name: vx-in-mask; }
+.vx-appear--pop { animation-name: vx-in-pop; }
+.vx-appear--btn { animation-name: vx-in-btn; }
+.vx-appear--side { animation-name: vx-in-side; }
+.vx-appear--stat { animation-name: vx-in-stat; }
+
+.vx-photo {
+  animation: vx-in-fade 1.4s ease both;
+}
+
+.vx-badge-star {
+  animation: vx-in-star 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.28s both;
+}
+
+.vx-headline em {
+  animation: vx-in-em 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.72s both;
+}
+
+.vx-appear.is-in,
+.vx-photo.is-in {
+  animation: none;
+  opacity: 1;
+  transform: none;
+  clip-path: none;
+  filter: none;
+}
+
+@keyframes vx-in-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes vx-in-scale {
+  from { opacity: 0; transform: scale(0.84); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes vx-in-soft {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes vx-in-mask {
+  from { opacity: 0; transform: translateY(40%); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes vx-in-pop {
+  0% { opacity: 0; transform: scale(0.9); }
+  70% { opacity: 1; transform: scale(1.03); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes vx-in-btn {
+  from { opacity: 0; transform: translateY(18px) scale(0.94); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes vx-in-side {
+  from { opacity: 0; transform: translateX(22px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes vx-in-stat {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes vx-in-star {
+  0% { opacity: 0; transform: scale(0.2) rotate(-50deg); }
+  65% { opacity: 1; transform: scale(1.2) rotate(8deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+@keyframes vx-in-em {
+  from { opacity: 0.35; filter: blur(4px); }
+  to { opacity: 1; filter: blur(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vx *,
+  .vx *::before,
+  .vx *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .vx-appear,
+  .vx-photo,
+  .vx-headline em,
+  .vx-badge-star {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+    filter: none !important;
+  }
+}

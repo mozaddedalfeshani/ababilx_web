@@ -1,0 +1,119 @@
+/* Header */
+.vx-header {
+  position: relative;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: var(--header-y) var(--header-x) 10px;
+}
+
+.vx-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  justify-self: start;
+  font-size: var(--logo);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.vx-logo-mark {
+  width: var(--logo-mark);
+  height: var(--logo-mark);
+  border-radius: 6px;
+}
+
+.vx-logo-suffix {
+  font-weight: 400;
+}
+
+.vx-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-self: center;
+}
+
+.vx-nav-link {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  height: var(--nav-h);
+  padding: 0 18px;
+  border-radius: 7px;
+  border: 1px solid rgba(198, 198, 198, 0.55);
+  background: linear-gradient(105deg, #050505 0%, #2a2a2a 48%, #4a4a4a 100%);
+  color: #f3f3f3;
+  font-size: var(--nav);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  transition: background 0.35s ease, border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.vx-nav-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, 0.16) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+
+.vx-nav-link:hover {
+  border-color: rgba(235, 235, 235, 0.9);
+  background: linear-gradient(105deg, #111111 0%, #3a3a3a 45%, #6a6a6a 100%);
+  box-shadow: 0 0 18px rgba(200, 210, 230, 0.18);
+}
+
+.vx-nav-link:hover::before {
+  transform: translateX(120%);
+}
+
+.vx-header-cta {
+  justify-self: end;
+}
+
+.vx-burger {
+  display: none;
+  place-items: center;
+  align-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: rgba(8, 8, 8, 0.55);
+  z-index: 60;
+  cursor: pointer;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.vx-burger span {
+  display: block;
+  width: 16px;
+  height: 1.5px;
+  border-radius: 1px;
+  background: #ffffff;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.vx-burger:hover {
+  border-color: rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+body.vx-menu-open .vx-burger span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+body.vx-menu-open .vx-burger span:nth-child(2) {
+  opacity: 0;
+}
+body.vx-menu-open .vx-burger span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
