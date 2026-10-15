@@ -35,5 +35,5 @@ bun run build
 - Package manager: **bun**
 - Hardcoded light theme, except the home page: black single viewport (`.vx`, `body:has(.vx)`), Inter + Instrument Serif via next/font, CloudFront video backdrop (`HERO_VIDEO` in `hero-landing.tsx`)
 - Auth / outbound links: `NEXT_PUBLIC_API_URL` (default `https://api.ababilx.com`) + `/auth/google`; Paper / Workspace / Play Store URLs in `src/lib/seo.ts`
-- Header pills: Paper, Web chat, Workspace, GitHub; CTAs: Play Store download, web chat (`WEB_CHAT_URL` = web.ababilx.com, QR sign-in hint under the buttons), Workspace. Copy (EN/BN) in `src/constant/home/copy.ts`
+- Header: logo + Play Store button only (no nav). Hero CTAs: Play Store download, web chat (`WEB_CHAT_URL` = chat.ababilx.com, QR sign-in hint under the buttons), Workspace. Copy (EN/BN) in `src/constant/home/copy.ts`
 - Bangla: `.vx[lang=bn]` zeroes letter-spacing and drops the Latin serif italic

@@ -27,8 +27,6 @@ body:has(.vx) {
   --border-soft: rgba(255, 255, 255, 0.12);
   --logo: 15.5px;
   --logo-mark: 22px;
-  --nav: 14px;
-  --nav-h: 40px;
   --btn: 13.5px;
   --btn-h: 40px;
   --hero-btn-h: 42px;
@@ -103,6 +101,3 @@ body:has(.vx) {
   min-height: 100dvh;
 }
 
-.vx-menu-backdrop {
-  display: none;
-}

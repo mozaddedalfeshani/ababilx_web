@@ -8,7 +8,6 @@ import HeroCopy from "./hero-copy";
 import HeroHeader from "./hero-header";
 import HeroStats from "./hero-stats";
 import { useAppear } from "./use-appear";
-import { useMenu } from "./use-menu";
 import "./styles/base.css";
 import "./styles/header.css";
 import "./styles/buttons.css";
@@ -24,7 +23,6 @@ const HERO_VIDEO =
 export default function HeroLanding() {
   const root = useRef<HTMLDivElement>(null);
   const { locale } = useHomeLocale();
-  const menu = useMenu();
   useAppear(root);
 
   return (
@@ -45,8 +43,7 @@ export default function HeroLanding() {
         aria-hidden="true"
       />
       <div className="vx-page">
-        <div className="vx-menu-backdrop" aria-hidden="true" onClick={menu.close} />
-        <HeroHeader menuOpen={menu.open} onToggle={menu.toggle} onNavigate={menu.close} />
+        <HeroHeader />
         <HeroCopy />
         <HeroStats />
       </div>

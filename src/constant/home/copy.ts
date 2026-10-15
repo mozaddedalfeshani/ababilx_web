@@ -5,13 +5,7 @@ export type NavItem = { label: string; href: string };
 export type HomeCopy = {
   nav: NavItem[];
   auth: {
-    paper: string;
-    workspace: string;
-    webChat: string;
     download: string;
-    github: string;
-    openMenu: string;
-    closeMenu: string;
   };
   hero: {
     badge: string;
@@ -30,13 +24,7 @@ export type HomeCopy = {
 export const HOME_COPY_EN: HomeCopy = {
   nav: [],
   auth: {
-    paper: "Paper",
-    workspace: "Workspace",
-    webChat: "Web chat",
     download: "Download the app",
-    github: "GitHub",
-    openMenu: "Open menu",
-    closeMenu: "Close menu",
   },
   hero: {
     badge: "End-to-end encrypted",
@@ -61,13 +49,7 @@ export const HOME_COPY_EN: HomeCopy = {
 export const HOME_COPY_BN: HomeCopy = {
   nav: [],
   auth: {
-    paper: "Paper",
-    workspace: "Workspace",
-    webChat: "ওয়েব চ্যাট",
     download: "অ্যাপ ডাউনলোড",
-    github: "GitHub",
-    openMenu: "মেনু খোলো",
-    closeMenu: "মেনু বন্ধ করো",
   },
   hero: {
     badge: "এন্ড-টু-এন্ড এনক্রিপ্টেড",
