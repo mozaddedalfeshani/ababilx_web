@@ -1,5 +1,11 @@
 import { ImageResponse } from "next/og";
-import { DEFAULT_TITLE, SITE_NAME, SITE_URL } from "@/lib/seo";
+import {
+  CHAT_NAME,
+  DEFAULT_TITLE,
+  SITE_NAME,
+  SITE_URL,
+  WORKSPACE_NAME,
+} from "@/lib/seo";
 
 export const alt = DEFAULT_TITLE;
 export const size = { width: 1200, height: 630 };
@@ -19,8 +25,8 @@ export default function OpenGraphImage() {
           alignItems: "center",
           justifyContent: "center",
           background:
-            "radial-gradient(circle at 20% 20%, rgba(225, 29, 72, 0.18), transparent 40%), linear-gradient(135deg, #FAFAFF 0%, #F4F5F7 55%, #EEF0F6 100%)",
-          color: "#0F172A",
+            "radial-gradient(ellipse at 50% 18%, rgba(255, 255, 255, 0.16), transparent 55%), #000000",
+          color: "#FFFFFF",
           padding: 72,
         }}
       >
@@ -60,14 +66,26 @@ export default function OpenGraphImage() {
         <div
           style={{
             fontSize: 26,
-            color: "#64748B",
+            color: "#9A9A9A",
             textAlign: "center",
             maxWidth: 820,
             lineHeight: 1.4,
           }}
         >
-          End-to-end encrypted messaging — not even we can read it. Privacy
-          mode, disappearing photos and Ghost Chat.
+          {`${CHAT_NAME}: end-to-end encrypted messaging — not even ${SITE_NAME} can read it. Privacy mode, disappearing photos and Ghost Chat.`}
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: 14,
+            marginTop: 36,
+            fontSize: 22,
+            color: "#D8D8D8",
+          }}
+        >
+          <span>{CHAT_NAME}</span>
+          <span style={{ color: "#5A5A5A" }}>·</span>
+          <span>{WORKSPACE_NAME}</span>
         </div>
       </div>
     ),

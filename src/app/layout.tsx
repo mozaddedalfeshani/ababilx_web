@@ -7,9 +7,11 @@ import {
   KEYWORDS,
   SITE_NAME,
   SITE_URL,
+} from "@/lib/seo";
+import {
   generateOrganizationSchema,
   generateWebSiteSchema,
-} from "@/lib/seo";
+} from "@/lib/seo-schema";
 import "./globals.css";
 
 const ubuntu = Ubuntu({

@@ -7,13 +7,17 @@ export const SITE_URL =
 
 export const SITE_NAME = "AbabilX";
 
-export const DEFAULT_TITLE = `${SITE_NAME} — Paper & Workspace`;
+/** AbabilX is the company; Chat and Workspace are services it runs. */
+export const CHAT_NAME = `${SITE_NAME} Chat`;
+export const WORKSPACE_NAME = `${SITE_NAME} Workspace`;
+
+export const DEFAULT_TITLE = `${SITE_NAME} — Encrypted Chat & Team Workspace`;
 
 export const DEFAULT_DESCRIPTION =
-  "End-to-end encrypted messaging — not even AbabilX can read your chats. Privacy mode, disappearing photos and Ghost Chat, with no ads and no trackers.";
+  "AbabilX runs AbabilX Chat — end-to-end encrypted messaging nobody else can read, with no ads or trackers — and AbabilX Workspace for teams.";
 
 export const DEFAULT_DESCRIPTION_BN =
-  "এন্ড-টু-এন্ড এনক্রিপ্টেড মেসেজিং — AbabilX-ও তোমার চ্যাট পড়তে পারে না। প্রাইভেসি মোড, হারিয়ে যাওয়া ছবি আর Ghost Chat, কোনো বিজ্ঞাপন বা ট্র্যাকার ছাড়া।";
+  "AbabilX চালায় AbabilX Chat — এন্ড-টু-এন্ড এনক্রিপ্টেড মেসেজিং, যা আর কেউ পড়তে পারে না, কোনো বিজ্ঞাপন বা ট্র্যাকার নেই — আর টিমের জন্য AbabilX Workspace।";
 
 export const FOUNDER_NAME = "Murad";
 
@@ -27,13 +31,19 @@ export const CONTACT_EMAIL = "info@ababilx.com";
 
 export const KEYWORDS = [
   "AbabilX",
-  "Murad",
-  "AbabilX Paper",
+  "AbabilX Chat",
+  "AbabilX Chat Web",
   "AbabilX Workspace",
+  "AbabilX Paper",
+  "Murad",
+  "encrypted messenger",
   "private messaging",
   "end-to-end encrypted chat",
+  "secure messaging app",
   "privacy mode",
   "disappearing photos",
+  "Ghost Chat",
+  "team workspace",
   "developer tools",
   "software engineering",
   "productivity tools",
@@ -63,86 +73,6 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
       item: item.item.startsWith("http") ? item.item : absoluteUrl(item.item),
     })),
   };
-}
-
-export function generateOrganizationSchema() {
-  return {
-    "@type": "Organization",
-    "@id": `${SITE_URL}/#organization`,
-    name: SITE_NAME,
-    url: SITE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: `${SITE_URL}/logo.png`,
-      width: 512,
-      height: 512,
-    },
-    image: `${SITE_URL}/logo.png`,
-    description: DEFAULT_DESCRIPTION,
-    founder: {
-      "@type": "Person",
-      name: FOUNDER_NAME,
-      url: SITE_URL,
-    },
-    sameAs: [GITHUB_ORG_URL, PLAY_STORE_URL],
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "customer support",
-      email: CONTACT_EMAIL,
-      availableLanguage: ["English", "Bengali"],
-    },
-  };
-}
-
-export function generateWebSiteSchema() {
-  return {
-    "@type": "WebSite",
-    "@id": `${SITE_URL}/#website`,
-    url: SITE_URL,
-    name: SITE_NAME,
-    description: DEFAULT_DESCRIPTION,
-    publisher: {
-      "@id": `${SITE_URL}/#organization`,
-    },
-    inLanguage: "en-US",
-  };
-}
-
-export function generateSoftwareApplicationSchema() {
-  return [
-    {
-      "@type": "SoftwareApplication",
-      "@id": `${PAPER_URL}/#application`,
-      name: "AbabilX Paper",
-      url: PAPER_URL,
-      applicationCategory: "DeveloperApplication",
-      operatingSystem: "Web, Desktop, Mobile",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-      },
-      publisher: {
-        "@id": `${SITE_URL}/#organization`,
-      },
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": `${WORKSPACE_URL}/#application`,
-      name: "AbabilX Workspace",
-      url: WORKSPACE_URL,
-      applicationCategory: "DeveloperApplication",
-      operatingSystem: "Web, Desktop, Mobile",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-      },
-      publisher: {
-        "@id": `${SITE_URL}/#organization`,
-      },
-    },
-  ];
 }
 
 export function buildPageMetadata({

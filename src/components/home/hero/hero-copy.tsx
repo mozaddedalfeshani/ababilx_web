@@ -15,7 +15,7 @@ function motion(kind: Parameters<typeof appear>[0], delay: number, extra: string
 
 export default function HeroCopy() {
   const { copy } = useHomeLocale();
-  const { hero, auth } = copy;
+  const { hero } = copy;
 
   return (
     <main className="vx-hero" id="top">
@@ -46,7 +46,7 @@ export default function HeroCopy() {
             {...motion("btn", 0.96, "vx-btn vx-btn-solid vx-hero-btn")}
           >
             <FaGooglePlay aria-hidden="true" className="vx-btn-icon" />
-            {auth.download}
+            {hero.androidCta}
           </a>
           <a
             href={WEB_CHAT_URL}

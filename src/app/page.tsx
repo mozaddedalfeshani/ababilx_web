@@ -6,8 +6,8 @@ import {
   KEYWORDS,
   SITE_NAME,
   SITE_URL,
-  generateSoftwareApplicationSchema,
 } from "@/lib/seo";
+import { generateSoftwareApplicationSchema } from "@/lib/seo-schema";
 
 export const viewport: Viewport = {
   themeColor: "#000000",

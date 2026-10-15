@@ -12,6 +12,7 @@ export type HomeCopy = {
     headline: string;
     headlineAccent: string;
     tagline: string;
+    androidCta: string;
     secondaryCta: string;
     webChatCta: string;
     webChatHint: string;
@@ -24,18 +25,19 @@ export type HomeCopy = {
 export const HOME_COPY_EN: HomeCopy = {
   nav: [],
   auth: {
-    download: "Download the app",
+    download: "Get AbabilX Chat",
   },
   hero: {
-    badge: "End-to-end encrypted",
+    badge: "AbabilX Chat · End-to-end encrypted",
     headline: "Your chats.",
     headlineAccent: "Nobody else's.",
     tagline:
-      "Messages locked on your phone — not even we can read them. Privacy mode, disappearing photos and Ghost Chat. No ads, no trackers.",
-    secondaryCta: "Open Workspace",
-    webChatCta: "Open web chat",
+      "AbabilX Chat keeps every message locked on your phone — not even AbabilX can read it. Privacy mode, disappearing photos and Ghost Chat. No ads, no trackers.",
+    androidCta: "Download for Android",
+    secondaryCta: "AbabilX Workspace",
+    webChatCta: "AbabilX Chat Web",
     webChatHint:
-      "On a computer? Open web chat and scan the QR code with the AbabilX app.",
+      "On a computer? Open AbabilX Chat Web and scan the QR code with AbabilX Chat on your phone.",
   },
   stats: [
     "End-to-end encrypted by default",
@@ -49,18 +51,19 @@ export const HOME_COPY_EN: HomeCopy = {
 export const HOME_COPY_BN: HomeCopy = {
   nav: [],
   auth: {
-    download: "অ্যাপ ডাউনলোড",
+    download: "AbabilX Chat নাও",
   },
   hero: {
-    badge: "এন্ড-টু-এন্ড এনক্রিপ্টেড",
+    badge: "AbabilX Chat · এন্ড-টু-এন্ড এনক্রিপ্টেড",
     headline: "তোমার চ্যাট।",
     headlineAccent: "শুধুই তোমার।",
     tagline:
-      "মেসেজ লক থাকে তোমার ফোনেই — আমরাও পড়তে পারি না। প্রাইভেসি মোড, হারিয়ে যাওয়া ছবি আর Ghost Chat। কোনো বিজ্ঞাপন নেই, কোনো ট্র্যাকার নেই।",
-    secondaryCta: "Workspace খোলো",
-    webChatCta: "ওয়েব চ্যাট খোলো",
+      "AbabilX Chat-এ প্রতিটি মেসেজ লক থাকে তোমার ফোনেই — AbabilX-ও পড়তে পারে না। প্রাইভেসি মোড, হারিয়ে যাওয়া ছবি আর Ghost Chat। কোনো বিজ্ঞাপন নেই, কোনো ট্র্যাকার নেই।",
+    androidCta: "Android-এ ডাউনলোড",
+    secondaryCta: "AbabilX Workspace",
+    webChatCta: "AbabilX Chat Web",
     webChatHint:
-      "কম্পিউটারে? ওয়েব চ্যাট খুলে AbabilX অ্যাপ দিয়ে QR কোড স্ক্যান করো।",
+      "কম্পিউটারে? AbabilX Chat Web খুলে ফোনের AbabilX Chat দিয়ে QR কোড স্ক্যান করো।",
   },
   stats: [
     "শুরু থেকেই এন্ড-টু-এন্ড এনক্রিপ্টেড",
