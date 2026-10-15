@@ -69,6 +69,7 @@
     --nav-h: 30px; --btn-h: 34px; --hero-btn-h: 36px;
   }
   .vx-badge { margin-bottom: 8px; }
+  .vx-hint { display: none; }
 }
 
 /* Desktop: one frame, no scroll */

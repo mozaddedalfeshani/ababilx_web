@@ -7,6 +7,7 @@ export type HomeCopy = {
   auth: {
     paper: string;
     workspace: string;
+    webChat: string;
     download: string;
     github: string;
     openMenu: string;
@@ -18,6 +19,8 @@ export type HomeCopy = {
     headlineAccent: string;
     tagline: string;
     secondaryCta: string;
+    webChatCta: string;
+    webChatHint: string;
   };
   stats: [string, string, string];
   languageEn: string;
@@ -29,6 +32,7 @@ export const HOME_COPY_EN: HomeCopy = {
   auth: {
     paper: "Paper",
     workspace: "Workspace",
+    webChat: "Web chat",
     download: "Download the app",
     github: "GitHub",
     openMenu: "Open menu",
@@ -41,6 +45,9 @@ export const HOME_COPY_EN: HomeCopy = {
     tagline:
       "Messages locked on your phone — not even we can read them. Privacy mode, disappearing photos and Ghost Chat. No ads, no trackers.",
     secondaryCta: "Open Workspace",
+    webChatCta: "Open web chat",
+    webChatHint:
+      "On a computer? Open web chat and scan the QR code with the AbabilX app.",
   },
   stats: [
     "End-to-end encrypted by default",
@@ -56,6 +63,7 @@ export const HOME_COPY_BN: HomeCopy = {
   auth: {
     paper: "Paper",
     workspace: "Workspace",
+    webChat: "ওয়েব চ্যাট",
     download: "অ্যাপ ডাউনলোড",
     github: "GitHub",
     openMenu: "মেনু খোলো",
@@ -68,6 +76,9 @@ export const HOME_COPY_BN: HomeCopy = {
     tagline:
       "মেসেজ লক থাকে তোমার ফোনেই — আমরাও পড়তে পারি না। প্রাইভেসি মোড, হারিয়ে যাওয়া ছবি আর Ghost Chat। কোনো বিজ্ঞাপন নেই, কোনো ট্র্যাকার নেই।",
     secondaryCta: "Workspace খোলো",
+    webChatCta: "ওয়েব চ্যাট খোলো",
+    webChatHint:
+      "কম্পিউটারে? ওয়েব চ্যাট খুলে AbabilX অ্যাপ দিয়ে QR কোড স্ক্যান করো।",
   },
   stats: [
     "শুরু থেকেই এন্ড-টু-এন্ড এনক্রিপ্টেড",

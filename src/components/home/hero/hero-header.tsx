@@ -3,7 +3,13 @@
 import Image from "next/image";
 import { FaGooglePlay } from "react-icons/fa";
 
-import { GITHUB_ORG_URL, PAPER_URL, PLAY_STORE_URL, WORKSPACE_URL } from "@/lib/seo";
+import {
+  GITHUB_ORG_URL,
+  PAPER_URL,
+  PLAY_STORE_URL,
+  WEB_CHAT_URL,
+  WORKSPACE_URL,
+} from "@/lib/seo";
 import { useHomeLocale } from "../shared/use-home-locale";
 import { appear, type AppearKind } from "./appear";
 
@@ -13,6 +19,7 @@ const NAV_MOTION: [AppearKind, number][] = [
   ["scale", 0.16],
   ["soft", 0.28],
   ["scale", 0.4],
+  ["soft", 0.52],
 ];
 
 export default function HeroHeader({ menuOpen, onToggle, onNavigate }: Props) {
@@ -20,6 +27,7 @@ export default function HeroHeader({ menuOpen, onToggle, onNavigate }: Props) {
   const { auth } = copy;
   const links = [
     { label: auth.paper, href: PAPER_URL },
+    { label: auth.webChat, href: WEB_CHAT_URL },
     { label: auth.workspace, href: WORKSPACE_URL },
     { label: auth.github, href: GITHUB_ORG_URL },
   ];

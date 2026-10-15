@@ -36,6 +36,7 @@
 
 .vx-badge-star {
   flex-shrink: 0;
+  color: #ffffff;
   filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.45));
 }
 
@@ -43,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
+  color: var(--text);
   font-size: var(--h1);
   font-weight: 500;
   letter-spacing: -0.045em;
@@ -73,7 +74,7 @@
 .vx-lede {
   max-width: var(--lede-max);
   margin-top: 18px;
-  color: #9a9a9a;
+  color: var(--muted);
   font-size: var(--lede);
   font-weight: 400;
   line-height: 1.55;
@@ -87,6 +88,16 @@
   justify-content: center;
   gap: 10px;
   margin-top: 26px;
+}
+
+/* How the web client signs in: a QR scanned from the phone */
+.vx-hint {
+  max-width: var(--lede-max);
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: calc(var(--lede) - 2.5px);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
 }
 
 /* Facts row along the bottom edge */
@@ -124,7 +135,7 @@
 
 /* Bangla: tracking splits vowel signs from their consonant, and the Latin
    serif has no Bengali glyphs to italicise. */
-.vx[lang="bn"] :is(.vx-headline, .vx-headline em, .vx-lede, .vx-badge, .vx-stat, .vx-btn) {
+.vx[lang="bn"] :is(.vx-headline, .vx-headline em, .vx-lede, .vx-hint, .vx-badge, .vx-stat, .vx-btn) {
   letter-spacing: 0;
 }
 
