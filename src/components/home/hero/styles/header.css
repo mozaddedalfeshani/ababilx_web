@@ -19,10 +19,11 @@
   color: #ffffff;
 }
 
+/* Company bird mark: transparent PNG, so no rounding */
 .vx-logo-mark {
   width: var(--logo-mark);
   height: var(--logo-mark);
-  border-radius: 6px;
+  object-fit: contain;
 }
 
 .vx-logo-suffix {

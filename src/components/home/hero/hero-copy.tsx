@@ -1,9 +1,8 @@
 "use client";
 
-import { QrCodeIcon } from "hugeicons-react";
-import { FaGooglePlay } from "react-icons/fa";
+import { ArrowUpRight01Icon } from "hugeicons-react";
 
-import { PLAY_STORE_URL, WEB_CHAT_URL, WORKSPACE_URL } from "@/lib/seo";
+import { WEB_CHAT_URL, WORKSPACE_URL } from "@/lib/seo";
 import { useHomeLocale } from "../shared/use-home-locale";
 import { appear } from "./appear";
 import { SparkleIcon } from "./hero-icons";
@@ -40,34 +39,24 @@ export default function HeroCopy() {
 
         <div className="vx-hero-actions">
           <a
-            href={PLAY_STORE_URL}
+            href={WEB_CHAT_URL}
             target="_blank"
             rel="noopener noreferrer"
             {...motion("btn", 0.96, "vx-btn vx-btn-solid vx-hero-btn")}
           >
-            <FaGooglePlay aria-hidden="true" className="vx-btn-icon" />
-            {hero.androidCta}
-          </a>
-          <a
-            href={WEB_CHAT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            {...motion("side", 1.1, "vx-btn vx-btn-ghost vx-hero-btn")}
-          >
-            <QrCodeIcon size={16} aria-hidden="true" className="vx-btn-icon" />
-            {hero.webChatCta}
+            {hero.chatCta}
+            <ArrowUpRight01Icon size={16} aria-hidden="true" className="vx-btn-icon" />
           </a>
           <a
             href={WORKSPACE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            {...motion("side", 1.22, "vx-btn vx-btn-ghost vx-hero-btn")}
+            {...motion("side", 1.1, "vx-btn vx-btn-ghost vx-hero-btn")}
           >
-            {hero.secondaryCta}
+            {hero.workspaceCta}
+            <ArrowUpRight01Icon size={16} aria-hidden="true" className="vx-btn-icon" />
           </a>
         </div>
-
-        <p {...motion("soft", 1.3, "vx-hint")}>{hero.webChatHint}</p>
       </div>
     </main>
   );

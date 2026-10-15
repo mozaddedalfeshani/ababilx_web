@@ -11,13 +11,13 @@ export const SITE_NAME = "AbabilX";
 export const CHAT_NAME = `${SITE_NAME} Chat`;
 export const WORKSPACE_NAME = `${SITE_NAME} Workspace`;
 
-export const DEFAULT_TITLE = `${SITE_NAME} — Encrypted Chat & Team Workspace`;
+export const DEFAULT_TITLE = `${SITE_NAME} — Makers of AbabilX Chat & AbabilX Workspace`;
 
 export const DEFAULT_DESCRIPTION =
-  "AbabilX runs AbabilX Chat — end-to-end encrypted messaging nobody else can read, with no ads or trackers — and AbabilX Workspace for teams.";
+  "AbabilX is the software company behind AbabilX Chat, end-to-end encrypted messaging with no ads or trackers, and AbabilX Workspace, tools for teams.";
 
 export const DEFAULT_DESCRIPTION_BN =
-  "AbabilX চালায় AbabilX Chat — এন্ড-টু-এন্ড এনক্রিপ্টেড মেসেজিং, যা আর কেউ পড়তে পারে না, কোনো বিজ্ঞাপন বা ট্র্যাকার নেই — আর টিমের জন্য AbabilX Workspace।";
+  "AbabilX একটি সফটওয়্যার প্রতিষ্ঠান — আমরা বানাই AbabilX Chat (এন্ড-টু-এন্ড এনক্রিপ্টেড মেসেজিং, কোনো বিজ্ঞাপন বা ট্র্যাকার নেই) আর টিমের জন্য AbabilX Workspace।";
 
 export const FOUNDER_NAME = "Murad";
 

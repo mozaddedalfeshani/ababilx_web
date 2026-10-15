@@ -61,7 +61,7 @@ export default function OpenGraphImage() {
             maxWidth: 900,
           }}
         >
-          {"Your chats. Nobody else's."}
+          {"Software that respects people."}
         </div>
         <div
           style={{
@@ -72,7 +72,7 @@ export default function OpenGraphImage() {
             lineHeight: 1.4,
           }}
         >
-          {`${CHAT_NAME}: end-to-end encrypted messaging — not even ${SITE_NAME} can read it. Privacy mode, disappearing photos and Ghost Chat.`}
+          {`${SITE_NAME} builds private software for people and teams.`}
         </div>
         <div
           style={{

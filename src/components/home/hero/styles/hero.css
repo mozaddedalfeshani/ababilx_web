@@ -90,15 +90,6 @@
   margin-top: 26px;
 }
 
-/* How the web client signs in: a QR scanned from the phone */
-.vx-hint {
-  max-width: var(--lede-max);
-  margin-top: 14px;
-  color: var(--muted);
-  font-size: calc(var(--lede) - 2.5px);
-  line-height: 1.5;
-  letter-spacing: -0.01em;
-}
 
 /* Facts row along the bottom edge */
 .vx-stats {
@@ -135,7 +126,7 @@
 
 /* Bangla: tracking splits vowel signs from their consonant, and the Latin
    serif has no Bengali glyphs to italicise. */
-.vx[lang="bn"] :is(.vx-headline, .vx-headline em, .vx-lede, .vx-hint, .vx-badge, .vx-stat, .vx-btn) {
+.vx[lang="bn"] :is(.vx-headline, .vx-headline em, .vx-lede, .vx-badge, .vx-stat, .vx-btn) {
   letter-spacing: 0;
 }
 
