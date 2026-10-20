@@ -11,6 +11,8 @@ interface UserLinkCardProps {
   kind: LinkKind;
   value: string;
   android: boolean;
+  /** The link carries an email or a phone number: never print it. */
+  contact?: boolean;
 }
 
 /** The landing card behind a shared `/u/<handle>` or `/g/<slug>` link. */
@@ -18,8 +20,10 @@ export default function UserLinkCard({
   kind,
   value,
   android,
+  contact = false,
 }: UserLinkCardProps) {
   const group = kind === "group";
+  const who = contact ? "this person" : `@${value}`;
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-12">
       <div className="w-full max-w-sm rounded-2xl border border-border bg-background p-8 text-center shadow-sm">
@@ -28,12 +32,12 @@ export default function UserLinkCard({
         </Link>
 
         <h1 className="mt-5 text-2xl font-bold break-all">
-          {group ? value : `@${value}`}
+          {group ? value : contact ? `Chat on ${SITE_NAME}` : `@${value}`}
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
           {group
             ? `You are invited to a group on ${SITE_NAME}.`
-            : `Message @${value} on ${SITE_NAME}.`}{" "}
+            : `Message ${who} on ${SITE_NAME}.`}{" "}
           End-to-end encrypted — not even {SITE_NAME} can read your chats.
         </p>
 
@@ -59,7 +63,7 @@ export default function UserLinkCard({
         {!android && (
           <p className="mt-6 text-xs text-muted-foreground">
             On a computer? Open this link on a phone that has {SITE_NAME}
-            {group ? "." : `, or search for @${value} there.`}
+            {group || contact ? "." : `, or search for @${value} there.`}
           </p>
         )}
       </div>

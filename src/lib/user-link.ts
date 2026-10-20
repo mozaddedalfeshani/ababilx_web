@@ -28,6 +28,29 @@ export function handleFromPath(raw: string): string | null {
   return SHAPE.test(handle) ? handle : null;
 }
 
+const EMAIL = /^[^\s@/]+@[^\s@/]+\.[^\s@/]+$/;
+const PHONE = /^\+[0-9]{8,15}$/;
+
+/**
+ * What a person's `/u/...` link carries: their handle, or — shared from the
+ * app for someone with no public handle — their email or phone number.
+ */
+export function userRefFromPath(
+  raw: string,
+): { value: string; contact: boolean } | null {
+  let text: string;
+  try {
+    text = decodeURIComponent(raw).trim().toLowerCase();
+  } catch {
+    return null;
+  }
+  if (text.length <= 254 && (EMAIL.test(text) || PHONE.test(text))) {
+    return { value: text, contact: true };
+  }
+  const handle = handleFromPath(text);
+  return handle ? { value: handle, contact: false } : null;
+}
+
 export type LinkKind = "user" | "group";
 
 /** The query key each kind carries: `ababilx://user?u=` / `ababilx://group?g=`. */
