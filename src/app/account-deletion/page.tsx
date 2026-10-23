@@ -102,7 +102,7 @@ export default function AccountDeletionPage() {
           body: (
             <>
               <strong>On your phone:</strong> Settings → Account → Delete account.{" "}
-              <strong>On desktop:</strong> Settings → Security → Delete account. Type{" "}
+              <strong>On desktop</strong> (when no phone is signed in): Settings → Security → Delete account. Type{" "}
               <strong>DELETE</strong> to confirm and it is gone at once.
               <br />
               <br />

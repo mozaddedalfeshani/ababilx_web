@@ -240,7 +240,7 @@ You may **access, correct, delete, or export** your data, **object** to processi
 
 ## 14. Account Deletion
 
-Delete your Account at any time in the app: **Settings → Account → Delete account** on your phone, or **Settings → Security → Delete account** on desktop. You can also email `info@ababilx.com` — see our [Account Deletion guide](/account-deletion). An Account unused for 30 days is deleted automatically. Deletion removes your profile, settings, devices, and any messages and files still waiting for delivery. It cannot be undone. Messages already on other people's phones stay on their phones. If you own a workspace, deleting your Account deletes that workspace too.
+Delete your Account at any time in the app: **Settings → Account → Delete account** on your phone, or, for an account with no phone signed in, **Settings → Security → Delete account** on desktop. You can also email `info@ababilx.com` — see our [Account Deletion guide](/account-deletion). An Account unused for 30 days is deleted automatically. Deletion removes your profile, settings, devices, and any messages and files still waiting for delivery. It cannot be undone. Messages already on other people's phones stay on their phones. If you own a workspace, deleting your Account deletes that workspace too.
 
 ## 15. Security
 
