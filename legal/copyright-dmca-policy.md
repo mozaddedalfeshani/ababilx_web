@@ -36,7 +36,7 @@ AbabilX respects intellectual-property rights and expects users to do the same. 
 
 ## 3. Scope of Hosted Content
 
-Content hosted on AbabilX that may be subject to a Notice includes: wall posts and comments, kanban tasks, notes and attachments, chat attachments, uploaded profile and cover images, and stored digests or summaries. Content residing on GitHub, Slack, or Google platforms is **not hosted by us** — see Section 10.
+Content hosted on AbabilX that may be subject to a Notice includes: wall posts and comments, kanban tasks, notes and attachments, chat attachments, and uploaded profile and cover images. Chat messages and files are end-to-end encrypted and deleted once delivered, so we cannot view them; report them from inside the app or include the content in your Notice.
 
 ## 4. Submitting a Copyright Notice
 
@@ -90,7 +90,7 @@ Trademark concerns (impersonation, misleading use of a mark in usernames, teams,
 
 ## 10. Content on Third-Party Platforms
 
-The Service reads from and writes to GitHub, Slack, and Google platforms at users' direction. Content stored on those platforms — repository code, Slack message history in a workspace, Google account data — must be reported to the respective platform under its own copyright process (for example, GitHub's DMCA process). Where a user employs AbabilX automation to *place* infringing content on a third-party platform, you may additionally report the conduct to us under the [Acceptable Use Policy](./acceptable-use-policy.md), and we may act on the user's AbabilX Account.
+Content stored on other platforms, including websites linked from a message, must be reported to that platform under its own copyright process.
 
 ## 11. Changes to This Policy
 

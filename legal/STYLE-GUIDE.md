@@ -32,9 +32,9 @@ Use these values consistently. Never invent alternatives.
 - **Operator:** AbabilX ("AbabilX," "we," "us," "our")
 - **Location:** Sector 4, Uttara, Dhaka, Bangladesh
 - **Contact:** `info@ababilx.com`
-- **Plans:** Free and Premium (no enterprise tier is currently sold; documents may reference organization/team features)
+- **Plans:** AbabilX Chat is free; Workspace is Free or Plus (bKash)
 - **Current document version:** 1.0.0 — Effective July 9, 2026
-- **AI provider:** DeepSeek (via API)
+- **AI:** none — AbabilX runs no AI on user content
 - **Key subprocessors:** see `subprocessors.md` (single source of truth; other documents link to it rather than duplicating the list)
 
 ## 3. Structure Requirements
@@ -79,7 +79,6 @@ Numbering is continuous and never restarts. Cross-references use the form
 | Customer Content | Content users submit or we access on their behalf | "your stuff", "user data" (ambiguous) |
 | Personal Data | GDPR-style term, used consistently | "PII" (except in CCPA doc where "personal information" is statutory) |
 | Subprocessor | Third party processing Personal Data for us | "vendor" (in DPA contexts) |
-| Output | AI-generated content returned to the user | "results", "completions" |
 
 ## 7. Versioning
 

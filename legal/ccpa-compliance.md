@@ -44,7 +44,7 @@ Mapped to the CCPA's statutory categories (Cal. Civ. Code §1798.140(v)):
 
 | CCPA Category | Collected? | Examples in Our Context |
 |---|---|---|
-| A. Identifiers | Yes | Name, username, email, avatar, IP address, OAuth account identifiers |
+| A. Identifiers | Yes | Name, username, email and phone number if you add them, avatar, IP address, Google account identifier if you sign in with Google |
 | B. Customer records (§1798.80(e)) | Yes | Account and subscription records |
 | C. Protected classifications | No | — |
 | D. Commercial information | Yes | Plan purchases, billing history |
@@ -52,18 +52,18 @@ Mapped to the CCPA's statutory categories (Cal. Civ. Code §1798.140(v)):
 | F. Internet/network activity | Yes | Feature usage, API logs, device/browser data |
 | G. Geolocation data | Limited | Coarse location inferable from IP address only; no precise geolocation |
 | H. Sensory data | No | — |
-| I. Professional/employment information | Limited | Team roles, work logs, and attendance records created by you or your team |
+| I. Professional/employment information | Limited | Workspace roles, created by your workspace |
 | J. Education information | No | — |
 | K. Inferences | No | We do not build behavioral profiles |
 | L. Sensitive personal information | Limited | Account log-in credentials in the form of authentication tokens (see Section 7) |
 
-Content you or your integrations submit (repository metadata, messages, posts) may incidentally contain identifiers of you or others; it is handled as Customer Content under the [Privacy Policy](./privacy-policy.md).
+Content you submit (workspace posts and cards; messages, which reach us only in encrypted form) may incidentally contain identifiers of you or others; it is handled as Customer Content under the [Privacy Policy](./privacy-policy.md).
 
 ## 5. Sources, Purposes, and Disclosures
 
-- **Sources:** you directly; your devices and browsers automatically; connected platforms (GitHub, Google, Slack) at your direction; payment providers ([Privacy Policy](./privacy-policy.md), Section 6).
-- **Business purposes:** providing and securing the Service; executing configured automations; generating AI Output; billing; debugging; auditing interactions; complying with law ([Privacy Policy](./privacy-policy.md), Section 7).
-- **Disclosures for business purposes:** to the service providers in our [Subprocessor List](./subprocessors.md) (hosting, storage, notifications, email, payments, AI processing); to connected platforms at your direction; to authorities where legally required ([Privacy Policy](./privacy-policy.md), Section 10). Each category in Section 4 marked "Yes" may be disclosed to the service providers whose function requires it.
+- **Sources:** you directly; your devices and browsers automatically; Google if you sign in with it; bKash for workspace payments ([Privacy Policy](./privacy-policy.md), Section 7).
+- **Business purposes:** providing and securing the Service; billing; debugging; auditing interactions; complying with law ([Privacy Policy](./privacy-policy.md), Section 8).
+- **Disclosures for business purposes:** to the service providers in our [Subprocessor List](./subprocessors.md) (hosting, storage, notifications, email, payments); to authorities where legally required ([Privacy Policy](./privacy-policy.md), Section 10). Each category in Section 4 marked "Yes" may be disclosed to the service providers whose function requires it.
 
 ## 6. No Sale or Sharing
 
@@ -75,7 +75,7 @@ The only sensitive personal information we process is account authentication mat
 
 ## 8. Retention
 
-Retention periods per category follow the schedule in our [Privacy Policy](./privacy-policy.md), Section 12: account data for the life of the account; logs on rolling 30–180-day windows; billing records as required by tax law; all subject to deletion on account closure.
+Retention periods per category follow the schedule in our [Privacy Policy](./privacy-policy.md), Section 12: account data for the life of the account; messages deleted once delivered (30 days at most); logs on a short rolling window; billing records as required by tax law; all subject to deletion on account closure.
 
 ## 9. Your Rights
 

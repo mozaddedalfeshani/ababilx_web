@@ -42,7 +42,7 @@ Our approach is deliberately minimal: we use **strictly necessary** cookies and 
 | **Authentication** | Keeping you signed in and refreshing your session securely without re-entering credentials. |
 | **Security** | Protecting session refresh credentials from client-side scripts; scoping cookies with `Secure` and `SameSite` attributes to resist cross-site attacks. |
 | **Preferences** | Remembering your theme (dark/light), accent color, language (English/Bangla), and dismissed in-app notices. |
-| **Functionality** | Remembering transient flow state, such as where to return after connecting a Slack workspace. |
+| **Functionality** | Remembering transient flow state, such as where to return after signing in. |
 
 We do **not** use cookies or storage for: third-party advertising, cross-site behavioral tracking, marketing analytics, telemetry SDKs, or building marketing profiles.
 
@@ -65,14 +65,13 @@ The web application stores the following on your device:
 |---|---|---|
 | `lbot_token` | Short-lived access token for authenticating API requests from the web client. | 1 hour token validity; removed on sign-out |
 | Theme / accent / language preferences | Renders the interface per your choices without a server round-trip. | Until you change them or clear browser data |
-| `slack_return_to` | Returns you to the page you started from after connecting Slack. | Removed immediately after the flow completes |
 | Dismissed-dialog markers (e.g., plan-expiry notice) | Prevents re-showing a notice you dismissed. | Until conditions change or you clear browser data |
 
 Desktop and mobile applications use equivalent platform-native secure storage for the same purposes.
 
 ## 6. Third-Party Cookies
 
-We do not embed third-party advertising or analytics tags that set cookies on our domain. If you follow a link from the Service to a third-party site (for example, GitHub or Slack during an OAuth flow), that site may set its own cookies under its own policy. OAuth providers necessarily use their own cookies on **their** domains during sign-in; we do not control them.
+We do not embed third-party advertising or analytics tags that set cookies on our domain. If you follow a link from the Service to a third-party site (for example, Google during sign-in), that site may set its own cookies under its own policy. Sign-in providers necessarily use their own cookies on **their** domains during sign-in; we do not control them.
 
 If we introduce any third-party cookie in the future, we will update this Policy, obtain consent where required, and list the cookie in Section 4.
 

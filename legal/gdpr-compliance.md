@@ -38,13 +38,13 @@ GDPR terms — "Controller," "Processor," "Personal Data," "Processing," "Data S
 | Data | Our role | Governing document |
 |---|---|---|
 | Your account registration data, billing records, security and service logs, telemetry | **Controller** | [Privacy Policy](./privacy-policy.md) |
-| Personal Data inside Customer Content processed for a team or business (repository content, workspace messages, team members' collaboration data) | **Processor** on the customer's behalf | [DPA](./data-processing-addendum.md) |
+| Personal Data inside Customer Content processed for a team or business (workspace Board and Wall content) | **Processor** on the customer's behalf | [DPA](./data-processing-addendum.md) |
 
 Individual users acting purely for themselves interact with us as Controller throughout.
 
 ## 4. Lawful Bases
 
-Our lawful bases per purpose are tabulated in the [Privacy Policy](./privacy-policy.md), Section 8: **contract** for operating the Service and generating requested Output; **legitimate interests** for security, abuse prevention, and service analytics (assessed against Data Subjects' rights, with minimization safeguards); **consent** for non-essential communications and any non-essential storage; **legal obligation** for tax, accounting, and lawful requests. Where we rely on legitimate interests, you may object (Section 5).
+Our lawful bases per purpose are tabulated in the [Privacy Policy](./privacy-policy.md), Section 9: **contract** for operating the Service; **legitimate interests** for security, abuse prevention, and service analytics (assessed against Data Subjects' rights, with minimization safeguards); **consent** for non-essential communications and any non-essential storage; **legal obligation** for tax, accounting, and lawful requests. Where we rely on legitimate interests, you may object (Section 5).
 
 ## 5. Data Subject Rights and How to Exercise Them
 
@@ -53,7 +53,7 @@ Under Articles 15–22 GDPR you have the rights of **access, rectification, eras
 **Self-service (immediate):**
 
 - edit profile data in Settings (rectification);
-- disconnect GitHub/Slack integrations, disable notification channels, sign out of sessions (restriction/objection in effect);
+- disable notifications, turn on Privacy Mode, remove a phone number, sign out of devices (restriction/objection in effect);
 - delete individual content items;
 - delete your account entirely (erasure — see [Privacy Policy](./privacy-policy.md), Section 14).
 
@@ -72,8 +72,8 @@ If we process your data as **Processor** for a team or business, we will redirec
 AbabilX operates from Bangladesh — a country without an EU adequacy decision — and uses Subprocessors in several countries. Transfers of EEA/UK/Swiss Personal Data are protected by:
 
 1. **Standard Contractual Clauses** (Decision 2021/914) with our Subprocessors, and — for business customers — the SCCs incorporated into our [DPA](./data-processing-addendum.md), Section 8 (with the UK Addendum for UK transfers);
-2. **Supplementary measures:** TLS for all transfers, encrypted storage, credential-free URLs and logs, least-privilege access, and Subprocessor contractual restrictions (including no AI training on your content);
-3. **Transfer impact assessment:** we evaluate destination-country law and Subprocessor safeguards before engagement and on material change, and we commit to challenging disproportionate government access requests where lawful ([Privacy Policy](./privacy-policy.md), Section 10.4).
+2. **Supplementary measures:** TLS for all transfers, encrypted storage, credential-free URLs and logs, least-privilege access, end-to-end encryption of chats so transferred messages and files are unreadable to us and every Subprocessor, and Subprocessor contractual restrictions;
+3. **Transfer impact assessment:** we evaluate destination-country law and Subprocessor safeguards before engagement and on material change, and we commit to challenging disproportionate government access requests where lawful ([Privacy Policy](./privacy-policy.md), Section 10.3).
 
 ## 7. Data Protection by Design and by Default
 
@@ -96,7 +96,7 @@ Where a Personal Data Breach is likely to result in a risk to individuals, we no
 
 ## 10. Automated Decision-Making
 
-The Service does not make decisions producing legal or similarly significant effects on you based solely on automated processing (Article 22). AI features generate drafts and summaries for human review; plan-limit and rate-limit enforcement are contractual usage controls, and enforcement decisions affecting your account involve human review (see [Acceptable Use Policy](./acceptable-use-policy.md), Sections 7–8).
+The Service does not make decisions producing legal or similarly significant effects on you based solely on automated processing (Article 22). AbabilX uses no AI on your content; plan-limit and rate-limit enforcement are contractual usage controls, and enforcement decisions affecting your account involve human review (see [Acceptable Use Policy](./acceptable-use-policy.md), Sections 7–8).
 
 ## 11. Supervisory Authorities and Complaints
 

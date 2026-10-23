@@ -38,7 +38,7 @@ This Policy governs programmatic access to the AbabilX Service — the REST API,
 
 ## 3. API Access and Authentication
 
-1. API access is authorized per Account. Requests are authenticated with a short-lived bearer access token obtained through the Service's supported authentication flows (OAuth sign-in with token exchange, token refresh, or desktop pairing).
+1. API access is authorized per Account. Requests are authenticated with a short-lived bearer access token obtained through the Service's supported authentication flows (device-key, Google, or email sign-in, token refresh, or QR pairing).
 2. Real-time streams authenticate through the connection handshake; do not place Credentials in URLs.
 3. An Integration acts **as the user who authorized it** and receives only the access that user has. Do not attempt to broaden access beyond the authenticated account's permissions.
 4. Access requires acceptance of our current policies; requests from accounts gated by policy acceptance or plan enforcement will receive corresponding error responses (for example, HTTP 403), which your Integration must handle rather than retry blindly.
@@ -61,7 +61,7 @@ You must not share Credentials between users, embed a user's Credentials in a mu
 1. The API enforces layered rate limits: global per-client limits, strict limits on authentication endpoints, and per-account limits on high-frequency routes (see [Security Policy](./security-policy.md), Section 10).
 2. Exceeding a limit returns **HTTP 429** with retry guidance. Integrations must honor `Retry-After` and implement exponential backoff with jitter.
 3. Deliberate evasion — rotating accounts, IP addresses, or request signatures to exceed limits — violates the [Acceptable Use Policy](./acceptable-use-policy.md) (items 25–26) and this Policy.
-4. Plan-based quotas (AI usage, automation limits) apply equally to API-originated usage.
+4. Sending budgets and plan limits apply equally to API-originated usage.
 5. If your legitimate use case requires higher limits, contact `info@ababilx.com` before engineering around them.
 
 ## 6. Data Use and Storage by Integrations
