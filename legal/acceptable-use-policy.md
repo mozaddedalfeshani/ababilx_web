@@ -1,8 +1,8 @@
 # AbabilX Acceptable Use Policy
 
-**Effective Date:** July 9, 2026
-**Last Updated:** July 9, 2026
-**Version:** 1.0.0
+**Effective Date:** October 23, 2026
+**Last Updated:** October 23, 2026
+**Version:** 2.0.0
 
 ---
 
@@ -28,7 +28,7 @@ This Acceptable Use Policy ("AUP") defines conduct that is prohibited on the Aba
 
 ## 2. Definitions
 
-Terms defined in the [Terms of Service](./terms-of-service.md) and [Privacy Policy](./privacy-policy.md) have the same meanings here. "Content" includes Customer Content, Output you distribute, and anything you cause the Service to post on a third-party platform.
+Terms defined in the [Terms of Service](./terms-of-service.md) and [Privacy Policy](./privacy-policy.md) have the same meanings here. "Content" includes Customer Content and anything you send or post through the Service.
 
 ## 3. General Standard
 
@@ -65,9 +65,9 @@ You may not:
 18. use the Service to develop, host, distribute, or command-and-control malware;
 19. conduct denial-of-service or resource-exhaustion attacks against the Service or any third party;
 20. exploit a vulnerability for any purpose other than good-faith reporting under our disclosure policy;
-21. steal, harvest, or attempt to extract credentials, API keys, or OAuth tokens of any party;
-22. exfiltrate data through AI features, crafted prompts, or injection techniques;
-23. attempt to extract system prompts, model configurations, or other users' AI context;
+21. steal, harvest, or attempt to extract credentials, API keys, access tokens, or device keys of any party;
+22. exfiltrate data through crafted payloads or injection techniques;
+23. attempt to read other users' encrypted content, keys, or sealed metadata;
 24. disable, overload, or impair any part of the Service's infrastructure.
 
 ### 4.3 Abuse of Platform Mechanics
@@ -80,7 +80,7 @@ You may not:
 28. automate account creation;
 29. resell, sublicense, or provide third parties access to the Service without authorization;
 30. use the free plan programmatically at scale to substitute for a paid plan;
-31. manipulate AI usage accounting or abuse retry mechanisms to exceed allowances;
+31. abuse retry mechanisms to exceed sending budgets or other allowances;
 32. scrape the Service, or bulk-download content you do not own, outside documented API access;
 33. use the API in violation of the [Developer & API Policy](./developer-api-policy.md);
 34. cache or store other users' data beyond what a permitted integration requires;
@@ -89,30 +89,30 @@ You may not:
 37. abuse webhook endpoints with junk, oversized, or malicious payloads;
 38. register misleading webhook integrations to capture data not intended for you.
 
-### 4.4 Misuse of Third-Party Integrations
+### 4.4 Misuse of Privacy Features
 
-You may not use AbabilX's automation to violate a connected platform's terms or harm its users, including:
+Privacy features exist to protect people, not to hide abuse. You may not:
 
-39. using auto-commit or scheduled automation to fabricate development activity in a deceptive manner (for example, to defraud an employer, client, or metric-based program);
-40. committing to repositories you lack rights to modify;
-41. posting to Slack channels or workspaces without authorization;
-42. sending messages through the Service that violate Slack's or GitHub's policies;
-43. using the Service to evade a suspension or ban imposed by GitHub, Google, or Slack;
-44. exceeding or laundering third-party API quotas through our infrastructure;
-45. connecting accounts you do not own or lack authority to connect;
-46. using integration tokens obtained through AbabilX outside the Service.
+39. use Ghost Chat, timed photos, private chat, or Privacy Mode to harass, threaten, extort, or exploit anyone;
+40. use Local Share to send content to a device whose owner has not accepted it, or to spread malware;
+41. use encryption to share content that is illegal to possess or distribute;
+42. create Accounts in bulk with Start New Chat, or use new Accounts to evade a block or a suspension;
+43. use another person's phone or linked device to read or send their messages without permission;
+44. use scheduled messages to flood a person or group;
+45. impersonate someone through a display name, picture, or username;
+46. misuse reports or blocks to target someone falsely.
 
 ### 4.5 Spam and Deceptive Practices
 
 You may not:
 
-47. send spam, bulk unsolicited messages, or chain content through any Service feature (chat, wall, standups, digests, webhooks);
+47. send spam, bulk unsolicited messages, or chain content through any Service feature (chat, groups, wall, webhooks);
 48. use scheduled messages to flood channels or recipients;
 49. engage in phishing, or create content that impersonates login pages, security notices, or other trusted communications;
 50. impersonate any person, organization, or AbabilX itself;
 51. misrepresent your affiliation or the origin of content;
-52. distribute deceptive AI-generated content presented as human-authored where that presentation is materially misleading;
-53. manipulate reactions, activity graphs, attendance records, or analytics to deceive a team or third party;
+52. distribute deceptive synthetic or doctored media presented as genuine where that is materially misleading;
+53. manipulate reactions, polls, or task status to deceive a team or third party;
 54. operate pyramid schemes, advance-fee fraud, fake giveaways, or other fraudulent schemes;
 55. engage in payment fraud, including using stolen payment instruments or initiating illegitimate chargebacks;
 56. abuse trials, promotions, or referral mechanics through fabricated identities.
@@ -143,18 +143,18 @@ You may not post, store, or transmit content that:
 
 Team-space behavioral norms are further described in our [Community Guidelines](./community-guidelines.md).
 
-### 4.8 Misuse of AI Features
+### 4.8 Misuse of Groups and Workspaces
 
-You may not use AI Features to:
+You may not:
 
-71. generate content prohibited elsewhere in this AUP;
-72. produce deliberately false summaries or reports intended to deceive a team, employer, or client;
-73. attempt prompt injection against the Service or other users;
-74. probe, jailbreak, or manipulate models to bypass safety controls;
-75. generate malware, exploits, or attack tooling for unauthorized use;
-76. mass-produce misleading or spam content;
-77. represent Output as an audit, certification, or professional opinion;
-78. process content you have no right to process.
+71. add people to groups to spam or harass them;
+72. post deliberately false updates on a Board or Wall to deceive a team, employer, or client;
+73. use group admin powers to exploit or intimidate members;
+74. run a group or workspace for coordinated inauthentic behaviour;
+75. scrape a group's members to contact them for unsolicited marketing;
+76. mass-forward content to spread spam or misinformation;
+77. use webhooks or bots to post content prohibited elsewhere in this AUP;
+78. share another person's private content from a chat without their consent where the law protects it.
 
 ### 4.9 Reverse Engineering and Competitive Misuse
 
@@ -162,7 +162,7 @@ You may not:
 
 79. reverse engineer, decompile, or disassemble the Service except where law grants an unwaivable right;
 80. bypass technical protections on the desktop, mobile, or web clients;
-81. systematically extract Service features, prompts, or data to build or train a competing product;
+81. systematically extract Service features or data to build or train a competing product;
 82. benchmark and publish results in a misleading manner that misrepresents the Service;
 83. access the Service to monitor its availability or functions on behalf of a competitor without our consent.
 
@@ -187,7 +187,7 @@ You may not:
 93. re-identify or attempt to re-identify de-identified data;
 94. retain data from a Team after your authorized access ends, beyond copies you lawfully own;
 95. sell or broker data obtained through the Service;
-96. use attendance, activity, or analytics data to violate employment or privacy law.
+96. use workspace data to violate employment or privacy law.
 
 ### 4.12 Integrity of Legal and Billing Processes
 
@@ -202,17 +202,17 @@ You may not:
 
 ## 5. Examples
 
-> **Example — automation misuse (prohibited, items 39, 53):** configuring auto-commit to generate daily filler commits on an employer-monitored repository so contribution graphs misrepresent work performed.
+> **Example — privacy feature misuse (prohibited, item 39):** sending a view-once photo to pressure or blackmail someone.
 >
-> **Example — permitted automation:** using auto-commit on your own experimental repository to keep a scheduled changelog file updated, with no one being deceived.
+> **Example — permitted use:** sending a view-once photo of a document so it does not stay on a friend's phone.
 
 > **Example — rate-limit evasion (prohibited, items 25–26):** after receiving HTTP 429 responses, rotating through several accounts or IP addresses to continue hammering the sign-in endpoint.
 >
 > **Example — permitted retry:** honoring `Retry-After` and backing off exponentially.
 
-> **Example — AI misuse (prohibited, item 72):** editing a standup rule so the AI reports completed work on tickets no one touched, to mislead a client.
+> **Example — workspace misuse (prohibited, item 72):** moving Board cards to Done for work that was never done, to mislead a client.
 >
-> **Example — permitted use:** letting the AI draft your standup from real commit activity, then reviewing and correcting it before it posts.
+> **Example — permitted use:** moving a card back to In progress when a fix turns out incomplete.
 
 > **Example — security research:** testing whether our WebSocket handshake leaks tokens **is** in scope for good-faith research under the [Vulnerability Disclosure Policy](./vulnerability-disclosure-policy.md); testing it by hijacking another user's live session **is not** (item 11).
 
@@ -251,4 +251,5 @@ Abuse reports: `info@ababilx.com` · Security: `info@ababilx.com` · Legal: `inf
 
 | Version | Date | Summary |
 |---|---|---|
+| 2.0.0 | October 23, 2026 | Replaced integration, automation and AI rules with rules on misuse of privacy features (4.4) and of groups and workspaces (4.8). |
 | 1.0.0 | July 9, 2026 | Initial publication. |

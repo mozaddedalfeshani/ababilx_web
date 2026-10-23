@@ -51,7 +51,7 @@ This Policy explains what we collect, why, how long we keep it, and the choices 
 
 Direct messages, group messages, and your Note to Self are end-to-end encrypted. Each message is locked on the sender's device with a key that exists only on the devices of the people in that conversation. Our servers only ever carry the locked form. **Because we do not hold the keys, there is nothing we could give a government, a military, a court, or an attacker who breaks into our systems.**
 
-- **Photos, videos, voice notes, and files** sent from the AbabilX mobile app are encrypted on your phone before they are uploaded, each with its own key that only the people in the chat can open. Our storage holds locked data with a hidden name and type. The web and desktop apps are receiving the same protection.
+- **Photos, videos, voice notes, and files** are encrypted on your device before they are uploaded — on the phone, the web, and desktop alike — each with its own key that only the people in the chat can open. Our storage holds locked data with a hidden name and type.
 - **Your keys never leave your devices in a form we can open.** They are created on your device. Moving them to a new device happens directly from your phone by QR code.
 - **Notifications stay locked.** On Android, a message notification arrives locked and is opened by your phone, not by us.
 - **You can check for eavesdroppers.** Every conversation has a safety number. If yours matches the other person's, nobody is sitting between you. The app warns you if a contact's key ever changes.
@@ -77,12 +77,12 @@ Local Share sends text, files, and folders between your devices on the same Wi-F
 | We **cannot** see | We need, only to deliver the Service |
 |---|---|
 | The text of your messages | The account details you choose to give (Section 7.1) |
-| Your photos, videos, voice notes, and files sent from the mobile app | Who is in a conversation and when a message is sent, so it can be delivered |
+| Your photos, videos, voice notes, and files | Who is in a conversation and when a message is sent, so it can be delivered |
 | Your message keys | A device token, so your phone can be woken for a new message |
 | Anything in Ghost Chat or Local Share | Your IP address at the moment of a connection, as every internet service does |
 | What is said in your calls | |
 
-**Exceptions.** Messages posted into a conversation by an outside integration (a webhook feed) arrive from outside AbabilX and are not end-to-end encrypted. A group carried over from an older workspace channel becomes encrypted when a member's app sets up its key.
+**Exceptions.** Messages posted into a conversation by an outside integration (a webhook feed) arrive from outside AbabilX and are not end-to-end encrypted. A group carried over from an older workspace channel becomes encrypted when a member's app sets up its key. Files sent before encrypted files were introduced stay in their original form until they are deleted.
 
 ## 3. Privacy Controls You Hold
 
@@ -201,7 +201,7 @@ More detail: [GDPR Compliance Statement](./gdpr-compliance.md).
 
 ### 10.1 Providers Who Help Run the Service
 
-Hosting, file storage, push notifications, and email are run by providers that only carry data on our behalf — this is not sharing. They are bound by contract to use it for nothing else ([Subprocessor List](./subprocessors.md)). File storage holds only the locked form of files sent from the mobile app.
+Hosting, file storage, push notifications, and email are run by providers that only carry data on our behalf — this is not sharing. They are bound by contract to use it for nothing else ([Subprocessor List](./subprocessors.md)). File storage holds only the locked form of chat files.
 
 ### 10.2 People You Talk To
 
@@ -244,7 +244,7 @@ Ask us to delete your Account at any time by emailing `info@ababilx.com` — see
 
 ## 15. Security
 
-- **End-to-end encryption** for messages, and for files sent from the mobile app (Section 2.1).
+- **End-to-end encryption** for messages and every chat file (Section 2.1).
 - **Delivery-only storage:** a breach finds no chat history, because there is none to find.
 - **Encryption in transit and at rest** for everything else (TLS, encrypted storage).
 - **Short-lived sign-in tokens**, rotating refresh tokens, and instant sign-out of any device.
@@ -277,7 +277,7 @@ All privacy, security, and legal questions: `info@ababilx.com`
 
 | Version | Date | Summary |
 |---|---|---|
-| 2.0.0 | October 23, 2026 | Rewritten for AbabilX as a private messenger. Added delivery-only storage (messages deleted once delivered, 30-day maximum), encrypted files from the mobile app, accounts without email or phone, private chat, group privacy, per-person Privacy Mode, local backup, linked devices, Local Share, and unused-account deletion. Workspace limited to Board and Wall. Removed developer-tool, AI, GitHub, and Slack sections. |
+| 2.0.0 | October 23, 2026 | Rewritten for AbabilX as a private messenger. Added delivery-only storage (messages deleted once delivered, 30-day maximum), encrypted files on every app, accounts without email or phone, private chat, group privacy, per-person Privacy Mode, local backup, linked devices, Local Share, and unused-account deletion. Workspace limited to Board and Wall. Removed developer-tool, AI, GitHub, and Slack sections. |
 | 1.2.0 | September 23, 2026 | Added Privacy Mode. |
 | 1.1.0 | September 19, 2026 | Added end-to-end encryption sections. |
 | 1.0.0 | July 9, 2026 | Initial publication. |
