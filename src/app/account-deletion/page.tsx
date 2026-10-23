@@ -26,20 +26,20 @@ function AccountDeletionStructuredData() {
           {
             "@type": "HowToStep",
             position: 1,
-            name: "Send a request",
-            text: "Email info@ababilx.com with the subject 'Account Deletion Request' and your username or account email.",
+            name: "Open Delete account",
+            text: "In the AbabilX app open Settings → Account → Delete account (phone) or Settings → Security → Delete account (desktop). Without the app, email info@ababilx.com with the subject 'Account Deletion Request'.",
           },
           {
             "@type": "HowToStep",
             position: 2,
-            name: "Confirm it is you",
-            text: "We confirm the request from inside your account before deleting anything.",
+            name: "Confirm",
+            text: "Type DELETE to confirm.",
           },
           {
             "@type": "HowToStep",
             position: 3,
             name: "Deleted",
-            text: "Your account and its data are permanently deleted within 30 days, usually much sooner.",
+            text: "In the app your account is deleted at once; an emailed request is completed within 30 days.",
           },
         ],
       },
@@ -98,10 +98,15 @@ export default function AccountDeletionPage() {
         title="Delete your account"
         subtitle="Permanently delete your AbabilX account and the data that belongs to it."
         highlight={{
-          title: "How to request deletion",
+          title: "How to delete your account",
           body: (
             <>
-              Email{" "}
+              <strong>On your phone:</strong> Settings → Account → Delete account.{" "}
+              <strong>On desktop:</strong> Settings → Security → Delete account. Type{" "}
+              <strong>DELETE</strong> to confirm and it is gone at once.
+              <br />
+              <br />
+              Can't open the app? Email{" "}
               <a href="mailto:info@ababilx.com" className="text-[#6366f1] hover:underline">
                 info@ababilx.com
               </a>{" "}
