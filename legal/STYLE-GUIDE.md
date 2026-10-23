@@ -14,7 +14,6 @@ Maintainers must follow this guide when creating or revising any document in `/l
 | `cookie-policy.md` | Cookie Policy | All users |
 | `acceptable-use-policy.md` | Acceptable Use Policy | All users |
 | `security-policy.md` | Security Policy | All users, security researchers |
-| `ai-policy.md` | AI Policy | All users |
 | `billing-refund-policy.md` | Billing & Refund Policy | Paying customers |
 | `developer-api-policy.md` | Developer & API Policy | API consumers, integrators |
 | `copyright-dmca-policy.md` | Copyright & DMCA Policy | Rights holders, users |

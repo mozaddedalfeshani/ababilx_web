@@ -1,23 +1,23 @@
 const PROMISES = [
   {
     title: "End-to-end encrypted",
-    body: "No government, no military, no hacker — not even us — can read your chats. Seize our servers and all anyone gets is locked text.",
+    body: "Messages, photos, voice notes and files are locked on your device. No government, no military, no hacker — not even us — can open them.",
+  },
+  {
+    title: "Delivered, then deleted",
+    body: "Our servers keep a message only until your phones have it. No chat history on our side to leak, seize, or hand over.",
+  },
+  {
+    title: "No email, no phone needed",
+    body: "Start New Chat with nothing but your phone. Email and phone number are always optional.",
   },
   {
     title: "Privacy mode",
     body: "One switch. Nobody sees you online, typing, or reading, nobody can find you by search, and nobody can add you to a group.",
   },
   {
-    title: "Photos that disappear",
-    body: "Pick a timer and the photo is deleted from both phones and our storage once it is seen. Or just turn off saving.",
-  },
-  {
-    title: "Ghost Chat",
-    body: "Phone to phone, never stored. One tap on the flame wipes it from both phones.",
-  },
-  {
-    title: "Your key, your code",
-    body: "Your recovery code is made on your device and shown only to you. We never see it.",
+    title: "Ghost Chat & Local Share",
+    body: "Phone to phone, never through our servers, never stored. One tap on the flame wipes a Ghost Chat from both phones.",
   },
   {
     title: "No ads, no trackers",
@@ -55,7 +55,7 @@ export default function PrivacyPromise() {
       </ul>
       <p className="mt-4 text-sm text-[#94a3b8]">
         What we can and cannot see, and where these protections stop, is
-        spelled out in Sections 1.1 to 1.3 of the Privacy Policy below.
+        spelled out in Sections 2 and 3 of the Privacy Policy below.
       </p>
     </section>
   );

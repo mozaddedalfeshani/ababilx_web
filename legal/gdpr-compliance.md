@@ -79,7 +79,7 @@ AbabilX operates from Bangladesh â€” a country without an EU adequacy decision â
 
 Article 25 obligations are reflected in the platform's construction:
 
-- **minimization:** split `me` endpoints expose only the fields each screen needs; AI requests carry the minimum context per feature ([AI Policy](./ai-policy.md), Section 4);
+- **minimization:** split `me` endpoints expose only the fields each screen needs;
 - **default protection:** third-party tokens are excluded from serialization by default; team content is scoped to team roles server-side;
 - **security by design:** short-lived tokens, rotating HttpOnly refresh cookies, one-time codes and tickets, handshake-authenticated WebSockets ([Security Policy](./security-policy.md), Section 6);
 - **transparency and control:** versioned policies requiring re-acceptance on material change; granular notification and privacy toggles; self-service deletion.

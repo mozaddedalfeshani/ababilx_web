@@ -71,7 +71,7 @@ export function generateSoftwareApplicationSchema() {
       "@id": `${SITE_URL}/#chat-android`,
       name: CHAT_NAME,
       description:
-        "End-to-end encrypted messaging — not even AbabilX can read your chats. Privacy mode, disappearing photos and Ghost Chat, with no ads and no trackers.",
+        "End-to-end encrypted messaging — not even AbabilX can read your chats, and each message is deleted from our servers once delivered. No email or phone number needed. Privacy mode, disappearing photos and Ghost Chat, with no ads, no trackers and no AI.",
       applicationCategory: "CommunicationApplication",
       operatingSystem: "Android",
       installUrl: PLAY_STORE_URL,

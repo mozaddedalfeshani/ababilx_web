@@ -98,7 +98,6 @@ The Service's authentication design keeps credentials out of URLs, logs, and cli
 - **Output encoding:** the web client uses a framework rendering model (React) that escapes content by default.
 - **Cross-site request protection:** state-changing browser flows rely on `SameSite` cookie scoping plus bearer-token authorization, so cross-site form posts cannot authenticate.
 - **Dependency hygiene:** dependencies are version-pinned and updated on a regular cadence; builds fail on compilation and vet errors.
-- **AI-specific controls:** see the [AI Policy](./ai-policy.md), Sections 10–11 (authorization-scoped context, prompt-injection mitigations, kill switch).
 
 ## 10. Rate Limiting and Abuse Resistance
 

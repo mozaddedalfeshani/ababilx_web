@@ -1,8 +1,8 @@
 # AbabilX Data Processing Addendum (DPA)
 
-**Effective Date:** July 9, 2026
-**Last Updated:** July 9, 2026
-**Version:** 1.0.0
+**Effective Date:** October 23, 2026
+**Last Updated:** October 23, 2026
+**Version:** 2.0.0
 
 ---
 
@@ -32,7 +32,7 @@
 
 ## 1. Introduction and Order of Precedence
 
-This Data Processing Addendum ("DPA") forms part of the agreement between AbabilX and the customer accepting it ("Customer") under the [Terms of Service](./terms-of-service.md) (together, the "Agreement"), and applies where AbabilX processes Personal Data subject to Data Protection Law on Customer's behalf. In case of conflict regarding the processing of Personal Data, this DPA prevails over the Agreement; executed Standard Contractual Clauses prevail over this DPA.
+This Data Processing Addendum ("DPA") forms part of the agreement between AbabilX and the customer accepting it ("Customer") under the [Terms of Service](./terms-of-service.md) (together, the "Agreement"), and applies where AbabilX processes Personal Data subject to Data Protection Law on Customer's behalf — in practice, the Board and Wall content of a Customer's Workspace. In case of conflict regarding the processing of Personal Data, this DPA prevails over the Agreement; executed Standard Contractual Clauses prevail over this DPA.
 
 This DPA is accepted by using the Service as a business or organization, or by countersignature where a signed copy is requested (`info@ababilx.com`).
 
@@ -46,7 +46,8 @@ This DPA is accepted by using the Service as a business or organization, or by c
 ## 3. Roles of the Parties
 
 1. For Customer Personal Data, **Customer is the Controller** (or a Processor acting for another Controller) and **AbabilX is the Processor**.
-2. AbabilX acts as an independent **Controller** for: account registration data of its users, billing records, security and service logs, and service telemetry — as described in the [Privacy Policy](./privacy-policy.md). Those are outside this DPA.
+2. AbabilX acts as an independent **Controller** for: account data of its users, billing records, and security logs — as described in the [Privacy Policy](./privacy-policy.md). Those are outside this DPA.
+3. **Chats are outside this DPA and outside AbabilX's reach.** Messages, files, and calls between users are end-to-end encrypted and deleted from AbabilX's servers once delivered. AbabilX cannot read them and processes them only as locked data in transit.
 
 ## 4. Details of Processing
 
@@ -61,17 +62,17 @@ AbabilX shall:
 3. ensure persons authorized to process Customer Personal Data are bound by confidentiality obligations;
 4. implement the technical and organizational measures in **Annex II**;
 5. not sell, share (for cross-context behavioral advertising), or retain, use, or disclose Customer Personal Data other than to provide the Service (CCPA §7051 obligations), and certify that it understands these restrictions;
-6. not use Customer Personal Data to train machine-learning models (see [AI Policy](./ai-policy.md), Section 8);
+6. not use Customer Personal Data to train machine-learning models;
 7. assist Customer as described in Sections 10–11.
 
 ## 6. Customer Obligations
 
 Customer shall:
 
-1. have a lawful basis for the Personal Data it submits or connects to the Service (including repository content and workspace messages);
-2. provide required notices to, and obtain required consents from, its Data Subjects (including team members whose attendance and activity data it processes);
-3. configure the Service (roles, integrations, retention-relevant deletions) consistently with its obligations;
-4. not submit special-category data or data of minors except as strictly incidental to development content and lawful.
+1. have a lawful basis for the Personal Data it puts in its Workspace;
+2. provide required notices to, and obtain required consents from, its Data Subjects, including its Workspace members;
+3. configure the Workspace (members, roles, deletions) consistently with its obligations;
+4. not submit special-category data or data of minors except as strictly incidental and lawful.
 
 ## 7. Subprocessing
 
@@ -96,7 +97,7 @@ AbabilX shall notify Customer **without undue delay, and in any event within 72 
 
 ## 11. Assistance and Data Subject Requests
 
-1. Taking into account the nature of Processing, AbabilX shall assist Customer with appropriate technical and organizational measures to fulfil Data Subject requests (access, rectification, erasure, restriction, portability, objection). The Service's self-service controls (content editing/deletion, integration disconnection, export on request) are the primary mechanism.
+1. Taking into account the nature of Processing, AbabilX shall assist Customer with appropriate technical and organizational measures to fulfil Data Subject requests (access, rectification, erasure, restriction, portability, objection). The Service's self-service controls (editing and deleting cards and posts, removing members, export on request) are the primary mechanism.
 2. If AbabilX receives a request directly from Customer's Data Subject, it will (where lawful) redirect the Data Subject to Customer and not respond substantively except on Customer's instruction.
 3. AbabilX shall provide reasonable assistance with Customer's data-protection impact assessments and prior consultations, to the extent the required information is available to AbabilX.
 
@@ -107,7 +108,7 @@ AbabilX shall notify Customer **without undue delay, and in any event within 72 
 
 ## 13. Return and Deletion
 
-Upon termination of the Agreement, or upon Customer's deletion of specific data through the Service, AbabilX deletes Customer Personal Data as described in the [Privacy Policy](./privacy-policy.md), Sections 12 and 14 (including rotation out of encrypted backups), except where retention is required by law. On written request made before account deletion, AbabilX will provide an export of Customer Personal Data in a machine-readable format.
+Upon termination of the Agreement, or upon Customer's deletion of specific data through the Service, AbabilX deletes Customer Personal Data as described in the [Privacy Policy](./privacy-policy.md), Sections 12 and 14 except where retention is required by law. On written request made before account deletion, AbabilX will provide an export of Customer Personal Data in a machine-readable format.
 
 ## 14. Liability
 
@@ -123,28 +124,27 @@ This DPA takes effect upon acceptance and remains in force as long as AbabilX pr
 |---|---|
 | **Data exporter** | Customer — the organization or individual using the Service for its team or business. |
 | **Data importer** | AbabilX, Sector 4, Uttara, Dhaka, Bangladesh — provider of the Service. |
-| **Subject matter** | Provision of the AbabilX developer-automation and team-collaboration platform. |
+| **Subject matter** | Provision of AbabilX Workspace (Board and Wall). |
 | **Duration** | The term of the Agreement plus the deletion periods in Section 13. |
-| **Nature and purpose** | Hosting, retrieval, transmission, display, AI-assisted summarization, scheduling, and notification of development and collaboration data, as configured by Customer. |
-| **Categories of Data Subjects** | Customer's team members and administrators; individuals appearing in connected repository and workspace content (e.g., commit authors, PR reviewers, message authors). |
-| **Categories of Personal Data** | Names, usernames, email addresses, avatars; repository/commit/PR metadata containing author identities; messages and posts; task and work-log content; attendance and schedule records; configuration data; technical identifiers (IP address, device tokens). |
+| **Nature and purpose** | Hosting, display, and notification of Workspace Board cards and Wall posts, as configured by Customer. No AI processing. |
+| **Categories of Data Subjects** | Customer's Workspace members and owners; individuals named in Workspace content. |
+| **Categories of Personal Data** | Names, usernames, email addresses, avatars; Board cards, comments, and attachments; Wall posts; Workspace settings; technical identifiers (IP address, device tokens). |
 | **Special categories** | None intended; incidental presence only if contained in Customer Content. |
-| **Frequency** | Continuous, as driven by Customer's use and configured automations. |
+| **Frequency** | Continuous, as driven by Customer's use. |
 | **Retention** | Per the [Privacy Policy](./privacy-policy.md), Section 12. |
 
 ## 17. Annex II — Technical and Organizational Measures
 
 As detailed in the [Security Policy](./security-policy.md):
 
-1. TLS encryption in transit for all traffic; encrypted storage for databases, objects, and backups.
-2. OAuth-based authentication; short-lived signed access tokens; rotating `HttpOnly; Secure; SameSite` refresh cookies; one-time exchange codes and tickets keeping credentials out of URLs and logs.
+1. End-to-end encryption for all chat messages, with delivery-only storage; TLS encryption in transit for all traffic; encrypted storage for databases and objects.
+2. Sign-in by device key, Google, or argon2id-hashed password; short-lived signed access tokens; rotating `HttpOnly; Secure; SameSite` refresh cookies; one-time exchange codes and tickets keeping credentials out of URLs and logs.
 3. Server-side, per-request authorization; role-based team permissions; segregated super-administrator access; least-privilege personnel access.
-4. Server-side secrets management; deny-by-default serialization of stored third-party tokens; signature-verified webhooks.
+4. Server-side secrets management; signature-verified webhooks.
 5. Layered rate limiting (global per-IP, strict credential-endpoint, per-user) against brute force and abuse.
 6. Security logging of authentication and administrative events, with credential material excluded from logs.
-7. Scheduled encrypted backups with rolling retention; documented recovery procedures.
-8. Incident-response process with detection, containment (credential revocation, feature kill switches), remediation, notification, and post-incident review.
-9. Vendor assessment and contractual flow-down of data-protection obligations to Subprocessors, including no-training restrictions on AI providers.
+7. Incident-response process with detection, containment (credential revocation, feature kill switches), remediation, notification, and post-incident review.
+8. Vendor assessment and contractual flow-down of data-protection obligations to Subprocessors.
 
 ## 18. Contact
 
@@ -155,4 +155,5 @@ DPA execution and questions: `info@ababilx.com` · Privacy: `info@ababilx.com`
 
 | Version | Date | Summary |
 |---|---|---|
+| 2.0.0 | October 23, 2026 | Scoped to Workspace (Board and Wall). Chats placed outside the DPA as end-to-end encrypted and delivery-only. Removed repository, attendance, AI, and integration processing. |
 | 1.0.0 | July 9, 2026 | Initial publication. |

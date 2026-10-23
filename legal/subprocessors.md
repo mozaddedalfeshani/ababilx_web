@@ -1,8 +1,8 @@
 # AbabilX Subprocessor List
 
-**Effective Date:** July 9, 2026
-**Last Updated:** July 9, 2026
-**Version:** 1.0.0
+**Effective Date:** October 23, 2026
+**Last Updated:** October 23, 2026
+**Version:** 2.0.0
 
 ---
 
@@ -29,32 +29,25 @@ This document is the single authoritative list of third parties that process Per
 
 ## 3. How We Engage Subprocessors
 
-Before engaging a Subprocessor we assess its security posture and data-protection practices, and we bind it by written contract to: process Personal Data only on our instructions; apply appropriate security measures; not use the data for its own purposes (including model training, for AI providers); and support deletion and breach-notification obligations. International transfers to Subprocessors rely on Standard Contractual Clauses where required ([GDPR Compliance Statement](./gdpr-compliance.md), Section 6).
+Before engaging a Subprocessor we assess its security posture and data-protection practices, and we bind it by written contract to: process Personal Data only on our instructions; apply appropriate security measures; not use the data for its own purposes (including model training); and support deletion and breach-notification obligations. International transfers to Subprocessors rely on Standard Contractual Clauses where required ([GDPR Compliance Statement](./gdpr-compliance.md), Section 6).
 
 ## 4. Current Subprocessors
 
 | Subprocessor | Function | Data Processed | Location of Processing |
 |---|---|---|---|
 | **Cloud hosting provider** (compute for API and application servers) | Runs the Service's backend and databases (PostgreSQL, Redis) | All Service data at rest and in processing | Data-center region(s) selected for the Service |
-| **Cloudflare, Inc. — R2 object storage & network services** | Stores user-uploaded files (avatars, covers, attachments) and provides network delivery | Uploaded media and attachments; request metadata | Global (distributed) |
-| **Google LLC — Firebase Cloud Messaging** | Delivers push notifications to mobile devices | Device registration tokens; notification titles/bodies | Global (Google infrastructure) |
-| **DeepSeek** | AI model inference for Output generation | Prompts assembled from Customer Content as described in the [AI Policy](./ai-policy.md), Sections 4–5 | Provider's API infrastructure |
+| **Cloudflare, Inc. — R2 object storage & network services** | Stores uploaded files and provides network delivery | Profile pictures; chat files in locked (encrypted) form, deleted once delivered; request metadata | Global (distributed) |
+| **Google LLC — Firebase Cloud Messaging** | Wakes your phone for a new message or call | Device tokens; locked (encrypted) message notifications that only your phone can open | Global (Google infrastructure) |
 | **Transactional email provider** | Sends account, security, and notification emails | Recipient email address; message content | Provider's infrastructure |
-| **Payment processor(s)** | Processes Premium plan payments | Payment credentials (held by the processor, not by us); transaction records | Provider's infrastructure |
+| **bKash** | Workspace Plus payments | Transaction ID and amount (your PIN never reaches us) | Bangladesh |
 
 > **Note:** Where a row names a function rather than a single vendor, the engaged vendor for your account is available on request to `info@ababilx.com`; the contractual protections in Section 3 apply identically.
 
 ## 5. Connected Platforms (Not Subprocessors)
 
-The following process your data because **you** connect them and direct the Service to interact with them. They act under their own terms as independent controllers, not as our Subprocessors:
-
 | Platform | Interaction |
 |---|---|
-| **GitHub, Inc.** | Repository, commit, PR, and profile data read with your token; commits/branches/PRs created at your direction |
-| **Slack Technologies** | Channel lists read and messages posted to workspaces you authorize |
-| **Google LLC (Sign-In)** | Identity verification when you sign in with Google |
-
-Disconnecting an integration in AbabilX stops our access but does not delete data those platforms hold — manage that with the platform directly.
+| **Google LLC (Sign-In)** | Confirms your identity, only if you choose to sign in with Google |
 
 ## 6. Change Notification
 
@@ -69,4 +62,5 @@ Questions and notification subscriptions: `info@ababilx.com`
 
 | Version | Date | Summary |
 |---|---|---|
+| 2.0.0 | October 23, 2026 | Removed DeepSeek, GitHub and Slack. Payments are bKash only. Storage and push now carry chat content only in locked form. |
 | 1.0.0 | July 9, 2026 | Initial publication. |

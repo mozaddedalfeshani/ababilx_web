@@ -14,7 +14,7 @@ export const WORKSPACE_NAME = `${SITE_NAME} Workspace`;
 export const DEFAULT_TITLE = `${SITE_NAME} — Makers of AbabilX Chat & AbabilX Workspace`;
 
 export const DEFAULT_DESCRIPTION =
-  "AbabilX is the software company behind AbabilX Chat, end-to-end encrypted messaging with no ads or trackers, and AbabilX Workspace, tools for teams.";
+  "AbabilX is the software company behind AbabilX Chat, private end-to-end encrypted messaging deleted from our servers once delivered, with no ads, no trackers and no AI, and AbabilX Workspace, boards and a wall for teams.";
 
 export const DEFAULT_DESCRIPTION_BN =
   "AbabilX একটি সফটওয়্যার প্রতিষ্ঠান — আমরা বানাই AbabilX Chat (এন্ড-টু-এন্ড এনক্রিপ্টেড মেসেজিং, কোনো বিজ্ঞাপন বা ট্র্যাকার নেই) আর টিমের জন্য AbabilX Workspace।";
@@ -47,8 +47,8 @@ export const KEYWORDS = [
   "developer tools",
   "software engineering",
   "productivity tools",
-  "code automation",
-  "AI tools for developers",
+  "messages deleted after delivery",
+  "messenger without phone number",
   "Paper",
   "Workspace",
 ];

@@ -63,7 +63,7 @@ Do not post in any Team Space content that:
 
 AI features draft standups, digests, summaries, and task descriptions. When that content enters a Team Space under your name:
 
-1. **you own it** — review and correct drafts before they post (see [AI Policy](./ai-policy.md), Section 9);
+1. **you own it** — review and correct drafts before they post;
 2. do not configure automations to report work that did not happen;
 3. do not present AI-generated assessments of a colleague's work as your considered judgment without actually considering it.
 

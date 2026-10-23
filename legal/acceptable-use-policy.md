@@ -154,7 +154,7 @@ You may not use AI Features to:
 75. generate malware, exploits, or attack tooling for unauthorized use;
 76. mass-produce misleading or spam content;
 77. represent Output as an audit, certification, or professional opinion;
-78. process content you have no right to process (see [AI Policy](./ai-policy.md), Section 14).
+78. process content you have no right to process.
 
 ### 4.9 Reverse Engineering and Competitive Misuse
 

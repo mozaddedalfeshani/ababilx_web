@@ -30,7 +30,6 @@ const LEGAL_DOCUMENTS: LegalDocument[] = [
   { slug: "cookie-policy", title: "Cookie Policy", fileName: "cookie-policy.md" },
   { slug: "acceptable-use-policy", title: "Acceptable Use Policy", fileName: "acceptable-use-policy.md" },
   { slug: "security-policy", title: "Security Policy", fileName: "security-policy.md" },
-  { slug: "ai-policy", title: "AI Policy", fileName: "ai-policy.md" },
   { slug: "billing-refund-policy", title: "Billing & Refund Policy", fileName: "billing-refund-policy.md" },
   { slug: "developer-api-policy", title: "Developer & API Policy", fileName: "developer-api-policy.md" },
   { slug: "copyright-dmca-policy", title: "Copyright & DMCA Policy", fileName: "copyright-dmca-policy.md" },
