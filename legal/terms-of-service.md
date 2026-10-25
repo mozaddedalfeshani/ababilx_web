@@ -170,7 +170,7 @@ The Service, including its software, design, text, graphics, logos, and Document
 
 ### 12.3 Open Source
 
-The Service incorporates open-source components licensed under their own terms. Nothing in these Terms limits your rights under, or grants you rights that supersede, the applicable open-source licenses. Attribution notices are available in the Service or Documentation where required.
+The Service incorporates open-source components licensed under their own terms. The source code of the AbabilX Chat Android app is published at https://github.com/AbabilX/ababilx-mobile under the GNU Affero General Public License v3.0. Nothing in these Terms, including Section 6, limits your rights under, or grants you rights that supersede, the applicable open-source licenses. Attribution notices are available in the Service or Documentation where required.
 
 ## 13. Feedback
 

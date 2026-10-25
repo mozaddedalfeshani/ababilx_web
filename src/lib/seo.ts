@@ -14,14 +14,17 @@ export const WORKSPACE_NAME = `${SITE_NAME} Workspace`;
 export const DEFAULT_TITLE = `${SITE_NAME} — Makers of AbabilX Chat & AbabilX Workspace`;
 
 export const DEFAULT_DESCRIPTION =
-  "AbabilX is the software company behind AbabilX Chat, private end-to-end encrypted messaging deleted from our servers once delivered, with no ads, no trackers and no AI, and AbabilX Workspace, boards and a wall for teams.";
+  "AbabilX is the software company behind AbabilX Chat, private end-to-end encrypted messaging with an open-source Android app, no email, phone number or personal details needed, deleted from our servers once delivered, with no ads, no trackers and no AI, and AbabilX Workspace, boards and a wall for teams.";
 
 export const DEFAULT_DESCRIPTION_BN =
-  "AbabilX একটি সফটওয়্যার প্রতিষ্ঠান — আমরা বানাই AbabilX Chat (এন্ড-টু-এন্ড এনক্রিপ্টেড মেসেজিং, কোনো বিজ্ঞাপন বা ট্র্যাকার নেই) আর টিমের জন্য AbabilX Workspace।";
+  "AbabilX একটি সফটওয়্যার প্রতিষ্ঠান — আমরা বানাই AbabilX Chat (এন্ড-টু-এন্ড এনক্রিপ্টেড মেসেজিং, ওপেন সোর্স Android অ্যাপ, ইমেইল, ফোন নম্বর বা কোনো ব্যক্তিগত তথ্য লাগে না, কোনো বিজ্ঞাপন বা ট্র্যাকার নেই) আর টিমের জন্য AbabilX Workspace।";
 
 export const FOUNDER_NAME = "Murad";
 
 export const GITHUB_ORG_URL = "https://github.com/AbabilX";
+/** The open-source Android app (GNU AGPL-3.0). */
+export const MOBILE_SOURCE_URL = "https://github.com/AbabilX/ababilx-mobile";
+export const SOURCE_LICENSE_URL = "https://www.gnu.org/licenses/agpl-3.0.html";
 export const PAPER_URL = "https://paper.ababilx.com";
 export const WORKSPACE_URL = "https://workspace.ababilx.com";
 export const WEB_CHAT_URL = "https://chat.ababilx.com";
@@ -49,6 +52,11 @@ export const KEYWORDS = [
   "productivity tools",
   "messages deleted after delivery",
   "messenger without phone number",
+  "messenger without email",
+  "anonymous messenger no personal data",
+  "open source messenger",
+  "open source encrypted messaging app",
+  "AGPL messenger",
   "Paper",
   "Workspace",
 ];
