@@ -51,10 +51,10 @@ export function userRefFromPath(
   return handle ? { value: handle, contact: false } : null;
 }
 
-export type LinkKind = "user" | "group";
+export type LinkKind = "user" | "group" | "space";
 
-/** The query key each kind carries: `ababilx://user?u=` / `ababilx://group?g=`. */
-const PARAM: Record<LinkKind, string> = { user: "u", group: "g" };
+/** The query key each kind carries: `ababilx://user?u=` / `ababilx://group?g=` / `ababilx://space?c=`. */
+const PARAM: Record<LinkKind, string> = { user: "u", group: "g", space: "c" };
 
 /** What the app's scanner and its intent filter both read. */
 export function appUrl(kind: LinkKind, value: string): string {

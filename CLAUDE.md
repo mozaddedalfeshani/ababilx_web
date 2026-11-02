@@ -38,3 +38,4 @@ bun run build
 - Auth / outbound links: `NEXT_PUBLIC_API_URL` (default `https://api.ababilx.com`) + `/auth/google`; Paper / Workspace / Play Store URLs in `src/lib/seo.ts`
 - Company page, not a chat page: header = logo + GitHub link (no nav); hero says what AbabilX builds, CTAs link out to AbabilX Chat (`WEB_CHAT_URL`) and AbabilX Workspace. Chat features, QR sign-in and the Play Store pitch live on chat web (`opensource/chat_ababilx` landing). Copy (EN/BN) in `src/constant/home/copy.ts`
 - Bangla: `.vx[lang=bn]` zeroes letter-spacing and drops the Latin serif italic
+- Space invite `/s/[code]`: asks the API's public preview (`lib/space-invite.ts`, cached 60 s), Join Space + Direct message fire `ababilx://`; a dead code says so, an API failure still offers Join. No test runner in package.json: `bun test src/lib/space-invite.test.mjs`
