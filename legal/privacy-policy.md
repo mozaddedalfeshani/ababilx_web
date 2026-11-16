@@ -1,8 +1,8 @@
 # AbabilX Privacy Policy
 
-**Effective Date:** October 23, 2026
-**Last Updated:** October 23, 2026
-**Version:** 2.0.0
+**Effective Date:** November 16, 2026
+**Last Updated:** November 16, 2026
+**Version:** 2.1.0
 
 > **Private by design, not by promise.** Your messages are end-to-end encrypted on your device — no government, no military, no hacker, not even AbabilX can read them. Once your phones have a message, it is deleted from our servers. You can start without an email or a phone number. Turn on Privacy Mode and nobody sees when you are online, typing, or reading, and nobody can find you by search. We cannot hand over what we cannot read and do not keep.
 
@@ -90,7 +90,7 @@ Local Share sends text, files, and folders between your devices on the same Wi-F
 
 You can create an account with **Start New Chat**: no email address, no phone number, no name required. Your account is tied to a key on your phone. You may instead sign in with Google or with an email and password. Adding an email or phone number is always optional.
 
-**Phone numbers** are never used to sign in or to recover an account. Searching for people by phone number is currently paused.
+**Phone number sign-in.** You can also create a new account with your phone number. We text a one-time code to confirm the number is yours before the account is created. If you already have an account, you can add a phone number to it and verify it the same way. Only a verified number can be used to sign in. Phone number sign-in currently supports Bangladeshi mobile numbers.
 
 ### 3.2 Privacy Mode
 
@@ -125,6 +125,22 @@ On Android, AbabilX keeps an automatic backup in a folder on your phone. The bac
 
 You can link up to five computers or browsers to your phone. Each keeps its own copy of your chats. A linked device that is unused for 14 days is signed out automatically, and you can sign any device out at any time.
 
+### 3.8 Contacts
+
+If you allow it, AbabilX reads the names and phone numbers in your phone's contacts. We use them to:
+
+- **Find friends** who already use AbabilX;
+- **Show the names you saved** for people in your chats and calls;
+- **Back up your contacts** to your AbabilX account, so they can be restored on a new device.
+
+Your contact list is **not public**. Other users cannot see your contacts. When a number has no AbabilX account, the app may show the name most people saved it under, only when several people agree and never revealing who saved it. Your contacts are **never sold and never used for advertising**.
+
+You can stop contact syncing at any time by turning off AbabilX's contacts permission in your phone's settings. To delete the contacts stored with your account, email `info@ababilx.com`. Deleting your Account deletes them too.
+
+### 3.9 Spam and Scam Reports
+
+You can report a phone number you believe is spam or a scam. Reports are stored in AbabilX's community database and reviewed by AbabilX. A number found to be spam or fraudulent may be marked as such to all AbabilX users, to help everyone recognise it. Your identity as the reporter is not shown to other users.
+
 > **Good to know.** Screenshot blocking works on Android. Nothing can stop someone photographing a screen with another camera.
 
 ## 4. Workspace
@@ -148,7 +164,9 @@ The Service is for people aged **18 or older**. We do not knowingly collect Pers
 
 ### 7.1 Information You Give Us
 
-- **Account details:** a display name and username if you choose them, a profile picture if you add one, and an email address only if you sign in with email or Google. A phone number only if you add one.
+- **Account details:** a display name and username if you choose them, a profile picture if you add one, and an email address only if you sign in with email or Google. A phone number only if you sign in with one or add one, verified by a one-time code (Section 3.1).
+- **Contacts:** if you allow it, the names and phone numbers in your phone's contacts (Section 3.8).
+- **Spam reports:** phone numbers you report as spam or a scam (Section 3.9).
 - **Password:** if you set one, we store only a one-way hash (argon2id). We cannot see your password.
 - **Settings:** language, theme, discovery, Privacy Mode, and notification choices.
 - **Messages and files:** carried in locked form only, and deleted once delivered (Section 2.2). **Scheduled messages** (Send later) are held locked until their send time.
@@ -169,6 +187,7 @@ We use no third-party analytics, advertising cookies, tracking pixels, or device
 
 - **Google:** confirmation of your identity, only if you sign in with Google.
 - **bKash:** confirmation of a workspace payment.
+- **Other users' contacts and reports:** your phone number may appear in the contacts other users back up, or in a spam report about a number (Sections 3.8 and 3.9).
 
 We never buy data about you.
 
@@ -191,6 +210,8 @@ Where the GDPR or similar laws apply:
 | Running your Account and delivering messages and calls | **Contract** (Art. 6(1)(b)) |
 | Security logs, rate limiting, abuse prevention | **Legitimate interest** (Art. 6(1)(f)) |
 | Optional email and phone number | **Consent** (Art. 6(1)(a)) — withdraw it any time |
+| Contacts access and backup | **Consent** (Art. 6(1)(a)) — withdraw it any time |
+| Spam and scam reports | **Legitimate interest** (Art. 6(1)(f)) |
 | Payment records and lawful requests | **Legal obligation** (Art. 6(1)(c)) |
 
 More detail: [GDPR Compliance Statement](./gdpr-compliance.md).
@@ -228,6 +249,7 @@ AbabilX is operated from Bangladesh and uses infrastructure in several countries
 | Timed and view-once photos | Deleted when the timer ends |
 | Scheduled messages | Until sent or cancelled |
 | Account details | While your Account exists |
+| Spam reports | As long as needed to help identify spam and fraud |
 | An unused Account | Deleted after **30 days** without use, after several reminders |
 | Signed-in device records | Until the device signs out; unused linked devices after 14 days |
 | Workspace content | Until you or the workspace owner delete it |
@@ -277,6 +299,7 @@ All privacy, security, and legal questions: `info@ababilx.com`
 
 | Version | Date | Summary |
 |---|---|---|
+| 2.1.0 | November 16, 2026 | Added phone number sign-in and verification, contacts access for searching only no backup to server , and community spam and scam reports. |
 | 2.0.0 | October 23, 2026 | Rewritten for AbabilX as a private messenger. Added delivery-only storage (messages deleted once delivered, 30-day maximum), encrypted files on every app, accounts without email or phone, private chat, group privacy, per-person Privacy Mode, local backup, linked devices, Local Share, and unused-account deletion. Workspace limited to Board and Wall. Removed developer-tool, AI, GitHub, and Slack sections. |
 | 1.2.0 | September 23, 2026 | Added Privacy Mode. |
 | 1.1.0 | September 19, 2026 | Added end-to-end encryption sections. |
